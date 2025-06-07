@@ -11,33 +11,30 @@ class Dashboard extends Page
     protected static string $view = 'filament.pages.dashboard';
     protected static ?string $slug = '/';
     protected static ?int $navigationSort = 1;
+    protected static ?string $navigationLabel = 'Главная';
 
-    /**
-     * Retrieve data for the dashboard view, including all user roles. 
-     */
     public function getViewData(): array
     {
         $user = Auth::user();
 
         if (!$user) {
             return [
-                'name' => 'Guest',
-                'email' => 'N/A',
+                'name' => 'Гость',
+                'email' => 'Нет данных',
                 'roles' => [],
-                'joined' => 'N/A',
-                'lastLogin' => 'Not available',
+                'joined' => 'Нет данных',
+                'lastLogin' => 'Недоступно',
             ];
         }
 
-        // Eager load roles to prevent N+1 queries
         $user->load('roles');
 
         return [
-            'name' => $user->name ?? 'Unknown',
-            'email' => $user->email ?? 'N/A',
+            'name' => $user->name ?? 'Неизвестно',
+            'email' => $user->email ?? 'Нет данных',
             'roles' => $user->roles->pluck('name')->toArray() ?? [],
-            'joined' => $user->created_at?->format('d M, Y') ?? 'N/A',
-            'lastLogin' => $user->last_login_at?->format('d M, Y H:i') ?? 'Not available',
+            'joined' => $user->created_at?->format('d M, Y') ?? 'Нет данных',
+            'lastLogin' => $user->last_login_at?->format('d M, Y H:i') ?? 'Недоступно',
         ];
     }
 }

@@ -18,23 +18,17 @@ class UsersResource extends Resource
 {
     protected static ?string $model = User::class;
     protected static ?string $navigationIcon = 'heroicon-o-users';
-    protected static ?string $navigationGroup = 'Roles & Users';
+    protected static ?string $navigationGroup = 'Роли и пользователи';
     protected static ?int $navigationSort = 3;
+    static ?string $navigationLabel = 'Пользователи';
 
-    /**
-     * Determine whether the current user can access this resource.
-     */
     public static function canAccess(): bool
     {
         return auth()->user()?->can('user.view') ?? false;
     }
 
-    /**
-     * Form Configuration: Defines fields for user creation and editing.
-     */
     public static function form(Form $form): Form
     {
-
         $shouldDisable = fn($record) => auth()->user()?->hasRole('superadmin') ?
             $record && $record->id === auth()->id() :
             $record?->hasRole('superadmin') || auth()->id() === $record?->id || !auth()->user()?->can('user.edit') || self::hasMatchingRoles($record);
@@ -43,11 +37,13 @@ class UsersResource extends Resource
 
         return $form->schema([
             TextInput::make('name')
+                ->label('Имя')
                 ->required()
                 ->maxLength(255)
                 ->disabled($shouldDisable),
 
             TextInput::make('email')
+                ->label('Электронная почта')
                 ->email()
                 ->required()
                 ->maxLength(255)
@@ -55,8 +51,8 @@ class UsersResource extends Resource
                 ->disabled($shouldDisable),
 
             TextInput::make('password')
+                ->label('Пароль')
                 ->password()
-                ->label('Password')
                 ->minLength(8)
                 ->maxLength(255)
                 ->requiredWith('passwordConfirmation')
@@ -64,8 +60,8 @@ class UsersResource extends Resource
                 ->disabled($shouldDisable),
 
             TextInput::make('passwordConfirmation')
+                ->label('Подтверждение пароля')
                 ->password()
-                ->label('Confirm Password')
                 ->minLength(8)
                 ->maxLength(255)
                 ->requiredWith('password')
@@ -74,6 +70,7 @@ class UsersResource extends Resource
                 ->disabled($shouldDisable),
 
             Select::make('roles')
+                ->label('Роли')
                 ->relationship('roles', 'name')
                 ->preload()
                 ->multiple()
@@ -84,34 +81,32 @@ class UsersResource extends Resource
         ]);
     }
 
-    /**
-     * Table Configuration: Configures the table for displaying users.
-     */
     public static function table(Table $table): Table
     {
         return $table
             ->columns([
                 TextColumn::make('id')->label('ID')->searchable()->sortable(),
-                TextColumn::make('name')->searchable()->sortable(),
-                TextColumn::make('email')->searchable()->sortable(),
-                TextColumn::make('roles.name')->sortable()->badge(),
-                TextColumn::make('created_at')->dateTime()->sortable()->label('Created At')->toggleable()->toggledHiddenByDefault(),
-                TextColumn::make('updated_at')->dateTime()->sortable()->label('Updated At')->toggleable()->toggledHiddenByDefault(),
+                TextColumn::make('name')->label('Имя')->searchable()->sortable(),
+                TextColumn::make('email')->label('Почта')->searchable()->sortable(),
+                TextColumn::make('roles.name')->label('Роли')->sortable()->badge(),
+                TextColumn::make('created_at')->label('Дата создания')->dateTime()->sortable()->toggleable()->toggledHiddenByDefault(),
+                TextColumn::make('updated_at')->label('Дата обновления')->dateTime()->sortable()->toggleable()->toggledHiddenByDefault(),
             ])
             ->filters([
                 SelectFilter::make('roles')
+                    ->label('Фильтр по ролям')
                     ->relationship('roles', 'name')
                     ->multiple()
                     ->preload(),
             ])
             ->actions([
-                Tables\Actions\EditAction::make()->visible(
+                Tables\Actions\EditAction::make()->label('Редактировать')->visible(
                     fn($record) => auth()->user()?->hasRole('superadmin')
                     ? $record && $record->id !== auth()->id()
                     : $record && !$record->hasRole('superadmin') && auth()->user()?->can('user.edit') && auth()->id() !== $record->id && !self::hasMatchingRoles($record)
                 ),
 
-                Tables\Actions\DeleteAction::make()->visible(
+                Tables\Actions\DeleteAction::make()->label('Удалить')->visible(
                     fn($record) => auth()->user()?->hasRole('superadmin')
                     ? $record && $record->id !== auth()->id()
                     : $record && !$record->hasRole('superadmin') && auth()->user()?->can('user.delete') && auth()->id() !== $record->id && !self::hasMatchingRoles($record)
@@ -120,25 +115,16 @@ class UsersResource extends Resource
             ->bulkActions([]);
     }
 
-    /**
-     * Checks if the authenticated user has any matching roles with the target user.
-     */
     public static function hasMatchingRoles($record): bool
     {
         return $record?->can('user.view') || $record?->can('user.create') || $record?->can('user.edit') || $record?->can('user.delete');
     }
 
-    /**
-     * Returns the relationships associated with this resource.
-     */
     public static function getRelations(): array
     {
         return [];
     }
 
-    /**
-     * Page Routes Configuration: Defines routes for user management.
-     */
     public static function getPages(): array
     {
         return [

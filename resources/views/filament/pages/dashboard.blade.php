@@ -16,15 +16,15 @@
                     @empty
                         <span
                             class="inline-block px-3 py-1 text-xs font-semibold text-gray-500 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-400">
-                            No roles assigned
+                            Роли не назначены
                         </span>
                     @endforelse
                 </div>
             </div>
         </div>
-        <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">Joined on: {{ $joined }}</p>
+        <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">Дата регистрации: {{ $joined }}</p>
         @if($lastLogin !== 'Not available')
-            <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Last login: {{ $lastLogin }}</p>
+            <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Последний вход: {{ $lastLogin }}</p>
         @endif
     </x-filament::card>
 </x-filament-panels::page>

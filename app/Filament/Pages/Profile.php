@@ -20,37 +20,32 @@ class Profile extends Page implements HasForms
 
     protected static ?string $navigationIcon = 'heroicon-o-user-circle';
     protected static string $view = 'filament.pages.profile';
-    protected static ?string $navigationGroup = 'Settings';
+    protected static ?string $navigationGroup = 'Настройки';
     protected static ?int $navigationSort = 4;
+    protected static ?string $navigationLabel = 'Профиль';
 
     public ?array $data = [];
 
-    /**
-     * Determine whether the current user can access this resource.
-     */
     public static function canAccess(): bool
     {
         return auth()->user()?->can('profile.view');
     }
 
-    /**
-     * Defines the form schema for the profile page.
-     */
     public function form(Form $form): Form
     {
         return $form
             ->schema([
-                Section::make('My Profile')
-                    ->description('Update your account details below.')
+                Section::make('Мой профиль')
+                    ->description('Обновите данные своей учетной записи ниже.')
                     ->schema([
                         TextInput::make('name')
-                            ->label('Full Name')
+                            ->label('Полное имя')
                             ->required()
                             ->maxLength(255)
                             ->disabled(fn() => !auth()->user()?->can('profile.edit')),
 
                         TextInput::make('email')
-                            ->label('Email Address')
+                            ->label('Электронная почта')
                             ->email()
                             ->required()
                             ->unique('users', 'email', ignorable: Auth::user())
@@ -59,24 +54,24 @@ class Profile extends Page implements HasForms
                     ])
                     ->collapsible(),
 
-                Section::make('Change Password')
-                    ->description('Change your current password securely.')
+                Section::make('Изменить пароль')
+                    ->description('Безопасно измените текущий пароль.')
                     ->schema([
                         TextInput::make('current_password')
-                            ->label('Current Password')
+                            ->label('Текущий пароль')
                             ->password()
                             ->maxLength(255)
                             ->minLength(8)
                             ->required(fn($get) => filled($get('password')))
-                            ->helperText('Enter your current password to change it.')
+                            ->helperText('Введите текущий пароль, чтобы изменить его.')
                             ->disabled(fn() => !auth()->user()?->can('profile.edit')),
 
                         TextInput::make('password')
-                            ->label('New Password')
+                            ->label('Новый пароль')
                             ->password()
                             ->maxLength(255)
                             ->minLength(8)
-                            ->helperText('Leave blank to keep your current password.')
+                            ->helperText('Оставьте пустым, чтобы сохранить текущий пароль.')
                             ->reactive()
                             ->required(fn($get) => filled($get('current_password')))
                             ->dehydrated(fn(?string $state): bool => filled($state))
@@ -89,7 +84,7 @@ class Profile extends Page implements HasForms
                             ->disabled(fn() => !auth()->user()?->can('profile.edit')),
 
                         TextInput::make('password_confirmation')
-                            ->label('Confirm Password')
+                            ->label('Подтвердите пароль')
                             ->password()
                             ->maxLength(255)
                             ->minLength(8)
@@ -103,7 +98,7 @@ class Profile extends Page implements HasForms
 
                 Actions::make([
                     Action::make('save')
-                        ->label('Save Changes')
+                        ->label('Сохранить изменения')
                         ->action('save')
                         ->color('primary')
                         ->visible(fn() => auth()->user()?->can('profile.edit'))
@@ -113,9 +108,6 @@ class Profile extends Page implements HasForms
             ->model(Auth::user());
     }
 
-    /**
-     * Mount the page and pre-fill form data with the current user's details.
-     */
     public function mount(): void
     {
         if (Auth::check()) {
@@ -126,9 +118,6 @@ class Profile extends Page implements HasForms
         }
     }
 
-    /**
-     * Saves the updated profile information to the database.
-     */
     public function save(): void
     {
         $data = $this->form->getState();
@@ -136,8 +125,8 @@ class Profile extends Page implements HasForms
         if (!empty($data['password'])) {
             if (!Hash::check($data['current_password'] ?? '', Auth::user()->password)) {
                 Notification::make()
-                    ->title('Error')
-                    ->body('Your current password is incorrect.')
+                    ->title('Ошибка')
+                    ->body('Ваш текущий пароль неверен.')
                     ->danger()
                     ->send();
                 return;
@@ -160,17 +149,14 @@ class Profile extends Page implements HasForms
         session()->regenerateToken();
 
         Notification::make()
-            ->title('Success')
-            ->body('Your profile has been updated successfully!')
+            ->title('Успешно')
+            ->body('Ваш профиль был успешно обновлен!')
             ->success()
             ->send();
 
         $this->redirect('/login');
     }
 
-    /**
-     * Get the forms used in the page.
-     */
     protected function getForms(): array
     {
         return [
