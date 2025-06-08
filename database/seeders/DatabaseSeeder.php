@@ -25,5 +25,6 @@ class DatabaseSeeder extends Seeder
         $this->call(HowWeWorkSeeder::class);
         $this->call(AdvantageSeeder::class);
         $this->call(TariffSeeder::class);
+        $this->call(ConsultationsSeeder::class);
     }
 }
