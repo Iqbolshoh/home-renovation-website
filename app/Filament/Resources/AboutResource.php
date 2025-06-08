@@ -30,6 +30,7 @@ class AboutResource extends Resource
                     ->label('Биография')
                     ->disableToolbarButtons(['attachFiles'])
                     ->maxLength(65535)
+                    ->required()
                     ->disabled(fn() => !auth()->user()?->can('about.edit')),
 
                 FileUpload::make('image')

@@ -932,7 +932,9 @@
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 125px; left: 180.5px; width: 474px; height: auto;">
                         <div class="tn-atom__sbs-anim-wrapper" id="sbs-645331714-1695915153549">
-                            <div class="tn-atom" field="tn_text_1695915153549" style="line-height: 98px;">О Студии</div>
+                            <div class="tn-atom" field="tn_text_1695915153549" style="line-height: 98px;">
+                                {{ $aboutStudia->title }}
+                            </div>
                         </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453317141695798525868" data-elem-id="1695798525868"
@@ -946,11 +948,9 @@
                         data-field-left-res-960-value="570" data-field-width-res-960-value="380"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 470px; left: 883.5px; width: 456px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798525868" style="line-height: 24px;">Dikii-Design — это
-                            команда профессионалов, Мы с радостью разработаем для Вас дизайн интерьера квартиры,
-                            загородного дома, ресторана, кафе или офиса в любой точке мира, поможем подобрать отделочные
-                            материалы, выполним ремонтно-отделочные работы любой сложности и осуществим авторский
-                            надзор.</div>
+                        <div class="tn-atom" field="tn_text_1695798525868" style="line-height: 24px;">
+                            {!! $aboutStudia->text_2 !!}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453317141695798525872" data-elem-id="1695798525872"
                         data-elem-type="text" data-field-top-value="470" data-field-left-value="20"
@@ -963,11 +963,9 @@
                         data-field-width-res-960-value="378"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 470px; left: 180.5px; width: 460px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798525872" style="line-height: 24px;">Именно поэтому
-                            дизайн интерьера должен удовлетворять всем вашим требованиям, соответствовать стилю и образу
-                            жизни. И тут каждый человек вправе выбирать: сделать все самостоятельно, допустив немало
-                            ошибок и потратив драгоценное время на переделки, или обратиться за помощью к компетентным
-                            специалистам, сэкономив время и деньги.</div>
+                        <div class="tn-atom" field="tn_text_1695798525872" style="line-height: 24px;">
+                            {!! $aboutStudia->text_1 !!}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453317141695798525874" data-elem-id="1695798525874"
                         data-elem-type="text" data-field-top-value="288" data-field-left-value="20"
@@ -980,9 +978,9 @@
                         data-field-width-res-960-value="907"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 288px; left: 180.5px; width: 1141px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798525874" style="line-height: 44px;">Дом для каждого из
-                            нас — это место, где мы обретаем покой и уют. Огромную роль в обеспечении комфорта и
-                            гармонии играет работа над дизайном вашего пространства. </div>
+                        <div class="tn-atom" field="tn_text_1695798525874" style="line-height: 44px;">
+                            {{ $aboutStudia->subtitle }}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453317141695915153560" data-elem-id="1695915153560"
                         data-elem-type="text" data-field-top-value="162" data-field-left-value="1130"

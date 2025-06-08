@@ -19,14 +19,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        /*
-        |-------------------------------------------------------------------------- 
-        | Execute RolePermissionSeeder
-        |-------------------------------------------------------------------------- 
-        | Calls the RolePermissionSeeder to create roles, permissions, and assign them to users.
-        */
         $this->call(RolePermissionSeeder::class);
-
         $this->call(AboutSeeder::class);
+        $this->call(AboutStudiaSeeder::class);
     }
 }
