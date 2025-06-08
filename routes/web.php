@@ -1,9 +1,10 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', fn() => view('home'))->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/projects', fn() => view('projects'))->name('projects');
+Route::view('/projects', 'projects')->name('projects');
 
-Route::get('/project-details', fn() => view('project-details'))->name('project-details');
+Route::view('/project-details', 'project-details')->name('project-details');

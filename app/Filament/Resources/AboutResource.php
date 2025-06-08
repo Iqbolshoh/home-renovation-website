@@ -5,6 +5,8 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\AboutResource\Pages;
 use App\Models\About;
 use Filament\Forms;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -24,32 +26,24 @@ class AboutResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name')
-                    ->label('Имя')
-                    ->required()
-                    ->maxLength(255),
-
-                Forms\Components\TextInput::make('title')
-                    ->label('Заголовок')
-                    ->required()
-                    ->maxLength(255),
-
-                Forms\Components\Textarea::make('bio')
+                RichEditor::make('bio')
                     ->label('Биография')
-                    ->required()
-                    ->rows(8),
+                    ->disableToolbarButtons(['attachFiles'])
+                    ->maxLength(65535)
+                    ->disabled(fn() => !auth()->user()?->can('about.edit')),
 
-                Forms\Components\FileUpload::make('image')
+                FileUpload::make('image')
                     ->label('Изображение')
+                    ->required()
                     ->image()
+                    ->imageEditor()
                     ->directory('about')
-                    ->imagePreviewHeight('150')
-                    ->imageCropAspectRatio('1:1')
-                    ->imageResizeMode('cover')
-                    ->imageResizeTargetWidth('500')
-                    ->imageResizeTargetHeight('500')
+                    ->imageEditorMode(2)
+                    ->openable()
+                    ->downloadable()
                     ->previewable()
-                    ->openable(),
+                    ->acceptedFileTypes(['image/jpeg', 'image/png', 'image/jpg'])
+                    ->disabled(fn() => !auth()->user()?->can('about.edit')),
             ]);
     }
 
@@ -61,15 +55,10 @@ class AboutResource extends Resource
                     ->label('Изображение')
                     ->rounded(),
 
-                Tables\Columns\TextColumn::make('name')
-                    ->label('Имя')
-                    ->searchable()
-                    ->sortable(),
-
-                Tables\Columns\TextColumn::make('title')
-                    ->label('Заголовок')
-                    ->searchable()
-                    ->sortable(),
+                Tables\Columns\TextColumn::make('bio')
+                    ->label('Биография')
+                    ->limit(80)
+                    ->toggleable(isToggledHiddenByDefault: true),
 
                 Tables\Columns\TextColumn::make('created_at')
                     ->label('Создано')
