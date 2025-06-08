@@ -2020,8 +2020,8 @@
                         data-field-left-res-960-value="7" data-field-width-res-960-value="174"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 627px; left: 177.5px; width: 202px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798728789" style="line-height: 25px;">Качественный
-                            дизайн-проект</div>
+                        <div class="tn-atom" field="tn_text_1695798728789" style="line-height: 25px;">
+                            {{ $advantages[0]->title}}</div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453340681695798728791" data-elem-id="1695798728791"
                         data-elem-type="text" data-field-top-value="627" data-field-left-value="317"
@@ -2035,8 +2035,8 @@
                         data-field-width-res-960-value="178"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 627px; left: 477.5px; width: 228px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798728791" style="line-height: 25px;">Соблюдение сроков
-                            по договору</div>
+                        <div class="tn-atom" field="tn_text_1695798728791" style="line-height: 25px;">
+                            {{ $advantages[1]->title}}</div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453340681695798728793" data-elem-id="1695798728793"
                         data-elem-type="text" data-field-top-value="627" data-field-left-value="617"
@@ -2050,8 +2050,8 @@
                         data-field-width-res-960-value="176"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 627px; left: 777.5px; width: 209px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798728793" style="line-height: 25px;">Подбор материалов
-                            и мебели</div>
+                        <div class="tn-atom" field="tn_text_1695798728793" style="line-height: 25px;">
+                            {{ $advantages[2]->title}}</div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453340681695798728796" data-elem-id="1695798728796"
                         data-elem-type="text" data-field-top-value="627" data-field-left-value="917"
@@ -2064,8 +2064,8 @@
                         data-field-width-res-960-value="206"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 627px; left: 1077.5px; width: 237px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798728796" style="line-height: 25px;">Реализация
-                            проектов под ключ</div>
+                        <div class="tn-atom" field="tn_text_1695798728796" style="line-height: 25px;">
+                            {{ $advantages[3]->title}}</div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453340681695803919982" data-elem-id="1695803919982"
                         data-elem-type="image" data-field-top-value="527" data-field-left-value="918"

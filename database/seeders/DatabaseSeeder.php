@@ -23,5 +23,6 @@ class DatabaseSeeder extends Seeder
         $this->call(AboutSeeder::class);
         $this->call(AboutStudiaSeeder::class);
         $this->call(HowWeWorkSeeder::class);
+        $this->call(AdvantageSeeder::class);
     }
 }

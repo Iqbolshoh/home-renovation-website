@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\AboutStudia;
 use App\Models\About;
 use App\Models\HowWeWork;
+use App\Models\Advantage;
 
 class HomeController extends Controller
 {
@@ -14,6 +15,7 @@ class HomeController extends Controller
         $about = About::first();
         $aboutStudia = AboutStudia::first();
         $howWeWork = HowWeWork::all();
-        return view('home', compact('about', 'aboutStudia', 'howWeWork'));
+        $advantages = Advantage::all();
+        return view('home', compact('about', 'aboutStudia', 'howWeWork', 'advantages'));
     }
 }
