@@ -3963,6 +3963,276 @@
             </div>
         </footer>
 
+        <div id="rec653299402" class="r t-rec" style="opacity: 1;" data-animationappear="off" data-record-type="890">
+            <!-- t890 -->
+            <div class="t890" style="display: none; opacity:1; position:fixed; z-index:99990; bottom:20px;right:20px;">
+                <button type="button" class="t890__arrow" aria-label="Вернуться к началу страницы"
+                    style="box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);"> <svg role="presentation" width="50"
+                        height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="50" height="50" rx="50" fill="#ffffff" fill-opacity="0.90" stroke="none">
+                        </rect>
+                        <path d="M14 28L25 18l10 10" stroke="#17161c" stroke-width="1" fill="none"></path>
+                    </svg> </button>
+            </div>
+            <script
+                type="text/javascript">t_onReady(function () { t_onFuncLoad('t890_init', function () { t890_init('653299402', '1000'); }); });</script>
+        </div>
+        <div id="rec653299529" class="r t-rec" style="opacity: 1;" data-animationappear="off" data-record-type="702"
+            data-popup-subscribe-inited="y"> <!-- T702 -->
+            <div class="t702">
+                <div class="t-popup" data-tooltip-hook="#popup:consultation" role="dialog" aria-modal="true"
+                    tabindex="-1" aria-label="Бесплатная консультация">
+                    <div class="t-popup__close t-popup__block-close"> <button type="button"
+                            class="t-popup__close-wrapper t-popup__block-close-button"
+                            aria-label="Закрыть диалоговое окно"> <svg role="presentation" class="t-popup__close-icon"
+                                width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                                    <rect
+                                        transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                                        x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                                    <rect
+                                        transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                                        x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                                </g>
+                            </svg> </button> </div>
+
+                    <div>
+                        <div class="custom-popup__container">
+                            <div class="custom-popup__wrapper">
+                                <div class="custom-popup__text">
+                                    <div class="custom-popup__title">Бесплатная консультация</div>
+                                    <div class="custom-popup__description">Заполните форму, и мы свяжемся с вами в
+                                        ближайшее время.</div>
+                                </div>
+
+                                <form id="custom-consultation-form">
+                                    @csrf
+                                    <input type="text" name="name" placeholder="Ваше имя" required>
+                                    <input type="email" name="email" placeholder="Ваш email" required>
+                                    <input type="tel" name="phone" id="custom-phone" placeholder="+7 (___) ___-__-__"
+                                        required>
+                                    <button type="submit" id="custom-submit-btn">Отправить</button>
+                                </form>
+
+                                <div id="custom-response-msg"></div>
+
+                                <div class="custom-popup__bottom-text">
+                                    Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и политику
+                                    конфиденциальности.
+                                </div>
+                            </div>
+                        </div>
+
+                        <style>
+                            .custom-popup__wrapper {
+                                background: #17161c;
+                                padding: 40px;
+                                max-width: 500px;
+                                margin: 100px auto;
+                                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+                            }
+
+                            .custom-popup__title {
+                                color: #fbfbfb;
+                                font-size: 28px;
+                                font-weight: 700;
+                                margin-bottom: 20px;
+                                text-align: center;
+                            }
+
+                            .custom-popup__description {
+                                color: #fbfbfb;
+                                font-size: 16px;
+                                margin-bottom: 30px;
+                                opacity: 0.85;
+                                line-height: 1.6;
+                                text-align: center;
+                            }
+
+                            #custom-consultation-form {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 20px;
+                                max-width: 400px;
+                                margin: 0 auto;
+                            }
+
+                            #custom-consultation-form input {
+                                padding: 16px;
+                                border: 1px solid #464646;
+                                border-radius: 8px;
+                                font-size: 16px;
+                                background: #2a2a2a;
+                                color: #fbfbfb;
+                                box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+                                transition: all 0.3s ease;
+                                outline: none;
+                            }
+
+                            #custom-consultation-form input:focus {
+                                border-color: #fbfbfb;
+                                background: #3a3a3a;
+                                box-shadow: 0 0 0 3px rgba(251, 251, 251, 0.3);
+                            }
+
+                            #custom-consultation-form input:hover {
+                                border-color: #fbfbfb;
+                            }
+
+                            #custom-submit-btn {
+                                padding: 16px;
+                                background: linear-gradient(135deg, #464646, #17161c);
+                                color: #fbfbfb;
+                                font-size: 16px;
+                                font-weight: 600;
+                                border: none;
+                                border-radius: 8px;
+                                cursor: pointer;
+                                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+                                transition: all 0.3s ease;
+                            }
+
+                            #custom-submit-btn:hover {
+                                background: linear-gradient(135deg, #555555, #2a2a2a);
+                                transform: translateY(-2px);
+                                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+                            }
+
+                            #custom-submit-btn:disabled {
+                                background: linear-gradient(135deg, #333333, #222222);
+                                cursor: not-allowed;
+                            }
+
+                            #custom-response-msg {
+                                position: fixed;
+                                top: 25px;
+                                right: 25px;
+                                padding: 18px 30px;
+                                font-size: 16px;
+                                font-weight: 600;
+                                color: #fbfbfb;
+                                display: none;
+                                opacity: 0;
+                                transform: translateY(-30px);
+                                border-radius: 10px;
+                                z-index: 1000;
+                                background: linear-gradient(135deg, #464646, #17161c);
+                                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+                                backdrop-filter: blur(8px);
+                                border: 1px solid rgba(255, 255, 255, 0.1);
+                                transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                            }
+
+                            #custom-response-msg.show {
+                                display: block;
+                                opacity: 1;
+                                transform: translateY(0);
+                            }
+
+                            #custom-response-msg.success {
+                                background: linear-gradient(135deg, #28a745, #5cb85c);
+                            }
+
+                            #custom-response-msg.error {
+                                background: linear-gradient(135deg, #dc3545, #d9534f);
+                            }
+
+                            .custom-popup__bottom-text {
+                                margin-top: 25px;
+                                font-size: 13px;
+                                color: #fbfbfb;
+                                opacity: 0.7;
+                                line-height: 1.6;
+                                text-align: center;
+                            }
+                        </style>
+                    </div>
+
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+                            const form = document.getElementById("custom-consultation-form");
+                            const submitBtn = document.getElementById("custom-submit-btn");
+                            const responseMsg = document.getElementById("custom-response-msg");
+                            const phoneInput = document.getElementById("custom-phone");
+
+                            let isSubmitting = false;
+
+                            phoneInput.addEventListener("input", function (e) {
+                                let value = e.target.value.replace(/\D/g, "");
+                                if (value.startsWith("7")) value = value.slice(1);
+                                if (value.length > 10) value = value.slice(0, 10);
+
+                                let formatted = "+7";
+                                if (value.length > 0) formatted += " (" + value.slice(0, 3);
+                                if (value.length > 3) formatted += ") " + value.slice(3, 6);
+                                if (value.length > 6) formatted += "-" + value.slice(6, 8);
+                                if (value.length > 8) formatted += "-" + value.slice(8, 10);
+
+                                e.target.value = formatted;
+                            });
+
+                            form.addEventListener("submit", async function (e) {
+                                e.preventDefault();
+
+                                if (isSubmitting) return;
+
+                                const phone = phoneInput.value.trim();
+                                const phonePattern = /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/;
+
+                                if (!phonePattern.test(phone)) {
+                                    responseMsg.className = "show error";
+                                    responseMsg.innerText = "Телефон введён неверно! Пожалуйста, используйте формат: +7 (XXX) XXX-XX-XX.";
+                                    setTimeout(() => {
+                                        responseMsg.classList.remove("show", "error");
+                                    }, 3500);
+                                    return;
+                                }
+
+                                isSubmitting = true;
+                                submitBtn.disabled = true;
+                                responseMsg.className = "";
+
+                                const formData = new FormData(form);
+                                const token = document.querySelector('input[name="_token"]').value;
+
+                                try {
+                                    const response = await fetch("{{ route('consultation.store') }}", {
+                                        method: "POST",
+                                        headers: { "X-CSRF-TOKEN": token },
+                                        body: formData
+                                    });
+
+                                    const data = await response.json();
+                                    responseMsg.classList.add("show");
+
+                                    if (response.ok && data.success) {
+                                        responseMsg.classList.add("success");
+                                        responseMsg.innerText = "Ваш запрос успешно отправлен!";
+                                        form.reset();
+                                    } else {
+                                        responseMsg.classList.add("error");
+                                        responseMsg.innerText = "Ошибка при отправке!";
+                                    }
+                                } catch (error) {
+                                    console.error(error);
+                                    responseMsg.classList.add("show", "error");
+                                    responseMsg.innerText = "Не удалось связаться с сервером!";
+                                } finally {
+                                    setTimeout(() => {
+                                        responseMsg.classList.remove("show", "success", "error");
+                                        isSubmitting = false;
+                                        submitBtn.disabled = false;
+                                    }, 3500);
+                                }
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+            <script>t_onReady(function () { t_onFuncLoad('t702_initPopup', function () { t702_initPopup('653299529'); }); });</script>
+        </div>
+
     </div>
 </body>
 
