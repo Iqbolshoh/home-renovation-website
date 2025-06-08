@@ -26,5 +26,6 @@ class DatabaseSeeder extends Seeder
         $this->call(AdvantageSeeder::class);
         $this->call(TariffSeeder::class);
         $this->call(ConsultationsSeeder::class);
+        $this->call(MessageSeeder::class);
     }
 }

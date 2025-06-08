@@ -17,7 +17,7 @@ class ConsultationsSeeder extends Seeder
                 'name' => 'Ivan Ivanov',
                 'email' => 'ivan@example.com',
                 'phone' => '+7 (999) 123-45-67',
-                'status' => 'read',
+                'status' => 'unread',
             ],
             [
                 'name' => 'Olga Petrova',
@@ -29,7 +29,7 @@ class ConsultationsSeeder extends Seeder
                 'name' => 'Sergey Smirnov',
                 'email' => 'sergey@example.com',
                 'phone' => '+7 (999) 345-67-89',
-                'status' => 'unread',
+                'status' => 'read',
             ],
             [
                 'name' => 'Anna Sidorova',
