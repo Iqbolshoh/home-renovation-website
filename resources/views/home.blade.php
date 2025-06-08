@@ -2021,7 +2021,8 @@
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 627px; left: 177.5px; width: 202px; height: auto;">
                         <div class="tn-atom" field="tn_text_1695798728789" style="line-height: 25px;">
-                            {{ $advantages[0]->title}}</div>
+                            {{ $advantages[0]->title}}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453340681695798728791" data-elem-id="1695798728791"
                         data-elem-type="text" data-field-top-value="627" data-field-left-value="317"
@@ -2036,7 +2037,8 @@
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 627px; left: 477.5px; width: 228px; height: auto;">
                         <div class="tn-atom" field="tn_text_1695798728791" style="line-height: 25px;">
-                            {{ $advantages[1]->title}}</div>
+                            {{ $advantages[1]->title}}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453340681695798728793" data-elem-id="1695798728793"
                         data-elem-type="text" data-field-top-value="627" data-field-left-value="617"
@@ -2051,7 +2053,8 @@
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 627px; left: 777.5px; width: 209px; height: auto;">
                         <div class="tn-atom" field="tn_text_1695798728793" style="line-height: 25px;">
-                            {{ $advantages[2]->title}}</div>
+                            {{ $advantages[2]->title}}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453340681695798728796" data-elem-id="1695798728796"
                         data-elem-type="text" data-field-top-value="627" data-field-left-value="917"
@@ -2065,7 +2068,8 @@
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 627px; left: 1077.5px; width: 237px; height: auto;">
                         <div class="tn-atom" field="tn_text_1695798728796" style="line-height: 25px;">
-                            {{ $advantages[3]->title}}</div>
+                            {{ $advantages[3]->title}}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453340681695803919982" data-elem-id="1695803919982"
                         data-elem-type="image" data-field-top-value="527" data-field-left-value="918"
@@ -2299,8 +2303,9 @@
                         data-field-width-res-960-value="325"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 351px; left: 180.5px; width: 340px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798874550" style="line-height: 24px;">Оптимально для
-                            Вас, если вы точно знаете что хотите и Вам не нужна визуализация</div>
+                        <div class="tn-atom" field="tn_text_1695798874550" style="line-height: 24px;">
+                            {{$tariffs[0]->subtitle}}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6533320671695798874556" data-elem-id="1695798874556"
                         data-elem-type="text" data-field-top-value="535" data-field-left-value="20"
@@ -2314,8 +2319,9 @@
                         data-field-left-res-960-value="10" data-field-width-res-960-value="255"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 535px; left: 180.5px; width: 278px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798874556" style="line-height: 24px;">Оптимально для
-                            Вас, если вам нужен полный проект с визуализацией и комплектация</div>
+                        <div class="tn-atom" field="tn_text_1695798874556" style="line-height: 24px;">
+                            {{$tariffs[1]->subtitle}}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6533320671695798874559" data-elem-id="1695798874559"
                         data-elem-type="text" data-field-top-value="718" data-field-left-value="20"
@@ -2328,8 +2334,9 @@
                         data-field-top-res-960-value="621" data-field-left-res-960-value="10"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 718px; left: 180.5px; width: 259px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798874559" style="line-height: 24px;">Оптимально для
-                            Вас, если вам нужно полное сопровождение на протяжении всего ремонта</div>
+                        <div class="tn-atom" field="tn_text_1695798874559" style="line-height: 24px;">
+                            {{$tariffs[2]->subtitle}}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6533320671736704907263" data-elem-id="1736704907263"
                         data-elem-type="text" data-field-top-value="950" data-field-left-value="20"
@@ -2342,8 +2349,9 @@
                         data-field-top-res-960-value="631px" data-field-left-res-960-value="20px"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 950px; left: 180.5px; width: 259px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1736704907263" style="line-height: 24px;">Так же вы можете
-                            заказать вы можете заказать некоторые услуги отдельно</div>
+                        <div class="tn-atom" field="tn_text_1736704907263" style="line-height: 24px;">
+                            {{$tariffs[3]->subtitle}}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6533320671695798874562" data-elem-id="1695798874562"
                         data-elem-type="text" data-field-top-value="848" data-field-left-value="20"
@@ -2356,8 +2364,9 @@
                         data-field-width-res-960-value="249"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 848px; left: 180.5px; width: 384px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798874562" style="line-height: 45px;">Дополнительные
-                            услуги</div>
+                        <div class="tn-atom" field="tn_text_1695798874562" style="line-height: 45px;">
+                            {{$tariffs[3]->title}}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6533320671695798874565" data-elem-id="1695798874565"
                         data-elem-type="text" data-field-top-value="293" data-field-left-value="17"
@@ -2370,7 +2379,8 @@
                         data-field-left-res-960-value="10"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 293px; left: 177.5px; width: 363px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798874565" style="line-height: 45px;">Пакет «‎эскизный»
+                        <div class="tn-atom" field="tn_text_1695798874565" style="line-height: 45px;">
+                            {{$tariffs[0]->title}}
                         </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6533320671695798874568" data-elem-id="1695798874568"
@@ -2383,7 +2393,8 @@
                         data-field-top-res-960-value="419" data-field-left-res-960-value="10"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 480px; left: 180.5px; width: 340px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798874568" style="line-height: 45px;">Пакет «стандарт»
+                        <div class="tn-atom" field="tn_text_1695798874568" style="line-height: 45px;">
+                            {{$tariffs[1]->title}}
                         </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6533320671695798874571" data-elem-id="1695798874571"
@@ -2396,7 +2407,8 @@
                         data-field-top-res-960-value="576" data-field-left-res-960-value="10"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 663px; left: 180.5px; width: 328px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798874571" style="line-height: 45px;">Пакет «максимум»
+                        <div class="tn-atom" field="tn_text_1695798874571" style="line-height: 45px;">
+                            {{$tariffs[2]->title}}
                         </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6533320671695798874573" data-elem-id="1695798874573"
@@ -2410,7 +2422,8 @@
                         data-field-top-res-960-value="316" data-field-left-res-960-value="470"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 366px; left: 780.5px; width: 212px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798874573" style="line-height: 34px;">от 3000 руб./кв.м
+                        <div class="tn-atom" field="tn_text_1695798874573" style="line-height: 34px;">
+                            {{$tariffs[0]->price}}
                         </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6533320671695798874575" data-elem-id="1695798874575"
@@ -2424,7 +2437,8 @@
                         data-field-top-res-960-value="474" data-field-left-res-960-value="470"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 550px; left: 780.5px; width: 212px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798874575" style="line-height: 34px;">от 4000 руб./кв.м
+                        <div class="tn-atom" field="tn_text_1695798874575" style="line-height: 34px;">
+                            {{$tariffs[1]->price}}
                         </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6533320671695798874578" data-elem-id="1695798874578"
@@ -2438,7 +2452,8 @@
                         data-field-top-res-960-value="631" data-field-left-res-960-value="470"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 733px; left: 780.5px; width: 212px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798874578" style="line-height: 34px;">от 5000 руб./кв.м
+                        <div class="tn-atom" field="tn_text_1695798874578" style="line-height: 34px;">
+                            {{$tariffs[2]->price}}
                         </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6533320671695798874580" data-elem-id="1695798874580"
@@ -2770,7 +2785,7 @@
             data-animationappear="off">
             <div class="t390">
                 <div class="t-popup" data-tooltip-hook="#popup:price-autor" role="dialog" aria-modal="true"
-                    tabindex="-1" aria-label="Пакет «‎ЭСКИЗНЫЙ»">
+                    tabindex="-1" aria-label="{{$tariffs[0]->title}}">
                     <div class="t-popup__close t-popup__block-close"> <button type="button"
                             class="t-popup__close-wrapper t-popup__block-close-button"
                             aria-label="Закрыть диалоговое окно"> <svg role="presentation" class="t-popup__close-icon"
@@ -2787,19 +2802,15 @@
                             </svg> </button> </div>
                     <div class="t-popup__container t-width t-width_6" style="background-color:#fbfbf9;">
                         <div class="t390__wrapper t-align_center">
-                            <div class="t390__uptitle t-uptitle t-uptitle_xs">2500 руб./кв.м</div>
-                            <div class="t390__title t-heading t-heading_lg" id="popuptitle_646638814">Пакет «‎ЭСКИЗНЫЙ»
+                            <div class="t390__uptitle t-uptitle t-uptitle_xs">{{$tariffs[0]->price}}</div>
+                            <div class="t390__title t-heading t-heading_lg" id="popuptitle_646638814">
+                                {{$tariffs[0]->title}}
                             </div>
                             <div class="t390__descr t-descr t-descr_xs">
                                 <ul>
-                                    <li data-list="bullet" style="text-align: left;">Обмер+Фото фиксация объекта</li>
-                                    <li data-list="bullet" style="text-align: left;">Планировочные решения (2 варианта)
+                                    <li data-list="bullet" style="text-align: left; list-style: none;">
+                                        {!! $tariffs[0]->description !!}
                                     </li>
-                                    <li data-list="bullet" style="text-align: left;">Художественная концепция в виде
-                                        коллажей</li>
-                                    <li data-list="bullet" style="text-align: left;">Чертежи(планы) для строителей</li>
-                                    <li data-list="bullet" style="text-align: left;">Рекомендации по основным чистовым
-                                        материалам</li>
                                 </ul>
                             </div>
                         </div>
@@ -2813,7 +2824,7 @@
             data-animationappear="off">
             <div class="t390">
                 <div class="t-popup" data-tooltip-hook="#popup:price-full" role="dialog" aria-modal="true" tabindex="-1"
-                    aria-label="Пакет «‎Стандарт»">
+                    aria-label="{{$tariffs[1]->title}}">
                     <div class="t-popup__close t-popup__block-close"> <button type="button"
                             class="t-popup__close-wrapper t-popup__block-close-button"
                             aria-label="Закрыть диалоговое окно"> <svg role="presentation" class="t-popup__close-icon"
@@ -2830,23 +2841,15 @@
                             </svg> </button> </div>
                     <div class="t-popup__container t-width t-width_6" style="background-color:#fbfbf9;">
                         <div class="t390__wrapper t-align_center">
-                            <div class="t390__uptitle t-uptitle t-uptitle_xs">3500 руб./кв.м</div>
-                            <div class="t390__title t-heading t-heading_lg" id="popuptitle_646639937">Пакет «‎Стандарт»
+                            <div class="t390__uptitle t-uptitle t-uptitle_xs">{{$tariffs[1]->price}}</div>
+                            <div class="t390__title t-heading t-heading_lg" id="popuptitle_646639937">
+                                {{$tariffs[1]->title}}
                             </div>
                             <div class="t390__descr t-descr t-descr_xs">
                                 <ul>
-                                    <li data-list="bullet" style="text-align: left;">Обмер+Фото фиксация объекта</li>
-                                    <li data-list="bullet" style="text-align: left;">Планировочные решения (2 варианта)
+                                    <li data-list="bullet" style="text-align: left; list-style: none;">
+                                        {!! $tariffs[1]->description !!}
                                     </li>
-                                    <li data-list="bullet" style="text-align: left;">Визуализация объекта фото
-                                        реалистичного качества</li>
-                                    <li data-list="bullet" style="text-align: left;">Чертежи(планы) для строителей</li>
-                                    <li data-list="bullet" style="text-align: left;">Развертки всех стен с указанием
-                                        чистовых материалов</li>
-                                    <li data-list="bullet" style="text-align: left;">Спецификация по основным чистовым
-                                        материалам и элементам</li>
-                                    <li data-list="bullet" style="text-align: left;">Одна плановая встреча с рабочими на
-                                        объекте перед началом отделочных работ</li>
                                 </ul>
                             </div>
                         </div>
@@ -2860,7 +2863,7 @@
             data-animationappear="off">
             <div class="t390">
                 <div class="t-popup" data-tooltip-hook="#popup:price-standart" role="dialog" aria-modal="true"
-                    tabindex="-1" aria-label="Пакет «‎Максимум»">
+                    tabindex="-1" aria-label="{{$tariffs[2]->title}}">
                     <div class="t-popup__close t-popup__block-close"> <button type="button"
                             class="t-popup__close-wrapper t-popup__block-close-button"
                             aria-label="Закрыть диалоговое окно"> <svg role="presentation" class="t-popup__close-icon"
@@ -2877,26 +2880,17 @@
                             </svg> </button> </div>
                     <div class="t-popup__container t-width t-width_6" style="background-color:#fbfbf9;">
                         <div class="t390__wrapper t-align_center">
-                            <div class="t390__uptitle t-uptitle t-uptitle_xs">4500 руб./кв.м</div>
-                            <div class="t390__title t-heading t-heading_lg" id="popuptitle_646639953">Пакет «‎Максимум»
+                            <div class="t390__uptitle t-uptitle t-uptitle_xs">
+                                {{$tariffs[2]->price}}
+                            </div>
+                            <div class="t390__title t-heading t-heading_lg" id="popuptitle_646639953">
+                                {{$tariffs[2]->title}}
                             </div>
                             <div class="t390__descr t-descr t-descr_xs">
                                 <ul>
-                                    <li data-list="bullet" style="text-align: left;">Обмер+Фото фиксация объекта</li>
-                                    <li data-list="bullet" style="text-align: left;">Планировочное решение</li>
-                                    <li data-list="bullet" style="text-align: left;">Визуализация объекта фото
-                                        реалистичного качества</li>
-                                    <li data-list="bullet" style="text-align: left;">Чертежи(планы) для строителей</li>
-                                    <li data-list="bullet" style="text-align: left;">Развертки всех стен с указанием
-                                        чистовых материалов</li>
-                                    <li data-list="bullet" style="text-align: left;">Спецификация по основным чистовым
-                                        материалам</li>
-                                    <li data-list="bullet" style="text-align: left;">Помощь в подборе основных
-                                        материалов (поездки по магазинам)</li>
-                                    <li data-list="bullet" style="text-align: left;">Помощь в декорировании объекта
-                                        (шторы, текстиль, элементы дизайна)</li>
-                                    <li data-list="bullet" style="text-align: left;">Полное авторское сопровождение на
-                                        протяжении всей стройки</li>
+                                    <li data-list="bullet" style="text-align: left; list-style: none;">
+                                        {!! $tariffs[2]->description !!}
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -2910,7 +2904,7 @@
             data-animationappear="off">
             <div class="t390">
                 <div class="t-popup" data-tooltip-hook="#popup:price-outher" role="dialog" aria-modal="true"
-                    tabindex="-1" aria-label="ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ">
+                    tabindex="-1" aria-label="{{$tariffs[3]->title}}">
                     <div class="t-popup__close t-popup__block-close"> <button type="button"
                             class="t-popup__close-wrapper t-popup__block-close-button"
                             aria-label="Закрыть диалоговое окно"> <svg role="presentation" class="t-popup__close-icon"
@@ -2928,18 +2922,14 @@
                     <div class="t-popup__container t-width t-width_6" style="background-color:#fbfbf9;">
                         <div class="t390__wrapper t-align_center">
                             <div class="t390__uptitle t-uptitle t-uptitle_xs">также Вы можете заказать</div>
-                            <div class="t390__title t-heading t-heading_lg" id="popuptitle_646639977">ДОПОЛНИТЕЛЬНЫЕ
-                                УСЛУГИ</div>
+                            <div class="t390__title t-heading t-heading_lg" id="popuptitle_646639977">
+                                {{$tariffs[3]->title}}
+                            </div>
                             <div class="t390__descr t-descr t-descr_xs">
                                 <ul>
-                                    <li style="text-align: left;">Авторский надзор в пределах КАД - 15-20000 руб./в
-                                        месяц (в зависимости от района)</li>
-                                    <li style="text-align: left;">Авторский надзор за пределами КАД - 20-25000 руб./в
-                                        месяц (в зависимости от района)</li>
-                                    <li style="text-align: left;">Обмер помещения+планировочные решение (2-3варианта) -
-                                        1000 руб./кв.м</li>
-                                    <li style="text-align: left;">Консультация (выезд на объект), перед покупкой, перед
-                                        началом ремонта - 5000 руб./выезд.</li>
+                                    <li style="text-align: left; list-style: none;">
+                                        {!! $tariffs[3]->description !!}
+                                    </li>
                                 </ul><br><br><br>
                             </div>
                         </div>

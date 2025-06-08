@@ -24,5 +24,6 @@ class DatabaseSeeder extends Seeder
         $this->call(AboutStudiaSeeder::class);
         $this->call(HowWeWorkSeeder::class);
         $this->call(AdvantageSeeder::class);
+        $this->call(TariffSeeder::class);
     }
 }
