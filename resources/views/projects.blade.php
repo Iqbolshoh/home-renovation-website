@@ -1881,7 +1881,7 @@
                                                 <li class="t-form__errorbox-item js-rule-error js-rule-error-string">
                                                 </li>
                                             </ul>
-                                        </div> <!--/noindex-->
+                                        </div>
                                     </div>
                                     <div style="position: absolute; left: -5000px; bottom: 0; display: none;"><input
                                             type="text" name="form-spec-comments" value="Its good"
