@@ -10,10 +10,10 @@ class ContactSeeder extends Seeder
     public function run(): void
     {
         $socials = [
-            ['name' => 'Phone', 'icon' => 'fas fa-phone', 'url' => 'tel:+998901234567', 'value' => '+998901234567', 'is_active' => true],
-            ['name' => 'Phone', 'icon' => 'fas fa-phone', 'url' => 'tel:+998909876543', 'value' => '+998909876543', 'is_active' => false],
-            ['name' => 'Email', 'icon' => 'fas fa-envelope', 'url' => 'mailto:iqbolshoh@example.com', 'value' => 'iqbolshoh@example.com', 'is_active' => true],
-            ['name' => 'Email', 'icon' => 'fas fa-envelope', 'url' => 'mailto:info@iqbolshoh.com', 'value' => 'info@iqbolshoh.com', 'is_active' => false],
+            ['name' => 'Phone', 'icon' => 'fas fa-phone', 'url' => 'tel:', 'value' => '+998901234567', 'is_active' => true],
+            ['name' => 'Phone', 'icon' => 'fas fa-phone', 'url' => 'tel:', 'value' => '+998909876543', 'is_active' => true],
+            ['name' => 'Email', 'icon' => 'fas fa-envelope', 'url' => 'mailto:', 'value' => 'iqbolshoh@example.com', 'is_active' => true],
+            ['name' => 'Email', 'icon' => 'fas fa-envelope', 'url' => 'mailto:', 'value' => 'info@iqbolshoh.com', 'is_active' => true],
             ['name' => 'Address', 'icon' => 'fas fa-map-marker-alt', 'url' => null, 'value' => 'Samarkand, Uzbekistan', 'is_active' => true],
             ['name' => 'Telegram', 'icon' => 'fab fa-telegram', 'url' => 'https://t.me/', 'value' => 'iqbolshoh', 'is_active' => true],
             ['name' => 'Instagram', 'icon' => 'fab fa-instagram', 'url' => 'https://www.instagram.com/', 'value' => 'iqbolshoh', 'is_active' => true],

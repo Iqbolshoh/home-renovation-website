@@ -8,6 +8,7 @@ use App\Models\About;
 use App\Models\HowWeWork;
 use App\Models\Advantage;
 use App\Models\Tariff;
+use App\Models\Contact;
 
 class HomeController extends Controller
 {
@@ -18,6 +19,7 @@ class HomeController extends Controller
         $howWeWork = HowWeWork::all();
         $advantages = Advantage::all();
         $tariffs = Tariff::all();
-        return view('home', compact('about', 'aboutStudia', 'howWeWork', 'advantages', 'tariffs'));
+        $contacts = Contact::all();
+        return view('home', compact('about', 'aboutStudia', 'howWeWork', 'advantages', 'tariffs', 'contacts'));
     }
 }

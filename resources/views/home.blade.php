@@ -5,7 +5,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дизайн интерьера | {{ config('app.name') }}</title>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <link rel="stylesheet" href="{{ asset('css/tilda-zero-form-errorbox.min.css') }}">
@@ -19,8 +18,10 @@
     <link rel="stylesheet" href="{{ asset('css/tilda-slds-1.4.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/tilda-zero-gallery-1.0.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/fonts-tildasans.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
     <script src="{{ asset('js/tilda-stat-1.0.min.js') }}" async></script>
     <script src="{{ asset('js/tilda-fallback-1.0.min.js') }}" async></script>
     <script nomodule src="{{ asset('js/tilda-polyfill-1.0.min.js') }}"></script>
@@ -3636,9 +3637,16 @@
                         data-field-left-res-960-value="12"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 853px; left: 182.5px; width: 144px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798983914" style="line-height: 30px;"><a
-                                href="tel:+79046164784">+7(904)616-47-84</a><br><a
-                                href="tel:+78129814784">+7(812)981-47-84</a></div>
+                        <div class="tn-atom" field="tn_text_1695798983914" style="line-height: 30px;">
+                            @if(isset($contacts[0]) && $contacts[0]['is_active'])
+                                <a
+                                    href="{{ $contacts[0]['url'] . $contacts[0]['value'] }}">{{ $contacts[0]['value'] }}</a><br>
+                            @endif
+
+                            @if(isset($contacts[1]) && $contacts[1]['is_active'])
+                                <a href="{{ $contacts[1]['url'] . $contacts[1]['value'] }}">{{ $contacts[1]['value'] }}</a>
+                            @endif
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453364901695798983917" data-elem-id="1695798983917"
                         data-elem-type="text" data-field-top-value="822" data-field-left-value="22"
@@ -3687,8 +3695,15 @@
                         data-field-left-res-960-value="328"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 853px; left: 582.5px; width: 146px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798983923" style="line-height: 30px;">6164784@mail.ru
-                            <br>niklajj-dikijj@bk.ru
+                        <div class="tn-atom" field="tn_text_1695798983923" style="line-height: 30px;">
+                            @if(isset($contacts[2]) && $contacts[2]['is_active'])
+                                <a
+                                    href="{{ $contacts[2]['url'] . $contacts[2]['value'] }}">{{ $contacts[2]['value'] }}</a><br>
+                            @endif
+
+                            @if(isset($contacts[3]) && $contacts[3]['is_active'])
+                                <a href="{{ $contacts[3]['url'] . $contacts[3]['value'] }}">{{ $contacts[3]['value'] }}</a>
+                            @endif
                         </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453364901695798983925" data-elem-id="1695798983925"
@@ -3702,8 +3717,11 @@
                         data-field-left-res-960-value="652" data-field-width-res-960-value="294"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 853px; left: 982.5px; width: 333px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798983925" style="line-height: 30px;">г.
-                            Санкт-Петербург, Ленинский проспект 144, корп. 1,стр. 2</div>
+                        <div class="tn-atom" field="tn_text_1695798983925" style="line-height: 30px;">
+                            @if(isset($contacts[4]) && $contacts[4]['is_active'])
+                                {{ $contacts[4]['value'] }}
+                            @endif
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453364901695798983927" data-elem-id="1695798983927"
                         data-elem-type="text" data-field-top-value="321" data-field-left-value="22"
@@ -3793,266 +3811,186 @@
             <!-- /T396 -->
         </div>
         <!-- contact -->
+        <style>
+            #minimal-white-footer {
+                background-color: #17161c;
+                color: #999999;
+                padding: 50px 0 20px;
+                font-family: 'Arial', sans-serif;
+                box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+            }
 
-        <footer id="t-footer" class="t-records" data-hook="blocks-collection-content-node"
-            data-tilda-project-id="7378990" data-tilda-page-id="40381991" data-tilda-page-alias="footer"
-            data-tilda-formskey="5fd665d1bd81ccc3f894e0dfe7378990" data-tilda-lazy="yes" data-tilda-root-zone="com">
-            <div id="rec653299401" class="r t-rec" style="background-color: rgb(37, 37, 37); --zoom: 1;"
-                data-animationappear="off" data-record-type="396" data-bg-color="#252525"> <!-- T396 -->
-                <div class="t396">
-                    <div class="t396__artboard rendered" data-artboard-recid="653299401"
-                        data-artboard-screens="320,480,640,960,1200" data-artboard-height="134.5"
-                        data-artboard-valign="center" data-artboard-upscale="grid" data-artboard-height-res-320="240"
-                        data-artboard-height-res-480="220.5" data-artboard-height-res-640="264"
-                        data-artboard-height-res-960="114" data-artboard-proxy-min-offset-top="0"
-                        data-artboard-proxy-min-height="134.5" data-artboard-proxy-max-height="134.5">
-                        <div class="t396__carrier" data-artboard-recid="653299401"></div>
-                        <div class="t396__filter" data-artboard-recid="653299401"></div>
-                        <div class="t396__elem tn-elem tn-elem__6532994011475143840125" data-elem-id="1475143840125"
-                            data-elem-type="text" data-field-top-value="30" data-field-left-value="40"
-                            data-field-width-value="358" data-field-axisy-value="top" data-field-axisx-value="left"
-                            data-field-container-value="window" data-field-topunits-value="px"
-                            data-field-leftunits-value="px" data-field-heightunits-value=""
-                            data-field-widthunits-value="px" data-field-top-res-320-value="100"
-                            data-field-left-res-320-value="10" data-field-width-res-320-value="300"
-                            data-field-top-res-480-value="102" data-field-left-res-480-value="43"
-                            data-field-top-res-640-value="99" data-field-left-res-640-value="123"
-                            data-field-width-res-640-value="392" data-field-container-res-640-value="grid"
-                            data-field-top-res-960-value="26" data-field-left-res-960-value="40"
-                            data-field-width-res-960-value="314"
-                            data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
-                            style="top: 30px; left: 40px; width: 358px; height: auto;">
-                            <div class="tn-atom" field="tn_text_1475143840125" style="line-height: 27px;">© Студия
-                                дизайна интерьеров Dikii-Design, 2023<br><a href="./privacy"
-                                    style="color: rgb(255, 255, 255);">Политика конфиденциальности</a></div>
-                        </div>
-                        <div class="t396__elem tn-elem tn-elem__6532994011475145377912" data-elem-id="1475145377912"
-                            data-elem-type="text" data-field-top-value="30" data-field-left-value="-41"
-                            data-field-width-value="136" data-field-axisy-value="top" data-field-axisx-value="right"
-                            data-field-container-value="window" data-field-topunits-value="px"
-                            data-field-leftunits-value="px" data-field-heightunits-value=""
-                            data-field-widthunits-value="px" data-field-top-res-320-value="148"
-                            data-field-left-res-320-value="10" data-field-top-res-480-value="151"
-                            data-field-left-res-480-value="90" data-field-top-res-640-value="159"
-                            data-field-left-res-640-value="170" data-field-width-res-640-value="300"
-                            data-field-axisx-res-640-value="left" data-field-container-res-640-value="grid"
-                            data-field-top-res-960-value="26" data-field-left-res-960-value="-40"
-                            data-field-width-res-960-value="220"
-                            data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
-                            style="top: 30px; left: 1344px; width: 136px; height: auto;">
-                            <div class="tn-atom" style="line-height: 22px;"><a href="https://ihadieva.ru/"
-                                    rel="nofollow noopener" target="_blank" style="color: inherit">Разработка сайта</a>
-                            </div>
-                        </div>
-                        <div class="t396__elem tn-elem tn-elem__6532994011475158728637" data-elem-id="1475158728637"
-                            data-elem-type="image" data-field-top-value="25" data-field-left-value="549"
-                            data-field-width-value="30" data-field-axisy-value="top" data-field-axisx-value="left"
-                            data-field-container-value="grid" data-field-topunits-value="px"
-                            data-field-leftunits-value="px" data-field-heightunits-value=""
-                            data-field-widthunits-value="px" data-animate-mobile="y" data-animate-sbs-event="hover"
-                            data-animate-sbs-opts="[{'ti':'0','mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':'0','bl':'0','ea':'','dt':'0'},{'ti':200,'mx':'0','my':'0','sx':1,'sy':1,'op':0.8,'ro':'0','bl':'0','ea':'','dt':'0'}]"
-                            data-field-top-res-320-value="46" data-field-left-res-320-value="109"
-                            data-field-top-res-480-value="46" data-field-left-res-480-value="189"
-                            data-field-top-res-640-value="46" data-field-left-res-640-value="269"
-                            data-field-top-res-960-value="25" data-field-left-res-960-value="429"
-                            data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-                            style="left: 709.5px; top: 25px; width: 30px;">
-                        </div>
-                        <div class="t396__elem tn-elem tn-elem__6532994011475158776955" data-elem-id="1475158776955"
-                            data-elem-type="image" data-field-top-value="25" data-field-left-value="621"
-                            data-field-width-value="30" data-field-axisy-value="top" data-field-axisx-value="left"
-                            data-field-container-value="grid" data-field-topunits-value="px"
-                            data-field-leftunits-value="px" data-field-heightunits-value=""
-                            data-field-widthunits-value="px" data-animate-mobile="y" data-animate-sbs-event="hover"
-                            data-animate-sbs-opts="[{'ti':'0','mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':'0','bl':'0','ea':'','dt':'0'},{'ti':200,'mx':'0','my':'0','sx':1,'sy':1,'op':0.8,'ro':'0','bl':'0','ea':'','dt':'0'}]"
-                            data-field-top-res-320-value="46" data-field-left-res-320-value="181"
-                            data-field-top-res-480-value="46" data-field-left-res-480-value="261"
-                            data-field-top-res-640-value="46" data-field-left-res-640-value="341"
-                            data-field-top-res-960-value="25" data-field-left-res-960-value="501"
-                            data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-                            style="left: 781.5px; top: 25px; width: 30px;">
-                            <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
-                                id="sbs-653299401-1475158776955"
-                                style="display: inherit; width: inherit; height: inherit; pointer-events: none;"><a
-                                    class="tn-atom" href="https://www.instagram.com/dikiidesign/" target="_blank"
-                                    rel="noopener" style="pointer-events: auto;"> <img class="tn-atom__img t-img"
-                                        data-original="https://static.tildacdn.com/tild3739-3362-4663-b034-666236313234/Group_6.svg"
-                                        alt="" imgfield="tn_img_1475158776955"> </a></div>
-                        </div>
+            #minimal-white-footer .footer-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 30px;
+                padding: 0 20px;
+            }
+
+            #minimal-white-footer .footer-section {
+                flex: 1;
+                min-width: 220px;
+                margin-bottom: 30px;
+            }
+
+            #minimal-white-footer .footer-section h3 {
+                color: #ffffff;
+                font-size: 1.3rem;
+                margin-bottom: 20px;
+                position: relative;
+                padding-bottom: 10px;
+            }
+
+            #minimal-white-footer .footer-section h3::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 50px;
+                height: 2px;
+                background: #ffffff;
+            }
+
+            #minimal-white-footer .footer-section p {
+                color: #999999;
+                line-height: 1.6;
+                margin: 15px 0;
+            }
+
+            #minimal-white-footer .footer-section a {
+                color: #999999;
+                text-decoration: none;
+                display: block;
+                margin: 10px 0;
+                transition: transform 0.3s ease;
+            }
+
+            #minimal-white-footer .footer-section a:hover {
+                color: #ffffff;
+                transform: translateX(5px);
+            }
+
+            #minimal-white-footer .social-icons {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            #minimal-white-footer .social-icons a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.4rem;
+                transition: all 0.3s ease;
+            }
+
+            #minimal-white-footer .social-icons a:hover {
+                color: #555555;
+                transform: translateY(-5px);
+            }
+
+            #minimal-white-footer .copyright {
+                text-align: center;
+                margin-top: 50px;
+                padding-top: 20px;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                color: #ffffff;
+                font-size: 0.9rem;
+            }
+
+            #minimal-white-footer .contact-item i,
+            #minimal-white-footer .footer-section a i {
+                color: #999999;
+                margin-right: 10px;
+            }
+
+            #minimal-white-footer .footer-section a i:hover {
+                color: #ffffff;
+            }
+
+            @media (max-width: 768px) {
+                #minimal-white-footer .footer-container {
+                    flex-direction: column;
+                    gap: 30px;
+                }
+
+                #minimal-white-footer .footer-section {
+                    text-align: center;
+                }
+
+                #minimal-white-footer .footer-section h3::after {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                #minimal-white-footer .social-icons {
+                    justify-content: center;
+                }
+
+                #minimal-white-footer .footer-section a:hover {
+                    transform: none;
+                }
+            }
+        </style>
+
+        <footer id="minimal-white-footer">
+            <div class="footer-container">
+                <!-- О компании -->
+                <div class="footer-section">
+                    <a href="{{ config('app.url') }}">
+                        <h3>{{ config('app.name') }}</h3>
+                    </a>
+                    <p>Мы создаём инновационные решения для вашего бизнеса и повседневной жизни.</p>
+                </div>
+
+                <!-- Навигация -->
+                <div class="footer-section">
+                    <h3 style="color: white;">Навигация</h3>
+                    <a href="./">Главная</a>
+                    <a href="#about">О нас</a>
+                    <a href="#price">Стоимость</a>
+                    <a href="#projects">Портфолио</a>
+                    <a href="#contacts">Контакты</a>
+                </div>
+
+                <!-- Контакты -->
+                <div class="footer-section">
+                    <h3 style="color: white;">Контакты</h3>
+                    @foreach ($contacts as $contact)
+                        @if ($contact['is_active'] && in_array($contact['name'], ['Phone', 'Email', 'Address']))
+                            <a href="{{ $contact['url'] ? $contact['url'] . $contact['value'] : '#' }}"
+                                target="{{ $contact['target'] ?? '_self' }}">
+                                <i class="{{ $contact['icon'] }}" style="margin-right: 10px;"></i>
+                                {{ $contact['value'] }}
+                            </a>
+                        @endif
+                    @endforeach
+                </div>
+
+                <!-- Социальные сети -->
+                <div class="footer-section">
+                    <h3 style="color: white;">Следите за нами</h3>
+                    <div class="social-icons">
+                        @foreach ($contacts as $contact)
+                            @if ($contact['is_active'] && !in_array($contact['name'], ['Phone', 'Email', 'Address', 'WorkTime']))
+                                <a href="{{ $contact['url'] . $contact['value'] }}"
+                                    target="{{ $contact['target'] ?? '_blank' }}" title="{{ $contact['name'] }}">
+                                    <i class="{{ $contact['icon'] }}"></i>
+                                </a>
+                            @endif
+                        @endforeach
                     </div>
                 </div>
-                <script>t_onReady(function () { t_onFuncLoad('t396_init', function () { t396_init('653299401'); }); });</script>
-                <!-- /T396 -->
             </div>
-            <div id="rec653299402" class="r t-rec" style="opacity: 1;" data-animationappear="off"
-                data-record-type="890">
-                <!-- t890 -->
-                <div class="t890"
-                    style="display: none; opacity:1; position:fixed; z-index:99990; bottom:20px;right:20px;">
-                    <button type="button" class="t890__arrow" aria-label="Вернуться к началу страницы"
-                        style="box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);"> <svg role="presentation" width="50"
-                            height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="50" height="50" rx="50" fill="#ffffff" fill-opacity="0.90" stroke="none">
-                            </rect>
-                            <path d="M14 28L25 18l10 10" stroke="#17161c" stroke-width="1" fill="none"></path>
-                        </svg> </button>
-                </div>
-                <script
-                    type="text/javascript">t_onReady(function () { t_onFuncLoad('t890_init', function () { t890_init('653299402', '1000'); }); });</script>
-            </div>
-            <div id="rec653299529" class="r t-rec" style="opacity: 1;" data-animationappear="off" data-record-type="702"
-                data-popup-subscribe-inited="y"> <!-- T702 -->
-                <div class="t702">
-                    <div class="t-popup" data-tooltip-hook="#popup:consultation" role="dialog" aria-modal="true"
-                        tabindex="-1" aria-label="Бесплатная консультация">
-                        <div class="t-popup__close t-popup__block-close"> <button type="button"
-                                class="t-popup__close-wrapper t-popup__block-close-button"
-                                aria-label="Закрыть диалоговое окно"> <svg role="presentation"
-                                    class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23"
-                                    version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
-                                        <rect
-                                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
-                                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
-                                        <rect
-                                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
-                                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
-                                    </g>
-                                </svg> </button> </div>
-                        <div class="t-popup__container t-width t-width_6">
-                            <div class="t702__wrapper">
-                                <div class="t702__text-wrapper t-align_center">
-                                    <div class="t702__title t-title t-title_xxs" id="popuptitle_653299529">Бесплатная
-                                        консультация</div>
-                                    <div class="t702__descr t-descr t-descr_xs">Пожалуйста, заполните форму. И мы
-                                        свяжемся с вами в ближайшее время.</div>
-                                </div>
-                                <form id="form653299529" name="form653299529" role="form" action="#" method="POST"
-                                    data-formactiontype="2" data-inputbox=".t-input-group"
-                                    class="t-form js-form-proccess t-form_inputs-total_3 "
-                                    data-success-callback="t702_onSuccess"> <input type="hidden" name="formservices[]"
-                                        value="c4de4af61ab9f8b89f233a246af78632" class="js-formaction-services">
-                                    <div class="js-successbox t-form__successbox t-text t-text_md" aria-live="polite"
-                                        style="display:none;"></div>
-                                    <div
-                                        class="t-form__inputsbox t-form__inputsbox_vertical-form t-form__inputsbox_inrow">
-                                        <div class=" t-input-group t-input-group_nm " data-input-lid="3559215262381"
-                                            data-field-type="nm" data-field-name="Name">
-                                            <div class="t-input-block " style="border-radius:5px;"> <input type="text"
-                                                    autocomplete="name" name="Name" id="input_3559215262381"
-                                                    class="t-input js-tilda-rule" value="" placeholder="Имя"
-                                                    data-tilda-req="1" aria-required="true" data-tilda-rule="name"
-                                                    aria-describedby="error_3559215262381"
-                                                    style="color:#000000;border:1px solid #c9c9c9;border-radius:5px;font-family:'TildaSans';font-weight:400;">
-                                            </div>
-                                            <div class="t-input-error" aria-live="polite" id="error_3559215262381">
-                                            </div>
-                                        </div>
-                                        <div class=" t-input-group t-input-group_em " data-input-lid="3559215262380"
-                                            data-field-type="em" data-field-name="Email">
-                                            <div class="t-input-block " style="border-radius:5px;"> <input type="email"
-                                                    autocomplete="email" name="Email" id="input_3559215262380"
-                                                    class="t-input js-tilda-rule" value="" placeholder="Email"
-                                                    data-tilda-req="1" aria-required="true" data-tilda-rule="email"
-                                                    aria-describedby="error_3559215262380"
-                                                    style="color:#000000;border:1px solid #c9c9c9;border-radius:5px;font-family:'TildaSans';font-weight:400;">
-                                            </div>
-                                            <div class="t-input-error" aria-live="polite" id="error_3559215262380">
-                                            </div>
-                                        </div>
-                                        <div class=" t-input-group t-input-group_ph " data-input-lid="3559215262382"
-                                            data-field-async="true" data-field-type="ph" data-field-name="Phone"
-                                            data-init-mask="yes" data-input-ready="true">
-                                            <div class="t-input-block " style="border-radius: 5px; overflow: visible;">
-                                                <div class="t-input t-input-phonemask__wrap t-input-inline-styles"
-                                                    style="color:#000000;border:1px solid #c9c9c9;border-radius:5px;font-family:'TildaSans';font-weight:400;">
-                                                    <div class="t-input-phonemask__select"><span
-                                                            class="t-input-phonemask__select-flag"
-                                                            data-phonemask-flag="ru"></span><span
-                                                            class="t-input-phonemask__select-triangle"></span><span
-                                                            class="t-input-phonemask__select-code"
-                                                            style="font-weight: 400;">+7</span></div><input
-                                                        type="hidden" class="js-phonemask-result-iso"
-                                                        name="tildaspec-phone-part[]-iso" value="" tabindex="-1"><input
-                                                        type="tel" class="t-input t-input-phonemask"
-                                                        name="tildaspec-phone-part[]" value=""
-                                                        placeholder="(999) 999-99-99" id="input_3559215262382"
-                                                        data-phonemask-iso="ru" data-phonemask-code="+7"
-                                                        data-phonemask-mask="+7(999) 999-99-99" maxlength="15"
-                                                        data-phonemask-without-code="(999) 999-99-99"
-                                                        style="font-weight: 400; font-family: TildaSans;"><input
-                                                        type="hidden" class="js-phonemask-result js-tilda-rule"
-                                                        data-tilda-rule="phone" name="Phone" value="" data-tilda-req="1"
-                                                        tabindex="-1" data-tilda-rule-minlength="18">
-                                                </div>
-                                                <script
-                                                    type="text/javascript">t_onReady(function () { t_onFuncLoad('t_loadJsFile', function () { t_loadJsFile('https://static.tildacdn.com/js/tilda-phone-mask-1.1.min.js', function () { t_onFuncLoad('t_form_phonemask_load', function () { var phoneMasks = document.querySelectorAll('#rec653299529 [data-phonemask-lid="3559215262382"]'); t_form_phonemask_load(phoneMasks); }); }) }) });</script>
-                                            </div>
-                                            <div class="t-input-error" aria-live="polite" id="error_3559215262382">
-                                            </div>
-                                        </div>
-                                        <div class="t-form__errorbox-middle"> <!--noindex-->
-                                            <div class="js-errorbox-all t-form__errorbox-wrapper" style="display:none;"
-                                                data-nosnippet="" tabindex="-1"
-                                                aria-label="Ошибки при заполнении формы">
-                                                <ul role="list" class="t-form__errorbox-text t-text t-text_md">
-                                                    <li class="t-form__errorbox-item js-rule-error js-rule-error-all">
-                                                    </li>
-                                                    <li class="t-form__errorbox-item js-rule-error js-rule-error-req">
-                                                    </li>
-                                                    <li class="t-form__errorbox-item js-rule-error js-rule-error-email">
-                                                    </li>
-                                                    <li class="t-form__errorbox-item js-rule-error js-rule-error-name">
-                                                    </li>
-                                                    <li class="t-form__errorbox-item js-rule-error js-rule-error-phone">
-                                                    </li>
-                                                    <li
-                                                        class="t-form__errorbox-item js-rule-error js-rule-error-minlength">
-                                                    </li>
-                                                    <li
-                                                        class="t-form__errorbox-item js-rule-error js-rule-error-string">
-                                                    </li>
-                                                </ul>
-                                            </div> <!--/noindex-->
-                                        </div>
-                                        <div class="t-form__submit"> <button type="submit" class="t-submit"
-                                                style="color:#ffffff;background-color:#252525;font-family:TildaSans;font-weight:500;text-transform:uppercase;"
-                                                data-field="buttontitle" data-buttonfieldset="button">
-                                                Отправить </button> </div>
-                                    </div>
-                                    <div class="t-form__errorbox-bottom"> <!--noindex-->
-                                        <div class="js-errorbox-all t-form__errorbox-wrapper" style="display:none;"
-                                            data-nosnippet="" tabindex="-1" aria-label="Ошибки при заполнении формы">
-                                            <ul role="list" class="t-form__errorbox-text t-text t-text_md">
-                                                <li class="t-form__errorbox-item js-rule-error js-rule-error-all"></li>
-                                                <li class="t-form__errorbox-item js-rule-error js-rule-error-req"></li>
-                                                <li class="t-form__errorbox-item js-rule-error js-rule-error-email">
-                                                </li>
-                                                <li class="t-form__errorbox-item js-rule-error js-rule-error-name"></li>
-                                                <li class="t-form__errorbox-item js-rule-error js-rule-error-phone">
-                                                </li>
-                                                <li class="t-form__errorbox-item js-rule-error js-rule-error-minlength">
-                                                </li>
-                                                <li class="t-form__errorbox-item js-rule-error js-rule-error-string">
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div style="position: absolute; left: -5000px; bottom: 0; display: none;"><input
-                                            type="text" name="form-spec-comments" value="Its good"
-                                            class="js-form-spec-comments" tabindex="-1"></div>
-                                </form>
-                                <div class="t702__form-bottom-text t-text t-text_xs t-align_center">Нажимая на кнопку,
-                                    вы соглашаетесь с обработкой персональных данных и политикой конфиденциальности
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <script>t_onReady(function () { t_onFuncLoad('t702_initPopup', function () { t702_initPopup('653299529'); }); });</script>
+
+            <div class="copyright">
+                &copy; {{ date('Y') }} {{ config('app.name') }}. Все права защищены.
             </div>
         </footer>
+
     </div>
 </body>
 
