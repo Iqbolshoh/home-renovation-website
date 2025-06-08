@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Дизайн интерьера</title>
+    <title>Дизайн интерьера | {{ config('app.name') }}</title>
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <link rel="stylesheet" href="{{ asset('css/tilda-zero-form-errorbox.min.css') }}">
@@ -117,22 +117,6 @@
                             data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
                             style="left: 27px; top: 100px; width: 25px; transition: none;">
                         </div>
-                        <div class="t396__elem tn-elem tn-elem__6532988881696008238634" data-elem-id="1696008238634"
-                            data-elem-type="image" data-field-top-value="-299" data-field-left-value="290"
-                            data-field-width-value="47" data-field-axisy-value="top" data-field-axisx-value="left"
-                            data-field-container-value="grid" data-field-topunits-value="px"
-                            data-field-leftunits-value="px" data-field-heightunits-value=""
-                            data-field-widthunits-value="px" data-field-filewidth-value="512"
-                            data-field-fileheight-value="512" data-field-top-res-320-value="23"
-                            data-field-left-res-320-value="-10" data-field-width-res-320-value="40"
-                            data-field-top-res-640-value="25" data-field-left-res-640-value="-21"
-                            data-field-axisx-res-640-value="right" data-field-container-res-640-value="window"
-                            data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-                            style="left: 450.5px; top: -299px; width: 47px;"> <a class="tn-atom" href="#menuopen">
-                                <img class="tn-atom__img t-img loaded"
-                                    data-original="https://static.tildacdn.com/tild3064-3761-4033-b737-353963626662/svg-gobbler_-_2023-0.svg"
-                                    alt="" imgfield="tn_img_1696008238634" src="./src/images/svg-gobbler_-_2023-0.svg">
-                            </a> </div>
                         <div class="t396__elem tn-elem tn-elem__6532988881695797803922 t-sbs-anim_started t-sbs-anim_reversed"
                             data-elem-id="1695797803922" data-elem-type="text" data-field-top-value="30"
                             data-field-left-value="-433" data-field-width-value="56" data-field-axisy-value="top"
@@ -349,95 +333,11 @@
                             data-field-width-res-640-value="109" data-field-top-res-960-value="5"
                             data-field-left-res-960-value="20"
                             data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-                            style="left: 40px; top: 5px; width: 100px;"> <a class="tn-atom" href="./"> <img
-                                    class="tn-atom__img t-img loaded"
-                                    data-original="https://static.tildacdn.com/tild3865-6163-4735-a238-636339653435/Layer_7.svg"
-                                    alt="" imgfield="tn_img_1696255455067" src="./src/images/Layer_7.svg"> </a> </div>
-                        <div class="t396__elem tn-elem tn-elem__6710239361695802957135" data-elem-id="1695802957135"
-                            data-elem-type="image" data-field-top-value="23" data-field-left-value="-100"
-                            data-field-width-value="25" data-field-axisy-value="top" data-field-axisx-value="right"
-                            data-field-container-value="window" data-field-topunits-value="px"
-                            data-field-leftunits-value="px" data-field-heightunits-value=""
-                            data-field-widthunits-value="px" data-animate-sbs-event="hover"
-                            data-animate-sbs-opts="[{'ti':'0','mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':'0','bl':'0','ea':'','dt':'0'},{'ti':200,'mx':'0','my':'0','sx':'1','sy':'1','op':0.6,'ro':'0','bl':'0','ea':'','dt':'0'}]"
-                            data-field-top-res-640-value="-302" data-field-left-res-640-value="25"
-                            data-field-top-res-960-value="23" data-field-left-res-960-value="919"
-                            data-field-axisx-res-960-value="left" data-field-container-res-960-value="window"
-                            data-field-topunits-res-960-value="px" data-field-leftunits-res-960-value="px"
-                            data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-                            style="left: 1396px; top: 23px; width: 25px; transition: none;">
-                            <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
-                                id="sbs-671023936-1695802957135"
-                                style="display: table; width: inherit; height: inherit; pointer-events: none;"><a
-                                    class="tn-atom" href="https://www.behance.net/dikii-design" target="_blank"
-                                    rel="noopener" style="pointer-events: auto;"> <img class="tn-atom__img t-img loaded"
-                                        data-original="https://static.tildacdn.com/tild3063-3534-4830-a163-343931323464/svg-gobbler_84_1_1.svg"
-                                        alt="" imgfield="tn_img_1695802957135"
-                                        src="./src/images/svg-gobbler_84_1_1.svg"> </a>
-                            </div>
-                        </div>
-                        <div class="t396__elem tn-elem tn-elem__6710239361695802960725" data-elem-id="1695802960725"
-                            data-elem-type="image" data-field-top-value="23" data-field-left-value="-70"
-                            data-field-width-value="25" data-field-axisy-value="top" data-field-axisx-value="right"
-                            data-field-container-value="window" data-field-topunits-value="px"
-                            data-field-leftunits-value="px" data-field-heightunits-value=""
-                            data-field-widthunits-value="px" data-animate-sbs-event="hover"
-                            data-animate-sbs-opts="[{'ti':'0','mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':'0','bl':'0','ea':'','dt':'0'},{'ti':200,'mx':'0','my':'0','sx':'1','sy':'1','op':0.6,'ro':'0','bl':'0','ea':'','dt':'0'}]"
-                            data-field-filewidth-value="25" data-field-fileheight-value="25"
-                            data-field-top-res-640-value="-267" data-field-left-res-640-value="25"
-                            data-field-top-res-960-value="23" data-field-left-res-960-value="-50"
-                            data-field-axisx-res-960-value="right" data-field-container-res-960-value="window"
-                            data-field-topunits-res-960-value="px" data-field-leftunits-res-960-value="px"
-                            data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-                            style="left: 1426px; top: 23px; width: 25px; transition: none;">
-                            <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
-                                id="sbs-671023936-1695802960725"
-                                style="display: table; width: inherit; height: inherit; pointer-events: none;"><a
-                                    class="tn-atom" href="https://m.vk.com/id759066" target="_blank" rel="noopener"
-                                    style="pointer-events: auto;"> <img class="tn-atom__img t-img loaded"
-                                        data-original="https://static.tildacdn.com/tild3435-6438-4136-b265-343437373339/19vk_1.svg"
-                                        alt="" imgfield="tn_img_1695802960725" src="./src/images/19vk_1.svg"> </a>
-                            </div>
-                        </div>
-                        <div class="t396__elem tn-elem tn-elem__6710239361695802963736" data-elem-id="1695802963736"
-                            data-elem-type="image" data-field-top-value="23" data-field-left-value="-40"
-                            data-field-width-value="25" data-field-axisy-value="top" data-field-axisx-value="right"
-                            data-field-container-value="window" data-field-topunits-value="px"
-                            data-field-leftunits-value="px" data-field-heightunits-value=""
-                            data-field-widthunits-value="px" data-animate-sbs-event="hover"
-                            data-animate-sbs-opts="[{'ti':'0','mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':'0','bl':'0','ea':'','dt':'0'},{'ti':200,'mx':'0','my':'0','sx':'1','sy':'1','op':0.6,'ro':'0','bl':'0','ea':'','dt':'0'}]"
-                            data-field-filewidth-value="25" data-field-fileheight-value="25"
-                            data-field-top-res-640-value="-232" data-field-left-res-640-value="25"
-                            data-field-top-res-960-value="23" data-field-left-res-960-value="-20"
-                            data-field-axisx-res-960-value="right" data-field-container-res-960-value="window"
-                            data-field-topunits-res-960-value="px" data-field-leftunits-res-960-value="px"
-                            data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-                            style="left: 1456px; top: 23px; width: 25px; transition: none;">
-                            <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
-                                id="sbs-671023936-1695802963736"
-                                style="display: table; width: inherit; height: inherit; pointer-events: none;"><a
-                                    class="tn-atom" href="https://www.instagram.com/dikiidesign/" target="_blank"
-                                    rel="noopener" style="pointer-events: auto;"> <img class="tn-atom__img t-img loaded"
-                                        data-original="https://static.tildacdn.com/tild6164-3634-4033-b562-656264646638/Group_6_1.svg"
-                                        alt="" imgfield="tn_img_1695802963736" src="./src/images/Group_6_1.svg"> </a>
-                            </div>
-                        </div>
-                        <div class="t396__elem tn-elem tn-elem__6710239361696008238634" data-elem-id="1696008238634"
-                            data-elem-type="image" data-field-top-value="-299" data-field-left-value="290"
-                            data-field-width-value="47" data-field-axisy-value="top" data-field-axisx-value="left"
-                            data-field-container-value="grid" data-field-topunits-value="px"
-                            data-field-leftunits-value="px" data-field-heightunits-value=""
-                            data-field-widthunits-value="px" data-field-filewidth-value="512"
-                            data-field-fileheight-value="512" data-field-top-res-320-value="10"
-                            data-field-left-res-320-value="-5" data-field-width-res-320-value="40"
-                            data-field-top-res-640-value="12" data-field-left-res-640-value="-5"
-                            data-field-axisx-res-640-value="right" data-field-container-res-640-value="window"
-                            data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-                            style="left: 450.5px; top: -299px; width: 47px;"> <a class="tn-atom" href="#menuopen">
-                                <img class="tn-atom__img t-img loaded"
-                                    data-original="https://static.tildacdn.com/tild3365-3337-4739-a331-366532336162/svg-gobbler_-_2023-0.svg"
-                                    alt="" imgfield="tn_img_1696008238634"
-                                    src="./src/images/svg-gobbler_-_2023-0(1).svg"> </a>
+                            style="left: 40px; top: 5px; width: 100px;">
+                            <a href="{{ url('/') }}"
+                                style="font-size: 24px; font-weight: bold; color: #222; text-decoration: none; font-family: Arial, sans-serif;">
+                                {{ config('app.name') }}
+                            </a>
                         </div>
                         <div class="t396__elem tn-elem tn-elem__6710239361695797803922" data-elem-id="1695797803922"
                             data-elem-type="text" data-field-top-value="25" data-field-left-value="261"
@@ -550,7 +450,8 @@
             </div>
         </header>
 
-        <div id="t-main-content"></div> <!--/header-->
+        <div id="t-main-content"></div>
+
         <div id="rec661730604" class="r t-rec t-rec_pt_0 t-rec_pb_0"
             style="padding-top: 0px; padding-bottom: 0px; --zoom: 1;" data-animationappear="off" data-record-type="396">
             <!-- T396 -->
@@ -818,28 +719,6 @@
                         style="width: 360px; left: 1091px; top: 675px; height: 2px;">
                         <div class="tn-atom"> </div>
                     </div>
-                    <div class="t396__elem tn-elem tn-elem__6617306041695802954755" data-elem-id="1695802954755"
-                        data-elem-type="image" data-field-top-value="-139" data-field-left-value="-74"
-                        data-field-width-value="16" data-field-axisy-value="bottom" data-field-axisx-value="right"
-                        data-field-container-value="window" data-field-topunits-value="px"
-                        data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-                        data-animate-mobile="y" data-animate-sbs-event="hover"
-                        data-animate-sbs-trgels="1633960220381,1695798587077,1697392484171"
-                        data-animate-sbs-opts="[{'ti':'0','mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':'0','bl':'0','ea':'','dt':'0'},{'ti':200,'mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':45,'bl':'0','ea':'','dt':'0'}]"
-                        data-field-filewidth-value="16" data-field-fileheight-value="16"
-                        data-field-top-res-320-value="-69" data-field-left-res-320-value="281"
-                        data-field-top-res-640-value="-62" data-field-left-res-640-value="337"
-                        data-field-axisx-res-640-value="left" data-field-top-res-960-value="-98"
-                        data-field-left-res-960-value="-40"
-                        data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-                        style="left: 1431px; top: 645px; width: 16px;">
-                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-661730604-1695802954755"
-                            style="display: inherit; width: inherit; height: inherit;">
-                            <div class="tn-atom"> <img class="tn-atom__img t-img loaded"
-                                    data-original="https://static.tildacdn.com/tild3762-6564-4061-a231-376432646366/arrow_1.svg"
-                                    alt="" imgfield="tn_img_1695802954755" src="./src/images/arrow_1.svg"> </div>
-                        </div>
-                    </div>
                     <div class="t396__elem tn-elem tn-elem__6617306041695909801635" data-elem-id="1695909801635"
                         data-elem-type="shape" data-field-top-value="0" data-field-left-value="80"
                         data-field-height-value="100" data-field-width-value="1" data-field-axisy-value="top"
@@ -936,8 +815,7 @@
                         data-field-left-res-960-value="10"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 125px; left: 180.5px; width: 474px; height: auto;">
-                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645329257-1695798194419"
-                            style="display: table; width: inherit; height: inherit; opacity: 0;">
+                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645329257-1695798194419">
                             <div class="tn-atom" field="tn_text_1695798194419" style="line-height: 98px;">Обо мне</div>
                         </div>
                     </div>
@@ -968,8 +846,7 @@
                         data-field-top-res-960-value="143" data-field-left-res-960-value="897"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 162px; left: 1290.5px; width: 52px; height: auto;">
-                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645329257-1695798194424"
-                            style="display: table; width: inherit; height: inherit; opacity: 0;">
+                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645329257-1695798194424">
                             <div class="tn-atom" field="tn_text_1695798194424" style="line-height: 25px;"></div>
                         </div>
                     </div>
@@ -1279,8 +1156,7 @@
                         data-field-left-res-960-value="10"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 125px; left: 180.5px; width: 474px; height: auto;">
-                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645331714-1695915153549"
-                            style="display: table; width: inherit; height: inherit; opacity: 0;">
+                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645331714-1695915153549">
                             <div class="tn-atom" field="tn_text_1695915153549" style="line-height: 98px;">О Студии</div>
                         </div>
                     </div>
@@ -1346,8 +1222,7 @@
                         data-field-top-res-960-value="143" data-field-left-res-960-value="897"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 162px; left: 1290.5px; width: 52px; height: auto;">
-                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645331714-1695915153560"
-                            style="display: table; width: inherit; height: inherit; opacity: 0;">
+                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645331714-1695915153560">
                             <div class="tn-atom" field="tn_text_1695915153560" style="line-height: 25px;"></div>
                         </div>
                     </div>
@@ -1404,8 +1279,7 @@
                         data-field-left-res-960-value="10"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 114px; left: 180.5px; width: 780px; height: auto;">
-                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645332199-1695915205005"
-                            style="display: table; width: inherit; height: inherit; opacity: 0;">
+                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645332199-1695915205005">
                             <div class="tn-atom" field="tn_text_1695915205005" style="line-height: 98px;">Наши проекты
                             </div>
                         </div>
@@ -1423,8 +1297,7 @@
                         data-field-top-res-960-value="143" data-field-left-res-960-value="897"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 154px; left: 1290.5px; width: 52px; height: auto;">
-                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645332199-1695915205013"
-                            style="display: table; width: inherit; height: inherit; opacity: 0;">
+                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645332199-1695915205013">
                             <div class="tn-atom" field="tn_text_1695915205013" style="line-height: 25px;"></div>
                         </div>
                     </div>
@@ -1806,8 +1679,7 @@
                         data-field-width-res-960-value="495"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 138px; left: 180.5px; width: 908px; height: auto;">
-                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645333613-1695915301499"
-                            style="display: table; width: inherit; height: inherit; opacity: 0;">
+                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645333613-1695915301499">
                             <div class="tn-atom" field="tn_text_1695915301499" style="line-height: 98px;">КАк мы
                                 работаем</div>
                         </div>
@@ -2272,8 +2144,7 @@
                         data-field-top-res-960-value="136" data-field-left-res-960-value="896"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 178px; left: 1290.5px; width: 52px; height: auto;">
-                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645333613-1695915301509"
-                            style="display: table; width: inherit; height: inherit; opacity: 0;">
+                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645333613-1695915301509">
                             <div class="tn-atom" field="tn_text_1695915301509" style="line-height: 25px;"></div>
                         </div>
                     </div>
@@ -2507,8 +2378,7 @@
                         data-field-top-res-960-value="97" data-field-left-res-960-value="10"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 114px; left: 180.5px; width: 780px; height: auto;">
-                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645334068-1695915462801"
-                            style="display: table; width: inherit; height: inherit; opacity: 0;">
+                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645334068-1695915462801">
                             <div class="tn-atom" field="tn_text_1695915462801" style="line-height: 84px;">Наши
                                 пРеимущества</div>
                         </div>
@@ -2526,8 +2396,7 @@
                         data-field-top-res-960-value="132" data-field-left-res-960-value="897"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 152px; left: 1290.5px; width: 52px; height: auto;">
-                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645334068-1695915462811"
-                            style="display: table; width: inherit; height: inherit; opacity: 0;">
+                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645334068-1695915462811">
                             <div class="tn-atom" field="tn_text_1695915462811" style="line-height: 25px;"></div>
                         </div>
                     </div>
@@ -2993,8 +2862,7 @@
                         data-field-left-res-960-value="10"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 130px; left: 180.5px; width: 394px; height: auto;">
-                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-653332067-1695915898209"
-                            style="display: table; width: inherit; height: inherit; opacity: 0;">
+                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-653332067-1695915898209">
                             <div class="tn-atom" field="tn_text_1695915898209" style="line-height: 98px;">Тарифы</div>
                         </div>
                     </div>
@@ -3013,8 +2881,7 @@
                         data-field-top-res-960-value="134" data-field-left-res-960-value="896"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 165px; left: 1290.5px; width: 52px; height: auto;">
-                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-653332067-1695915898213"
-                            style="display: table; width: inherit; height: inherit; opacity: 0;">
+                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-653332067-1695915898213">
                             <div class="tn-atom" field="tn_text_1695915898213" style="line-height: 25px;"></div>
                         </div>
                     </div>
@@ -3404,8 +3271,7 @@
                         data-field-left-res-960-value="10"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 128px; left: 180.5px; width: 474px; height: auto;">
-                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-653332364-1695916608598"
-                            style="display: table; width: inherit; height: inherit; opacity: 0;">
+                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-653332364-1695916608598">
                             <div class="tn-atom" field="tn_text_1695916608598" style="line-height: 98px;">Гарантии</div>
                         </div>
                     </div>
@@ -3435,8 +3301,7 @@
                         data-field-top-res-960-value="135" data-field-left-res-960-value="897"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 163px; left: 1290.5px; width: 52px; height: auto;">
-                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-653332364-1695916608606"
-                            style="display: table; width: inherit; height: inherit; opacity: 0;">
+                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-653332364-1695916608606">
                             <div class="tn-atom" field="tn_text_1695916608606" style="line-height: 25px;"></div>
                         </div>
                     </div>
@@ -3824,8 +3689,7 @@
                         data-field-left-res-960-value="10"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 135px; left: 180.5px; width: 474px; height: auto;">
-                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645336490-1695916885341"
-                            style="display: table; width: inherit; height: inherit; opacity: 0;">
+                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645336490-1695916885341">
                             <div class="tn-atom" field="tn_text_1695916885341" style="line-height: 98px;">Контакты</div>
                         </div>
                     </div>
@@ -3842,8 +3706,7 @@
                         data-field-top-res-960-value="143" data-field-left-res-960-value="897"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 172px; left: 1290.5px; width: 52px; height: auto;">
-                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645336490-1695916885349"
-                            style="display: table; width: inherit; height: inherit; opacity: 0;">
+                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645336490-1695916885349">
                             <div class="tn-atom" field="tn_text_1695916885349" style="line-height: 25px;"></div>
                         </div>
                     </div>

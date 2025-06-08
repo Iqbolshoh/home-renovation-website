@@ -21,6 +21,7 @@ class SessionsResource extends Resource
     protected static ?string $navigationGroup = 'Настройки';
     protected static ?int $navigationSort = 5;
     protected static ?string $navigationLabel = 'Сессии';
+    protected static ?string $modelLabel = 'Сессии';
 
     public static function canAccess(): bool
     {

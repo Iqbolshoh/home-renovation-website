@@ -23,6 +23,7 @@ class Profile extends Page implements HasForms
     protected static ?string $navigationGroup = 'Настройки';
     protected static ?int $navigationSort = 4;
     protected static ?string $navigationLabel = 'Профиль';
+    protected static ?string $modelLabel = 'Профиль';
 
     public ?array $data = [];
 

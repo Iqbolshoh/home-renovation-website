@@ -26,5 +26,7 @@ class DatabaseSeeder extends Seeder
         | Calls the RolePermissionSeeder to create roles, permissions, and assign them to users.
         */
         $this->call(RolePermissionSeeder::class);
+
+        $this->call(AboutSeeder::class);
     }
 }

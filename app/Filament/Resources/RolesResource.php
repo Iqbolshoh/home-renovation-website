@@ -24,6 +24,7 @@ class RolesResource extends Resource
     protected static ?string $navigationGroup = 'Роли и пользователи';
     protected static ?int $navigationSort = 2;
     protected static ?string $navigationLabel = 'Роли';
+    protected static ?string $modelLabel = 'Роли';
 
     public static function canAccess(): bool
     {

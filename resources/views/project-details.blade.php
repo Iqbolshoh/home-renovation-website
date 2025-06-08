@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Подробности проекта</title>
+    <title>Подробности проекта | {{ config('app.name') }}</title>
     <!-- CSS fayllar -->
     <link rel="stylesheet" href="{{ asset('css/projects-details.css') }}">
     <link rel="stylesheet" href="{{ asset('css/fonts-tildasans.css') }}" media="all" onerror="this.loaderr='y';">

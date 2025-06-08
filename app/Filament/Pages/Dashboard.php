@@ -12,6 +12,7 @@ class Dashboard extends Page
     protected static ?string $slug = '/';
     protected static ?int $navigationSort = 1;
     protected static ?string $navigationLabel = 'Главная';
+    protected static ?string $modelLabel = 'Главная';
 
     public function getViewData(): array
     {

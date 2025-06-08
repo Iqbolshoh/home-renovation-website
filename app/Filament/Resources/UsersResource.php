@@ -21,6 +21,7 @@ class UsersResource extends Resource
     protected static ?string $navigationGroup = 'Роли и пользователи';
     protected static ?int $navigationSort = 3;
     static ?string $navigationLabel = 'Пользователи';
+    protected static ?string $modelLabel = 'Пользователи';
 
     public static function canAccess(): bool
     {
