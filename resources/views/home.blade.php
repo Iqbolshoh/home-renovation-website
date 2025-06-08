@@ -1453,7 +1453,7 @@
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 138px; left: 180.5px; width: 908px; height: auto;">
                         <div class="tn-atom__sbs-anim-wrapper" id="sbs-645333613-1695915301499">
-                            <div class="tn-atom" field="tn_text_1695915301499" style="line-height: 98px;">КАк мы
+                            <div class="tn-atom" field="tn_text_1695915301499" style="line-height: 98px;">КАК мы
                                 работаем</div>
                         </div>
                     </div>
@@ -1468,7 +1468,8 @@
                         data-field-left-res-960-value="36"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 355px; left: 206.5px; width: 312px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798666309" style="line-height: 45px;">ОСТАВЛЯЕТЕ ЗАЯВКУ
+                        <div class="tn-atom" field="tn_text_1695798666309" style="line-height: 45px;">
+                            {{ $howWeWork[0]['title'] }}
                         </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453336131695798666328" data-elem-id="1695798666328"
@@ -1482,8 +1483,9 @@
                         data-field-left-res-960-value="490"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 352px; left: 880.5px; width: 360px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798666328" style="line-height: 25px;">Вы звоните нам,
-                            пишите на почту или оставляете заявку на сайте.</div>
+                        <div class="tn-atom" field="tn_text_1695798666328" style="line-height: 25px;">
+                            {{ $howWeWork[0]['value'] }}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453336131695798666312" data-elem-id="1695798666312"
                         data-elem-type="text" data-field-top-value="500" data-field-left-value="46"
@@ -1496,8 +1498,9 @@
                         data-field-left-res-960-value="36"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 500px; left: 206.5px; width: 412px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798666312" style="line-height: 45px;">ЗАМЕРЫ И
-                            КОНСУЛЬТАЦИЯ</div>
+                        <div class="tn-atom" field="tn_text_1695798666312" style="line-height: 45px;">
+                            {{ $howWeWork[1]['title'] }}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453336131695798666331" data-elem-id="1695798666331"
                         data-elem-type="text" data-field-top-value="497" data-field-left-value="720"
@@ -1510,8 +1513,9 @@
                         data-field-left-res-960-value="490"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 497px; left: 880.5px; width: 360px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798666331" style="line-height: 25px;">Дизайнер бесплатно
-                            приезжает к Вам для выполнения обмеров и фотофиксации.</div>
+                        <div class="tn-atom" field="tn_text_1695798666331" style="line-height: 25px;">
+                            {{ $howWeWork[1]['value'] }}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453336131695798666315" data-elem-id="1695798666315"
                         data-elem-type="text" data-field-top-value="645" data-field-left-value="46"
@@ -1524,8 +1528,9 @@
                         data-field-left-res-960-value="36"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 645px; left: 206.5px; width: 403px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798666315" style="line-height: 45px;">ПОДПИСАНИЕ
-                            ДОГОВОРА</div>
+                        <div class="tn-atom" field="tn_text_1695798666315" style="line-height: 45px;">
+                            {{ $howWeWork[2]['title'] }}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453336131695798666333" data-elem-id="1695798666333"
                         data-elem-type="text" data-field-top-value="642" data-field-left-value="720"
@@ -1538,8 +1543,9 @@
                         data-field-left-res-960-value="490"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 642px; left: 880.5px; width: 360px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798666333" style="line-height: 25px;">Вы приезжаете к
-                            нам в офис для подписания договора и уточнения всех нюансов.</div>
+                        <div class="tn-atom" field="tn_text_1695798666333" style="line-height: 25px;">
+                            {{ $howWeWork[2]['value'] }}.
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453336131695798666317" data-elem-id="1695798666317"
                         data-elem-type="text" data-field-top-value="790" data-field-left-value="46"
@@ -1552,8 +1558,9 @@
                         data-field-left-res-960-value="36"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 790px; left: 206.5px; width: 442px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798666317" style="line-height: 45px;">ПЛАНИРОВОЧНЫЕ
-                            РЕШЕНИЯ</div>
+                        <div class="tn-atom" field="tn_text_1695798666317" style="line-height: 45px;">
+                            {{ $howWeWork[3]['title'] }}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453336131695798666334" data-elem-id="1695798666334"
                         data-elem-type="text" data-field-top-value="787" data-field-left-value="720"
@@ -1566,8 +1573,9 @@
                         data-field-left-res-960-value="490"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 787px; left: 880.5px; width: 360px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798666334" style="line-height: 25px;">Разрабатываем 2-3
-                            варианта планировки, исходя из ваших пожеланий</div>
+                        <div class="tn-atom" field="tn_text_1695798666334" style="line-height: 25px;">
+                            {{ $howWeWork[3]['value'] }}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453336131695798666320" data-elem-id="1695798666320"
                         data-elem-type="text" data-field-top-value="941" data-field-left-value="46"
@@ -1580,8 +1588,9 @@
                         data-field-left-res-960-value="36"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 941px; left: 206.5px; width: 423px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798666320" style="line-height: 45px;">ВИЗУАЛИЗАЦИЯ
-                            ИНТЕРЬЕРА</div>
+                        <div class="tn-atom" field="tn_text_1695798666320" style="line-height: 45px;">
+                            {{ $howWeWork[4]['title'] }}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453336131695798666337" data-elem-id="1695798666337"
                         data-elem-type="text" data-field-top-value="936" data-field-left-value="720"
@@ -1594,8 +1603,9 @@
                         data-field-left-res-960-value="490"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 936px; left: 880.5px; width: 360px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798666337" style="line-height: 25px;">Разрабатываем 3D
-                            визуализацию помещений фотореалистичного качества.</div>
+                        <div class="tn-atom" field="tn_text_1695798666337" style="line-height: 25px;">
+                            {{ $howWeWork[4]['value'] }}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453336131695798666322" data-elem-id="1695798666322"
                         data-elem-type="text" data-field-top-value="1085" data-field-left-value="46"
@@ -1608,8 +1618,9 @@
                         data-field-left-res-960-value="36"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 1085px; left: 206.5px; width: 417px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798666322" style="line-height: 45px;">ЧЕРТЕЖИ ДЛЯ
-                            СТРОИТЕЛЕЙ</div>
+                        <div class="tn-atom" field="tn_text_1695798666322" style="line-height: 45px;">
+                            {{ $howWeWork[5]['title'] }}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453336131695798666339" data-elem-id="1695798666339"
                         data-elem-type="text" data-field-top-value="1070" data-field-left-value="720"
@@ -1622,8 +1633,9 @@
                         data-field-left-res-960-value="490" data-field-width-res-960-value="408"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 1070px; left: 880.5px; width: 360px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798666339" style="line-height: 25px;">Разрабатываем
-                            полный пакет чертежей для реализации дизайн-проекта интерьера "под ключ".</div>
+                        <div class="tn-atom" field="tn_text_1695798666339" style="line-height: 25px;">
+                            {{ $howWeWork[5]['value'] }}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453336131695798666324" data-elem-id="1695798666324"
                         data-elem-type="text" data-field-top-value="1224" data-field-left-value="46"
@@ -1636,8 +1648,9 @@
                         data-field-left-res-960-value="36"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 1224px; left: 206.5px; width: 387px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798666324" style="line-height: 45px;">РЕАЛИЗАЦИЯ ПОД
-                            КЛЮЧ</div>
+                        <div class="tn-atom" field="tn_text_1695798666324" style="line-height: 45px;">
+                            {{ $howWeWork[6]['title'] }}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453336131695798666342" data-elem-id="1695798666342"
                         data-elem-type="text" data-field-top-value="1209" data-field-left-value="720"
@@ -1650,8 +1663,8 @@
                         data-field-left-res-960-value="490" data-field-width-res-960-value="460"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 1209px; left: 880.5px; width: 360px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798666342" style="line-height: 25px;">Наши мастера с
-                            большим опытом, именно в реализации дизайн-проектов, помогут Вам воплотить проект в жизнь.
+                        <div class="tn-atom" field="tn_text_1695798666342" style="line-height: 25px;">
+                            {{ $howWeWork[6]['value'] }}
                         </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453336131695798666326" data-elem-id="1695798666326"
@@ -1665,7 +1678,8 @@
                         data-field-left-res-960-value="36"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 1370px; left: 206.5px; width: 323px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798666326" style="line-height: 45px;">АВТОРСКИЙ НАДЗОР
+                        <div class="tn-atom" field="tn_text_1695798666326" style="line-height: 45px;">
+                            {{ $howWeWork[7]['title'] }}
                         </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453336131695798666343" data-elem-id="1695798666343"
@@ -1679,8 +1693,9 @@
                         data-field-left-res-960-value="490"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 1367px; left: 880.5px; width: 360px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695798666343" style="line-height: 25px;">Контроль
-                            соблюдения дизайн-проекта интерьера в ходе выполнения работ.</div>
+                        <div class="tn-atom" field="tn_text_1695798666343" style="line-height: 25px;">
+                            {{ $howWeWork[7]['value'] }}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453336131695798666353" data-elem-id="1695798666353"
                         data-elem-type="shape" data-field-top-value="304" data-field-left-value="20"

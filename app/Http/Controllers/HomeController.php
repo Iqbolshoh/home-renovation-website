@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\AboutStudia;
 use Illuminate\Http\Request;
+use App\Models\AboutStudia;
 use App\Models\About;
+use App\Models\HowWeWork;
 
 class HomeController extends Controller
 {
@@ -12,6 +13,7 @@ class HomeController extends Controller
     {
         $about = About::first();
         $aboutStudia = AboutStudia::first();
-        return view('home', compact('about', 'aboutStudia'));
+        $howWeWork = HowWeWork::all();
+        return view('home', compact('about', 'aboutStudia', 'howWeWork'));
     }
 }
