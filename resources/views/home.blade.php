@@ -262,7 +262,7 @@
                             style="left: 450.5px; top: -299px; width: 47px;"> <a class="tn-atom" href="#menuopen">
                                 <img class="tn-atom__img t-img loaded"
                                     data-original="https://static.tildacdn.com/tild3064-3761-4033-b737-353963626662/svg-gobbler_-_2023-0.svg"
-                                    alt="" imgfield="tn_img_1696008238634" src="./src/images/svg-gobbler_-_2023-0.svg">
+                                    alt="" imgfield="tn_img_1696008238634" src="{{ asset('storage/svg-gobbler_-_2023-0.svg') }}">
                             </a> </div>
                         <div class="t396__elem tn-elem tn-elem__6532988881695797803922 t-sbs-anim_started t-sbs-anim_reversed"
                             data-elem-id="1695797803922" data-elem-type="text" data-field-top-value="30"
@@ -465,7 +465,7 @@
                                 <img class="tn-atom__img t-img loaded"
                                     data-original="https://static.tildacdn.com/tild3365-3337-4739-a331-366532336162/svg-gobbler_-_2023-0.svg"
                                     alt="" imgfield="tn_img_1696008238634"
-                                    src="./src/images/svg-gobbler_-_2023-0(1).svg"> </a>
+                                    src="{{ asset('storage/svg-gobbler_-_2023-0(1).svg') }}"></a>
                         </div>
                         <div class="t396__elem tn-elem tn-elem__6710239361695797803922" data-elem-id="1695797803922"
                             data-elem-type="text" data-field-top-value="25" data-field-left-value="261"

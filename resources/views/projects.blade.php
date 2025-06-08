@@ -131,7 +131,8 @@
                             style="left: 450.5px; top: -299px; width: 47px;"> <a class="tn-atom" href="#menuopen">
                                 <img class="tn-atom__img t-img loaded"
                                     data-original="https://static.tildacdn.com/tild3064-3761-4033-b737-353963626662/svg-gobbler_-_2023-0.svg"
-                                    alt="" imgfield="tn_img_1696008238634" src="./src/images/svg-gobbler_-_2023-0.svg">
+                                    alt="" imgfield="tn_img_1696008238634"
+                                    src="{{ asset('storage/svg-gobbler_-_2023-0.svg') }}">
                             </a> </div>
                         <div class="t396__elem tn-elem tn-elem__6532988881695797803922 t-sbs-anim_started t-sbs-anim_reversed"
                             data-elem-id="1695797803922" data-elem-type="text" data-field-top-value="30"
@@ -352,7 +353,8 @@
                             style="left: 40px; top: 5px; width: 100px;"> <a class="tn-atom" href="./"> <img
                                     class="tn-atom__img t-img loaded"
                                     data-original="https://static.tildacdn.com/tild3865-6163-4735-a238-636339653435/Layer_7.svg"
-                                    alt="" imgfield="tn_img_1696255455067" src="./src/images/Layer_7.svg"> </a> </div>
+                                    alt="" imgfield="tn_img_1696255455067" src="{{ asset('storage/Layer_7.svg') }}">
+                            </a> </div>
                         <div class="t396__elem tn-elem tn-elem__6710239361695802957135" data-elem-id="1695802957135"
                             data-elem-type="image" data-field-top-value="23" data-field-left-value="-100"
                             data-field-width-value="25" data-field-axisy-value="top" data-field-axisx-value="right"
@@ -373,7 +375,7 @@
                                     rel="noopener" style="pointer-events: auto;"> <img class="tn-atom__img t-img loaded"
                                         data-original="https://static.tildacdn.com/tild3063-3534-4830-a163-343931323464/svg-gobbler_84_1_1.svg"
                                         alt="" imgfield="tn_img_1695802957135"
-                                        src="./src/images/svg-gobbler_84_1_1.svg"> </a>
+                                        src="{{ asset('storage/svg-gobbler_84_1_1.svg') }}"> </a>
                             </div>
                         </div>
                         <div class="t396__elem tn-elem tn-elem__6710239361695802960725" data-elem-id="1695802960725"
@@ -396,7 +398,8 @@
                                     class="tn-atom" href="https://m.vk.com/id759066" target="_blank" rel="noopener"
                                     style="pointer-events: auto;"> <img class="tn-atom__img t-img loaded"
                                         data-original="https://static.tildacdn.com/tild3435-6438-4136-b265-343437373339/19vk_1.svg"
-                                        alt="" imgfield="tn_img_1695802960725" src="./src/images/19vk_1.svg"> </a>
+                                        alt="" imgfield="tn_img_1695802960725" src="{{ asset('storage/19vk_1.svg') }}">
+                                </a>
                             </div>
                         </div>
                         <div class="t396__elem tn-elem tn-elem__6710239361695802963736" data-elem-id="1695802963736"
@@ -419,7 +422,8 @@
                                     class="tn-atom" href="https://www.instagram.com/dikiidesign/" target="_blank"
                                     rel="noopener" style="pointer-events: auto;"> <img class="tn-atom__img t-img loaded"
                                         data-original="https://static.tildacdn.com/tild6164-3634-4033-b562-656264646638/Group_6_1.svg"
-                                        alt="" imgfield="tn_img_1695802963736" src="./src/images/Group_6_1.svg"> </a>
+                                        alt="" imgfield="tn_img_1695802963736"
+                                        src="{{ asset('storage/Group_6_1.svg') }}"> </a>
                             </div>
                         </div>
                         <div class="t396__elem tn-elem tn-elem__6710239361696008238634" data-elem-id="1696008238634"
@@ -437,7 +441,7 @@
                                 <img class="tn-atom__img t-img loaded"
                                     data-original="https://static.tildacdn.com/tild3365-3337-4739-a331-366532336162/svg-gobbler_-_2023-0.svg"
                                     alt="" imgfield="tn_img_1696008238634"
-                                    src="./src/images/svg-gobbler_-_2023-0(1).svg"> </a>
+                                    src="{{ asset('storage/svg-gobbler_-_2023-0(1).svg') }}"> </a>
                         </div>
                         <div class="t396__elem tn-elem tn-elem__6710239361695797803922" data-elem-id="1695797803922"
                             data-elem-type="text" data-field-top-value="25" data-field-left-value="261"
@@ -837,7 +841,8 @@
                             style="display: inherit; width: inherit; height: inherit;">
                             <div class="tn-atom"> <img class="tn-atom__img t-img loaded"
                                     data-original="https://static.tildacdn.com/tild3762-6564-4061-a231-376432646366/arrow_1.svg"
-                                    alt="" imgfield="tn_img_1695802954755" src="./src/images/arrow_1.svg"> </div>
+                                    alt="" imgfield="tn_img_1695802954755" src="{{ asset('storage/arrow_1.svg') }}">
+                            </div>
                         </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6617306041695909801635" data-elem-id="1695909801635"
