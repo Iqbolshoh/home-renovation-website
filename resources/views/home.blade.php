@@ -210,8 +210,30 @@
                             data-field-top-res-960-value="27" data-field-left-res-960-value="25"
                             data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
                             style="left: 27px; top: 30px; width: 25px; transition: none;">
-                            <img src="{{ asset('images/placeholder.png') }}" alt="Social icon"
-                                style="width: 25px; height: 25px;">
+                            <div style="color: white;">
+                                @foreach ($contacts as $contact)
+                                    @if ($contact['is_active'] && !in_array($contact['name'], ['Phone', 'Email', 'Address']))
+                                        <a href="{{ $contact['url'] . $contact['value'] }}"
+                                            target="{{ $contact['target'] ?? '_blank' }}" title="{{ $contact['name'] }}"
+                                            style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; color: #999999; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s ease; margin-top: 3px;">
+                                            <i class="{{ $contact['icon'] }}"></i>
+                                        </a>
+                                    @endif
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="t396__elem tn-elem tn-elem__6532988881695802957135" data-elem-id="1695802957135"
+                            data-elem-type="image" data-field-top-value="30" data-field-left-value="27"
+                            data-field-width-value="25" data-field-axisy-value="top" data-field-axisx-value="left"
+                            data-field-container-value="window" data-field-topunits-value="px"
+                            data-field-leftunits-value="px" data-field-heightunits-value=""
+                            data-field-widthunits-value="px" data-animate-sbs-event="hover"
+                            data-animate-sbs-opts="[{'ti':'0','mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':'0','bl':'0','ea':'','dt':'0'},{'ti':200,'mx':'0','my':'0','sx':'1','sy':'1','op':0.6,'ro':'0','bl':'0','ea':'','dt':'0'}]"
+                            data-field-filewidth-value="25" data-field-fileheight-value="25"
+                            data-field-top-res-640-value="-302" data-field-left-res-640-value="25"
+                            data-field-top-res-960-value="27" data-field-left-res-960-value="25"
+                            data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
+                            style="left: 27px; top: 30px; width: 25px; transition: none;">
                         </div>
                         <div class="t396__elem tn-elem tn-elem__6532988881695802963736" data-elem-id="1695802963736"
                             data-elem-type="image" data-field-top-value="100" data-field-left-value="27"
@@ -219,15 +241,29 @@
                             data-field-container-value="window" data-field-topunits-value="px"
                             data-field-leftunits-value="px" data-field-heightunits-value=""
                             data-field-widthunits-value="px" data-animate-sbs-event="hover"
-                            data-animate-sbs-opts="[{'ti':'0','mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':'0','bl':'0','ea':'','dt':'0'},{'ti':200,'mx':'0','my':'0','sx':'1','sy':'1','op':0.6,'row':'0','bl':'0','ea':'','dt':'0'}]"
+                            data-animate-sbs-opts="[{'ti':'0','mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':'0','bl':'0','ea':'','dt':'0'},{'ti':200,'mx':'0','my':'0','sx':'1','sy':'1','op':0.6,'ro':'0','bl':'0','ea':'','dt':'0'}]"
                             data-field-filewidth-value="25" data-field-fileheight-value="25"
                             data-field-top-res-640-value="-232" data-field-left-res-640-value="25"
                             data-field-top-res-960-value="97" data-field-left-res-960-value="25"
                             data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
                             style="left: 27px; top: 100px; width: 25px; transition: none;">
-                            <img src="{{ asset('images/placeholder.png') }}" alt="Social icon"
-                                style="width: 25px; height: 25px;">
                         </div>
+                        <div class="t396__elem tn-elem tn-elem__6532988881696008238634" data-elem-id="1696008238634"
+                            data-elem-type="image" data-field-top-value="-299" data-field-left-value="290"
+                            data-field-width-value="47" data-field-axisy-value="top" data-field-axisx-value="left"
+                            data-field-container-value="grid" data-field-topunits-value="px"
+                            data-field-leftunits-value="px" data-field-heightunits-value=""
+                            data-field-widthunits-value="px" data-field-filewidth-value="512"
+                            data-field-fileheight-value="512" data-field-top-res-320-value="23"
+                            data-field-left-res-320-value="-10" data-field-width-res-320-value="40"
+                            data-field-top-res-640-value="25" data-field-left-res-640-value="-21"
+                            data-field-axisx-res-640-value="right" data-field-container-res-640-value="window"
+                            data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
+                            style="left: 450.5px; top: -299px; width: 47px;"> <a class="tn-atom" href="#menuopen">
+                                <img class="tn-atom__img t-img loaded"
+                                    data-original="https://static.tildacdn.com/tild3064-3761-4033-b737-353963626662/svg-gobbler_-_2023-0.svg"
+                                    alt="" imgfield="tn_img_1696008238634" src="./src/images/svg-gobbler_-_2023-0.svg">
+                            </a> </div>
                         <div class="t396__elem tn-elem tn-elem__6532988881695797803922 t-sbs-anim_started t-sbs-anim_reversed"
                             data-elem-id="1695797803922" data-elem-type="text" data-field-top-value="30"
                             data-field-left-value="-433" data-field-width-value="56" data-field-axisy-value="top"
@@ -244,9 +280,8 @@
                             <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
                                 id="sbs-653298888-1695797803922"
                                 style="display: table; width: inherit; height: inherit; pointer-events: none;">
-                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;">
-                                    <a href="#about" style="color: inherit" aria-label="О нас">О нас</a>
-                                </div>
+                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;"><a href="./#about"
+                                        style="color: inherit">О нас</a></div>
                             </div>
                         </div>
                         <div class="t396__elem tn-elem tn-elem__6532988881695797803924" data-elem-id="1695797803924"
@@ -264,8 +299,8 @@
                                 id="sbs-653298888-1695797803924"
                                 style="display: table; width: inherit; height: inherit; pointer-events: none;">
                                 <div class="tn-atom" style="pointer-events: auto; line-height: 20px;">
-                                    <a href="#price" style="color: inherit" class="t794__tm-link"
-                                        data-tooltip-menu-id="671035158" aria-label="Стоимость">Стоимость</a>
+                                    <a href="./#price" style="color: inherit" class="t794__tm-link"
+                                        data-tooltip-menu-id="671035158">Стоимость</a>
                                 </div>
                             </div>
                         </div>
@@ -284,7 +319,7 @@
                                 id="sbs-653298888-1695797803926"
                                 style="display: table; width: inherit; height: inherit; pointer-events: none;">
                                 <div class="tn-atom" style="pointer-events: auto; line-height: 20px;">
-                                    <a href="#projects" style="color: inherit" aria-label="Портфолио">Портфолио</a>
+                                    <a href="./#projects" style="color: inherit">Портфолио</a>
                                 </div>
                             </div>
                         </div>
@@ -302,8 +337,8 @@
                             <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
                                 id="sbs-653298888-1695797803928"
                                 style="display: table; width: inherit; height: inherit; pointer-events: none;">
-                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;">
-                                    <a href="#contacts" style="color: inherit" aria-label="Контакты">Контакты</a>
+                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;"><a
+                                        href="#contacts" style="color: inherit">Контакты</a>
                                 </div>
                             </div>
                         </div>
@@ -321,131 +356,59 @@
 
             <div id="rec653298889" class="r t-rec t-rec_pt_0 t-rec_pb_0"
                 style="padding-top: 0px; padding-bottom: 0px; opacity: 1;" data-animationappear="off"
-                data-record-type="450">
-                <!-- t450 -->
+                data-record-type="450"> <!-- t450 -->
                 <div id="nav653298889marker"></div>
                 <div class="t450__overlay">
-                    <div class="t450__overlay_bg"></div>
+                    <div class="t450__overlay_bg"> </div>
                 </div>
                 <div id="nav653298889" class="t450" data-tooltip-hook="#menuopen"
-                    style="max-width: 260px;background-color: #6c7177;">
-                    <button type="button" class="t450__close-button t450__close t450_opened"
-                        style="background-color: #6c7177;" aria-label="Закрыть меню">
-                        <div class="t450__close_icon">
-                            <span style="background-color:#ffffff;"></span>
-                            <span style="background-color:#ffffff;"></span>
-                            <span style="background-color:#ffffff;"></span>
-                            <span style="background-color:#ffffff;"></span>
-                        </div>
+                    style="max-width: 260px;background-color: #6c7177;"> <button type="button"
+                        class="t450__close-button t450__close t450_opened " style="background-color: #6c7177;"
+                        aria-label="Закрыть меню">
+                        <div class="t450__close_icon"> <span style="background-color:#ffffff;"></span> <span
+                                style="background-color:#ffffff;"></span> <span
+                                style="background-color:#ffffff;"></span> <span
+                                style="background-color:#ffffff;"></span> </div>
                     </button>
                     <div class="t450__container t-align_left">
                         <div class="t450__top">
-                            <nav class="t450__menu" aria-label="Главное меню">
+                            <nav class="t450__menu">
                                 <ul role="list" class="t450__list t-menu__list">
-                                    <li class="t450__list_item">
-                                        <a class="t-menu__link-item t-active" href="./" data-menu-submenu-hook=""
-                                            data-menu-item-number="1" aria-label="Главная страница">
+                                    <li class="t450__list_item"> <a class="t-menu__link-item t-active" href="./"
+                                            data-menu-submenu-hook="" data-menu-item-number="1">
                                             Главная
-                                        </a>
-                                    </li>
-                                    <li class="t450__list_item">
-                                        <a class="t-menu__link-item" href="#about" data-menu-submenu-hook=""
-                                            data-menu-item-number="2" aria-label="О нас">
+                                        </a> </li>
+                                    <li class="t450__list_item"> <a class="t-menu__link-item" href="./#about"
+                                            data-menu-submenu-hook="" data-menu-item-number="2">
                                             О нас
                                         </a>
                                     </li>
-                                    <li class="t450__list_item">
-                                        <a class="t-menu__link-item" href="#projects" data-menu-submenu-hook=""
-                                            data-menu-item-number="4" aria-label="Портфолио">
+                                    <li class="t450__list_item"> <a class="t-menu__link-item" href="./#projects"
+                                            data-menu-submenu-hook="" data-menu-item-number="4">
                                             Портфолио
                                         </a>
                                     </li>
-                                    <li class="t450__list_item">
-                                        <a class="t-menu__link-item" href="#price" data-menu-submenu-hook=""
-                                            data-menu-item-number="4" aria-label="Стоимость">
+                                    <li class="t450__list_item"> <a class="t-menu__link-item" href="./#price"
+                                            data-menu-submenu-hook="" data-menu-item-number="4">
                                             Стоимость
                                         </a>
                                     </li>
-                                    <li class="t450__list_item">
-                                        <a class="t-menu__link-item" href="#contacts" data-menu-submenu-hook=""
-                                            data-menu-item-number="5" aria-label="Контакты">
+                                    <li class="t450__list_item"> <a class="t-menu__link-item" href="#contacts"
+                                            data-menu-submenu-hook="" data-menu-item-number="5">
                                             Контакты
                                         </a>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
-                        <div class="t450__rightside">
-                            <div class="t450__rightcontainer">
-                                <div class="t450__right_social_links">
-                                    <div class="t-sociallinks">
-                                        <ul role="list" class="t-sociallinks__wrapper" aria-label="Социальные сети">
-                                            <li class="t-sociallinks__item t-sociallinks__item_vk">
-                                                <a href="https://m.vk.com/id759066" target="_blank"
-                                                    rel="nofollow noopener" aria-label="VK">
-                                                    <svg class="t-sociallinks__svg" role="presentation" width="30px"
-                                                        height="30px" viewBox="0 0 100 100" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50ZM25 34c.406 19.488 10.15 31.2 27.233 31.2h.968V54.05c6.278.625 11.024 5.216 12.93 11.15H75c-2.436-8.87-8.838-13.773-12.836-15.647C66.162 47.242 71.783 41.62 73.126 34h-8.058c-1.749 6.184-6.932 11.805-11.867 12.336V34h-8.057v21.611C40.147 54.362 33.838 48.304 33.556 34H25Z"
-                                                            fill="#ffffff"></path>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li class="t-sociallinks__item t-sociallinks__item_behance">
-                                                <a href="https://www.behance.net/dikii-design" target="_blank"
-                                                    rel="nofollow noopener" aria-label="Behance">
-                                                    <svg class="t-sociallinks__svg" role="presentation" width="30px"
-                                                        height="30px" viewBox="0 0 100 100" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M50 100c27.6142 0 50-22.3858 50-50S77.6142 0 50 0 0 22.3858 0 50s22.3858 50 50 50Zm-1.4722-51.0072c1.0869-.5533 1.9078-1.167 2.4634-1.8412.9991-1.2023 1.4951-2.7852 1.4951-4.7637 0-1.9173-.4897-3.5669-1.4794-4.9411-1.6488-2.2414-4.4411-3.3824-8.38-3.4468H27v32.3572h14.5721c1.6395 0 3.162-.1468 4.5683-.4371 1.4017-.2904 2.6212-.8327 3.6517-1.6246.915-.6843 1.6763-1.5343 2.2892-2.5412.9638-1.5217 1.4378-3.2435 1.4378-5.1631 0-1.8561-.4207-3.4374-1.2612-4.7394-.835-1.3067-2.0836-2.2555-3.7301-2.859Zm-14.066-9.3729h6.0226c1.5476 0 2.8229.1719 3.8196.5062 1.1599.4803 1.7383 1.4794 1.7383 2.9846 0 1.3624-.4363 2.3112-1.3122 2.8449-.8766.5344-2.0138.8021-3.4209.8021h-6.8474v-7.1378Zm10.1153 20.5507c-.7848.3838-1.8717.5674-3.2765.5674h-6.838v-8.6233h6.9455c1.3867.0133 2.469.1938 3.2357.5486 1.371.6239 2.0577 1.7854 2.0577 3.4664 0 1.9926-.7094 3.3354-2.1244 4.0409Zm29.3836-24.827v3.2365H60.9299v-3.2365h13.0308Zm2.9849 10.7282c.9504 1.3797 1.5625 2.976 1.8474 4.7936.1578 1.0587.2284 2.5945.1994 4.602H62.1169c.0934 2.3293.897 3.9585 2.4227 4.8901.9197.5847 2.0349.8703 3.3408.8703 1.3766 0 2.4988-.3484 3.3629-1.0634.4709-.379.886-.9143 1.2447-1.59h6.1857c-.1616 1.3758-.9064 2.7712-2.2453 4.1893-2.0734 2.2539-4.9819 3.384-8.7167 3.384-3.085 0-5.8044-.9527-8.165-2.8519-2.3521-1.9063-3.534-4.9968-3.534-9.285 0-4.0205 1.0611-7.0985 3.1894-9.2402 2.1363-2.1464 4.8933-3.2145 8.2922-3.2145 2.0146 0 3.8298.3602 5.4504 1.0838 1.6151.7244 2.9493 1.8647 4.0009 3.4319Zm-13.0669 1.8098c-.8609.8789-1.3961 2.075-1.6159 3.5881h10.4426c-.1138-1.6104-.6514-2.83-1.6199-3.6627-.9606-.8358-2.1597-1.2549-3.5912-1.2549-1.5578 0-2.7609.4481-3.6156 1.3295Z"
-                                                            fill="#ffffff"></path>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li class="t-sociallinks__item t-sociallinks__item_instagram">
-                                                <a href="https://www.instagram.com/dikiidesign/" target="_blank"
-                                                    rel="nofollow noopener" aria-label="Instagram">
-                                                    <svg class="t-sociallinks__svg" role="presentation" width="30px"
-                                                        height="30px" viewBox="0 0 100 100" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100ZM25 39.3918C25 31.4558 31.4566 25 39.3918 25H60.6082C68.5442 25 75 31.4566 75 39.3918V60.8028C75 68.738 68.5442 75.1946 60.6082 75.1946H39.3918C31.4558 75.1946 25 68.738 25 60.8028V39.3918ZM36.9883 50.0054C36.9883 42.8847 42.8438 37.0922 50.0397 37.0922C57.2356 37.0922 63.0911 42.8847 63.0911 50.0054C63.0911 57.1252 57.2356 62.9177 50.0397 62.9177C42.843 62.9177 36.9883 57.1252 36.9883 50.0054ZM41.7422 50.0054C41.7422 54.5033 45.4641 58.1638 50.0397 58.1638C54.6153 58.1638 58.3372 54.5041 58.3372 50.0054C58.3372 45.5066 54.6145 41.8469 50.0397 41.8469C45.4641 41.8469 41.7422 45.5066 41.7422 50.0054ZM63.3248 39.6355C65.0208 39.6355 66.3956 38.2606 66.3956 36.5646C66.3956 34.8687 65.0208 33.4938 63.3248 33.4938C61.6288 33.4938 60.2539 34.8687 60.2539 36.5646C60.2539 38.2606 61.6288 39.6355 63.3248 39.6355Z"
-                                                            fill="#ffffff"></path>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-                <script>
-                    t_onReady(function () {
-                        var rec = document.querySelector('#rec653298889');
-                        if (!rec) return;
-                        rec.setAttribute('data-animationappear', 'off');
-                        rec.style.opacity = 1;
-                        t_onFuncLoad('t450_initMenu', function () {
-                            t450_initMenu('653298889');
-                        });
-                    });
-                    t_onReady(function () {
-                        setTimeout(function () {
-                            t_onFuncLoad('t_menusub_init', function () {
-                                t_menusub_init('653298889');
-                            });
-                        }, 500);
-                    });
-                </script>
+                <script>t_onReady(function () { var rec = document.querySelector('#rec653298889'); if (!rec) return; rec.setAttribute('data-animationappear', 'off'); rec.style.opacity = 1; t_onFuncLoad('t450_initMenu', function () { t450_initMenu('653298889'); }); });</script>
+                <script>t_onReady(function () { setTimeout(function () { t_onFuncLoad('t_menusub_init', function () { t_menusub_init('653298889'); }); }, 500); });</script>
             </div>
             <div id="rec671023936" class="r t-rec t-rec_pt_0 t-rec_pb_0"
                 style="padding-top: 0px; padding-bottom: 0px; --zoom: 1;" data-animationappear="off"
-                data-record-type="396">
-                <!-- T396 -->
+                data-record-type="396"> <!-- T396 -->
                 <div class="t396">
                     <div class="t396__artboard rendered" data-artboard-recid="671023936"
                         data-artboard-screens="320,640,960,1200" data-artboard-height="70" data-artboard-valign="center"
@@ -466,7 +429,7 @@
                             data-field-left-res-640-value="0" data-field-top-res-960-value="0"
                             data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
                             style="width: 1521px; left: 0px; top: 0px; height: 70px;">
-                            <div class="tn-atom"></div>
+                            <div class="tn-atom"> </div>
                         </div>
                         <div class="t396__elem tn-elem tn-elem__6710239361696255455067" data-elem-id="1696255455067"
                             data-elem-type="image" data-field-top-value="5" data-field-left-value="40"
@@ -487,6 +450,23 @@
                                 {{ config('app.name') }}
                             </a>
                         </div>
+                        <div class="t396__elem tn-elem tn-elem__6710239361696008238634" data-elem-id="1696008238634"
+                            data-elem-type="image" data-field-top-value="-299" data-field-left-value="290"
+                            data-field-width-value="47" data-field-axisy-value="top" data-field-axisx-value="left"
+                            data-field-container-value="grid" data-field-topunits-value="px"
+                            data-field-leftunits-value="px" data-field-heightunits-value=""
+                            data-field-widthunits-value="px" data-field-filewidth-value="512"
+                            data-field-fileheight-value="512" data-field-top-res-320-value="10"
+                            data-field-left-res-320-value="-5" data-field-width-res-320-value="40"
+                            data-field-top-res-640-value="12" data-field-left-res-640-value="-5"
+                            data-field-axisx-res-640-value="right" data-field-container-res-640-value="window"
+                            data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
+                            style="left: 450.5px; top: -299px; width: 47px;"> <a class="tn-atom" href="#menuopen">
+                                <img class="tn-atom__img t-img loaded"
+                                    data-original="https://static.tildacdn.com/tild3365-3337-4739-a331-366532336162/svg-gobbler_-_2023-0.svg"
+                                    alt="" imgfield="tn_img_1696008238634"
+                                    src="./src/images/svg-gobbler_-_2023-0(1).svg"> </a>
+                        </div>
                         <div class="t396__elem tn-elem tn-elem__6710239361695797803922" data-elem-id="1695797803922"
                             data-elem-type="text" data-field-top-value="25" data-field-left-value="261"
                             data-field-width-value="56" data-field-axisy-value="top" data-field-axisx-value="left"
@@ -503,9 +483,8 @@
                             <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
                                 id="sbs-671023936-1695797803922"
                                 style="display: table; width: inherit; height: inherit; pointer-events: none;">
-                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;">
-                                    <a href="./" style="color: inherit" aria-label="Главная страница">Главная</a>
-                                </div>
+                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;"><a href="./"
+                                        style="color: inherit">Главная</a></div>
                             </div>
                         </div>
                         <div class="t396__elem tn-elem tn-elem__6710239361700654464285" data-elem-id="1700654464285"
@@ -524,9 +503,8 @@
                             <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
                                 id="sbs-671023936-1700654464285"
                                 style="display: table; width: inherit; height: inherit; pointer-events: none;">
-                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;">
-                                    <a href="#about" style="color: inherit" aria-label="О нас">О нас</a>
-                                </div>
+                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;"><a href="./#about"
+                                        style="color: inherit">О нас</a></div>
                             </div>
                         </div>
                         <div class="t396__elem tn-elem tn-elem__6710239361695797803926" data-elem-id="1695797803926"
@@ -545,8 +523,8 @@
                             <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
                                 id="sbs-671023936-1695797803926"
                                 style="display: table; width: inherit; height: inherit; pointer-events: none;">
-                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;">
-                                    <a href="#price" style="color: inherit" aria-label="Стоимость">Стоимость</a>
+                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;"><a href="./#price"
+                                        style="color: inherit">Стоимость</a>
                                 </div>
                             </div>
                         </div>
@@ -566,9 +544,9 @@
                             <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
                                 id="sbs-671023936-1695797803924"
                                 style="display: table; width: inherit; height: inherit; pointer-events: none;">
-                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;">
-                                    <a href="#projects" style="color: inherit" class="t794__tm-link"
-                                        data-tooltip-menu-id="671035158" aria-label="Портфолио">Портфолио</a>
+                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;"><a
+                                        href="./#projects" style="color: inherit" class="t794__tm-link"
+                                        data-tooltip-menu-id="671035158">Портфолио</a>
                                 </div>
                             </div>
                         </div>
@@ -588,20 +566,14 @@
                             <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
                                 id="sbs-671023936-1695797803928"
                                 style="display: table; width: inherit; height: inherit; pointer-events: none;">
-                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;">
-                                    <a href="#contacts" style="color: inherit" aria-label="Контакты">Контакты</a>
+                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;"><a
+                                        href="#contacts" style="color: inherit">Контакты</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <script>
-                    t_onReady(function () {
-                        t_onFuncLoad('t396_init', function () {
-                            t396_init('671023936');
-                        });
-                    });
-                </script>
+                <script>t_onReady(function () { t_onFuncLoad('t396_init', function () { t396_init('671023936'); }); });</script>
                 <!-- /T396 -->
             </div>
         </header>
@@ -3975,7 +3947,7 @@
                     <h3 style="color: white;">Следите за нами</h3>
                     <div class="social-icons">
                         @foreach ($contacts as $contact)
-                            @if ($contact['is_active'] && !in_array($contact['name'], ['Phone', 'Email', 'Address', 'WorkTime']))
+                            @if ($contact['is_active'] && !in_array($contact['name'], ['Phone', 'Email', 'Address']))
                                 <a href="{{ $contact['url'] . $contact['value'] }}"
                                     target="{{ $contact['target'] ?? '_blank' }}" title="{{ $contact['name'] }}">
                                     <i class="{{ $contact['icon'] }}"></i>

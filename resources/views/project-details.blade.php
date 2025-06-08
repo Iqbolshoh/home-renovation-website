@@ -77,8 +77,11 @@
         data-hook="blocks-collection-content-node" data-tilda-project-id="7378990" data-tilda-page-id="41052446"
         data-tilda-formskey="5fd665d1bd81ccc3f894e0dfe7378990" data-tilda-lazy="yes" data-tilda-root-zone="com"
         style="overflow: hidden;">
-        <noindex><a href="https://dikii-design.com/page41052446.html#t-main-content" class="t-skiplink" rel="nofollow"
-                aria-label="К основному контенту" style="opacity:0;">К основному контенту</a></noindex> <!--header-->
+        <noindex>
+            <a href="https://dikii-design.com/page41052446.html#t-main-content" class="t-skiplink" rel="nofollow"
+                aria-label="К основному контенту" style="opacity:0;">К основному контенту</a>
+        </noindex>
+        <!--header-->
         <header id="t-header" class="t-records" data-hook="blocks-collection-content-node"
             data-tilda-project-id="7378990" data-tilda-page-id="40381961" data-tilda-page-alias="header"
             data-tilda-formskey="5fd665d1bd81ccc3f894e0dfe7378990" data-tilda-lazy="yes" data-tilda-root-zone="com">
@@ -570,8 +573,9 @@
                 <!-- /T396 -->
             </div>
         </header>
+        <!--/header-->
 
-        <div id="t-main-content"></div> <!--/header-->
+        <div id="t-main-content"></div>
         <div id="rec663743558" class="r t-rec t-rec_pt_0 t-rec_pb_0"
             style="padding-top: 0px; padding-bottom: 0px; --zoom: 1;" data-animationappear="off" data-record-type="396">
             <!-- T396 -->
