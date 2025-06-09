@@ -1044,119 +1044,7 @@
                                     </span>
                                 </div>
                             </form>
-                            <script>
-                                const form = document.querySelector("#send-message");
-                                const numberInput = form.querySelector("input[name='number']");
-                                const submitBtn = form.querySelector("button[type='submit']");
-
-                                let isSubmitting = false;
-
-                                numberInput.addEventListener("input", function (e) {
-                                    let value = e.target.value.replace(/\D/g, "").slice(0, 11);
-
-                                    if (value.startsWith("7")) value = value.slice(1);
-
-                                    let formatted = "+7";
-                                    if (value.length > 0) formatted += " (" + value.slice(0, 3);
-                                    if (value.length >= 3) formatted += ") " + value.slice(3, 6);
-                                    if (value.length >= 6) formatted += "-" + value.slice(6, 8);
-                                    if (value.length >= 8) formatted += "-" + value.slice(8, 10);
-
-                                    e.target.value = formatted;
-                                });
-
-                                form.addEventListener("submit", async function (e) {
-                                    e.preventDefault();
-                                    if (isSubmitting) return;
-
-                                    const name = form.querySelector("input[name='name']").value.trim();
-                                    const number = numberInput.value.trim();
-                                    const email = form.querySelector("input[name='email']").value.trim();
-                                    const message = form.querySelector("textarea[name='message']").value.trim();
-                                    const phonePattern = /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/;
-                                    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-                                    if (!name) {
-                                        Swal.fire({
-                                            icon: 'error',
-                                            title: 'Ошибка',
-                                            text: 'Пожалуйста, введите ваше имя',
-                                        });
-                                        return;
-                                    }
-                                    if (!phonePattern.test(number)) {
-                                        Swal.fire({
-                                            icon: 'error',
-                                            title: 'Ошибка',
-                                            text: 'Неверный формат телефона! Пример: +7 (999) 999-99-99',
-                                        });
-                                        return;
-                                    }
-                                    if (!emailPattern.test(email)) {
-                                        Swal.fire({
-                                            icon: 'error',
-                                            title: 'Ошибка',
-                                            text: 'Пожалуйста, введите корректный email',
-                                        });
-                                        return;
-                                    }
-                                    if (!message) {
-                                        Swal.fire({
-                                            icon: 'error',
-                                            title: 'Ошибка',
-                                            text: 'Пожалуйста, введите сообщение',
-                                        });
-                                        return;
-                                    }
-
-                                    const formData = new FormData(form);
-                                    const token = form.querySelector('input[name="_token"]').value;
-
-                                    try {
-                                        isSubmitting = true;
-                                        submitBtn.classList.add('loading');
-                                        submitBtn.disabled = true;
-
-                                        const response = await fetch("{{ route('message.send') }}", {
-                                            method: "POST",
-                                            headers: {
-                                                "X-CSRF-TOKEN": token,
-                                                "Accept": "application/json"
-                                            },
-                                            body: formData
-                                        });
-
-                                        const result = await response.json();
-
-                                        if (response.ok) {
-                                            Swal.fire({
-                                                icon: 'success',
-                                                title: 'Успех',
-                                                text: result.message || 'Заявка успешно отправлена!',
-                                                timer: 3000,
-                                                timerProgressBar: true,
-                                                willClose: () => {
-                                                    isSubmitting = false;
-                                                    submitBtn.classList.remove('loading');
-                                                    submitBtn.disabled = false;
-                                                    form.reset();
-                                                }
-                                            });
-                                        } else {
-                                            throw new Error(result.message || "Ошибка при отправке формы");
-                                        }
-                                    } catch (error) {
-                                        Swal.fire({
-                                            icon: 'error',
-                                            title: 'Ошибка',
-                                            text: error.message || 'Произошла ошибка. Попробуйте снова.',
-                                        });
-                                        isSubmitting = false;
-                                        submitBtn.classList.remove('loading');
-                                        submitBtn.disabled = false;
-                                    }
-                                });
-                            </script>
+                            <script>const form = document.querySelector("#send-message"), numberInput = form.querySelector("input[name='number']"), submitBtn = form.querySelector("button[type='submit']"); let isSubmitting = !1; numberInput.addEventListener("input", function (e) { let t = e.target.value.replace(/\D/g, "").slice(0, 11); t.startsWith("7") && (t = t.slice(1)); let i = "+7"; t.length > 0 && (i += " (" + t.slice(0, 3)), t.length >= 3 && (i += ") " + t.slice(3, 6)), t.length >= 6 && (i += "-" + t.slice(6, 8)), t.length >= 8 && (i += "-" + t.slice(8, 10)), e.target.value = i }), form.addEventListener("submit", async function (e) { if (e.preventDefault(), isSubmitting) return; let t = form.querySelector("input[name='name']").value.trim(), i = numberInput.value.trim(), r = form.querySelector("input[name='email']").value.trim(), s = form.querySelector("textarea[name='message']").value.trim(); if (!t) { Swal.fire({ icon: "error", title: "Ошибка", text: "Пожалуйста, введите ваше имя" }); return } if (!/^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/.test(i)) { Swal.fire({ icon: "error", title: "Ошибка", text: "Неверный формат телефона! Пример: +7 (999) 999-99-99" }); return } if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(r)) { Swal.fire({ icon: "error", title: "Ошибка", text: "Пожалуйста, введите корректный email" }); return } if (!s) { Swal.fire({ icon: "error", title: "Ошибка", text: "Пожалуйста, введите сообщение" }); return } let n = new FormData(form), l = form.querySelector('input[name="_token"]').value; try { isSubmitting = !0, submitBtn.classList.add("loading"), submitBtn.disabled = !0; let m = await fetch("{{ route('message.send') }}", { method: "POST", headers: { "X-CSRF-TOKEN": l, Accept: "application/json" }, body: n }), u = await m.json(); if (m.ok) Swal.fire({ icon: "success", title: "Успех", text: u.message || "Заявка успешно отправлена!", timer: 3e3, timerProgressBar: !0, willClose() { isSubmitting = !1, submitBtn.classList.remove("loading"), submitBtn.disabled = !1, form.reset() } }); else throw Error(u.message || "Ошибка при отправке формы") } catch (a) { Swal.fire({ icon: "error", title: "Ошибка", text: a.message || "Произошла ошибка. Попробуйте снова." }), isSubmitting = !1, submitBtn.classList.remove("loading"), submitBtn.disabled = !1 } });</script>
                         </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6453364901695798983908" data-elem-id="1695798983908"
@@ -1354,7 +1242,6 @@
                 </div>
             </div>
             <script>t_onReady(function () { t_onFuncLoad('t396_init', function () { t396_init('645336490'); }); });</script>
-            <!-- /T396 -->
         </div>
         <!-- contact -->
 
@@ -1375,7 +1262,7 @@
                     <a href="/#about">О нас</a>
                     <a href="/#price">Стоимость</a>
                     <a href="/#projects">Портфолио</a>
-                    <a href="/#contacts">Контакты</a>
+                    <a href="#contacts">Контакты</a>
                 </div>
 
                 <!-- Контакты -->
