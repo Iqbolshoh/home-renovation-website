@@ -6,7 +6,7 @@ use App\Http\Controllers\MessageController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::post('/consultation', [ConsultationController::class, 'store'])->name('consultation.store');
+Route::post('/consultation', [ConsultationController::class, 'send'])->name('consultation.send');
 Route::post('/message-send', [MessageController::class, 'send'])->name('message.send');
 
 Route::view('/projects', 'projects')->name('projects');

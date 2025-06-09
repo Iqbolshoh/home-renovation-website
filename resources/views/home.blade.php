@@ -118,6 +118,19 @@
             });
         }
     </script>
+    <style>
+        body {
+            font-family: 'Tilda Sans', 'Segoe UI', 'Roboto', sans-serif !important;
+            color: #222 !important;
+            background-color: #ffffff !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            line-height: 1.6 !important;
+            font-size: 16px !important;
+            -webkit-font-smoothing: antialiased !important;
+            -moz-osx-font-smoothing: grayscale !important;
+        }
+    </style>
 </head>
 
 <body class="t-body" style="margin:0;">
@@ -262,7 +275,8 @@
                             style="left: 450.5px; top: -299px; width: 47px;"> <a class="tn-atom" href="#menuopen">
                                 <img class="tn-atom__img t-img loaded"
                                     data-original="https://static.tildacdn.com/tild3064-3761-4033-b737-353963626662/svg-gobbler_-_2023-0.svg"
-                                    alt="" imgfield="tn_img_1696008238634" src="{{ asset('storage/svg-gobbler_-_2023-0.svg') }}">
+                                    alt="" imgfield="tn_img_1696008238634"
+                                    src="{{ asset('storage/svg-gobbler_-_2023-0.svg') }}">
                             </a> </div>
                         <div class="t396__elem tn-elem tn-elem__6532988881695797803922 t-sbs-anim_started t-sbs-anim_reversed"
                             data-elem-id="1695797803922" data-elem-type="text" data-field-top-value="30"
@@ -1404,7 +1418,7 @@
                         data-field-left-res-960-value="650" data-field-width-res-960-value="300"
                         data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
                         style="width: 360px; left: 980.5px; top: 50px; height: 30px; pointer-events: none;"> <a
-                            class="tn-atom" href="./page41052446.html" style="pointer-events: auto;"> </a> </div>
+                            class="tn-atom" href="/projects" style="pointer-events: auto;"> </a> </div>
                     <div class="t396__elem tn-elem tn-elem__6593420171695798587108 t-animate t-animate_wait"
                         data-elem-id="1695798587108" data-elem-type="shape" data-field-top-value="116"
                         data-field-left-value="820" data-field-height-value="350" data-field-width-value="360"
@@ -1539,7 +1553,7 @@
                         data-field-height-res-960-value="60" data-field-width-res-960-value="940"
                         data-fields="top,left,width,height,container,axisx,axisy,caption,leftunits,topunits"
                         style="top: 0px; left: 180.5px; width: 1160px; height: 70px;"> <a class="tn-atom"
-                            href="./projects.html">Смотреть все проекты</a>
+                            href="/projects">Смотреть все проекты</a>
                     </div>
                 </div>
             </div>
@@ -3998,32 +4012,6 @@
                             </svg> </button> </div>
 
                     <div>
-                        <div class="custom-popup__container">
-                            <div class="custom-popup__wrapper">
-                                <div class="custom-popup__text">
-                                    <div class="custom-popup__title">Бесплатная консультация</div>
-                                    <div class="custom-popup__description">Заполните форму, и мы свяжемся с вами в
-                                        ближайшее время.</div>
-                                </div>
-
-                                <form id="custom-consultation-form">
-                                    @csrf
-                                    <input type="text" name="name" placeholder="Ваше имя" required>
-                                    <input type="email" name="email" placeholder="Ваш email" required>
-                                    <input type="tel" name="phone" id="custom-phone" placeholder="+7 (___) ___-__-__"
-                                        required>
-                                    <button type="submit" id="custom-submit-btn">Отправить</button>
-                                </form>
-
-                                <div id="custom-response-msg"></div>
-
-                                <div class="custom-popup__bottom-text">
-                                    Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и политику
-                                    конфиденциальности.
-                                </div>
-                            </div>
-                        </div>
-
                         <style>
                             .custom-popup__wrapper {
                                 background: #17161c;
@@ -4099,6 +4087,27 @@
                                 box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
                             }
 
+                            #custom-submit-btn.loading {
+                                position: relative;
+                                color: transparent;
+                            }
+
+                            #custom-submit-btn.loading::after {
+                                content: "";
+                                position: absolute;
+                                width: 20px;
+                                height: 20px;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                margin: auto;
+                                border: 3px solid transparent;
+                                border-top-color: #fbfbfb;
+                                border-radius: 50%;
+                                animation: button-loading-spinner 1s ease infinite;
+                            }
+
                             #custom-submit-btn:disabled {
                                 background: linear-gradient(135deg, #333333, #222222);
                                 cursor: not-allowed;
@@ -4147,87 +4156,114 @@
                                 text-align: center;
                             }
                         </style>
+                        <div class="custom-popup__container">
+                            <div class="custom-popup__wrapper">
+                                <div class="custom-popup__text">
+                                    <div class="custom-popup__title">Бесплатная консультация</div>
+                                    <div class="custom-popup__description">Заполните форму, и мы свяжемся с вами в
+                                        ближайшее время.</div>
+                                </div>
+
+                                <form id="custom-consultation-form">
+                                    @csrf
+                                    <input type="text" name="name" placeholder="Ваше имя" required>
+                                    <input type="email" name="email" placeholder="Ваш email" required>
+                                    <input type="tel" name="phone" id="custom-phone" placeholder="+7 (___) ___-__-__"
+                                        required>
+                                    <button type="submit" id="custom-submit-btn">Отправить</button>
+                                </form>
+
+                                <div id="custom-response-msg"></div>
+
+                                <div class="custom-popup__bottom-text">
+                                    Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и политику
+                                    конфиденциальности.
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function () {
+                                const form = document.getElementById("custom-consultation-form");
+                                const submitBtn = document.getElementById("custom-submit-btn");
+                                const responseMsg = document.getElementById("custom-response-msg");
+                                const phoneInput = document.getElementById("custom-phone");
+
+                                let isSubmitting = false;
+
+                                phoneInput.addEventListener("input", function (e) {
+                                    let value = e.target.value.replace(/\D/g, "");
+                                    if (value.startsWith("7")) value = value.slice(1);
+                                    if (value.length > 10) value = value.slice(0, 10);
+
+                                    let formatted = "+7";
+                                    if (value.length > 0) formatted += " (" + value.slice(0, 3);
+                                    if (value.length > 3) formatted += ") " + value.slice(3, 6);
+                                    if (value.length > 6) formatted += "-" + value.slice(6, 8);
+                                    if (value.length > 8) formatted += "-" + value.slice(8, 10);
+
+                                    e.target.value = formatted;
+                                });
+
+                                form.addEventListener("submit", async function (e) {
+                                    e.preventDefault();
+
+                                    if (isSubmitting) return;
+
+                                    const phone = phoneInput.value.trim();
+                                    const phonePattern = /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/;
+
+                                    if (!phonePattern.test(phone)) {
+                                        responseMsg.className = "show error";
+                                        responseMsg.innerText = "Телефон введён неверно! Пожалуйста, используйте формат: +7 (XXX) XXX-XX-XX.";
+                                        setTimeout(() => {
+                                            responseMsg.classList.remove("show", "error");
+                                        }, 3500);
+                                        return;
+                                    }
+
+                                    isSubmitting = true;
+                                    submitBtn.disabled = true;
+                                    responseMsg.className = "";
+                                    submitBtn.classList.add('loading');
+
+                                    const formData = new FormData(form);
+                                    const token = document.querySelector('input[name="_token"]').value;
+
+                                    try {
+                                        const response = await fetch("{{ route('consultation.send') }}", {
+                                            method: "POST",
+                                            headers: { "X-CSRF-TOKEN": token },
+                                            body: formData
+                                        });
+
+                                        const data = await response.json();
+                                        responseMsg.classList.add("show");
+
+                                        if (response.ok && data.success) {
+                                            responseMsg.classList.add("success");
+                                            responseMsg.innerText = "Ваш запрос успешно отправлен!";
+                                            form.reset();
+                                        } else {
+                                            responseMsg.classList.add("error");
+                                            responseMsg.innerText = "Ошибка при отправке!";
+                                        }
+                                    } catch (error) {
+                                        console.error(error);
+                                        responseMsg.classList.add("show", "error");
+                                        responseMsg.innerText = "Не удалось связаться с сервером!";
+                                    } finally {
+                                        setTimeout(() => {
+                                            responseMsg.classList.remove("show", "success", "error");
+                                            isSubmitting = false;
+                                            submitBtn.disabled = false;
+                                            submitBtn.classList.remove('loading');
+                                        }, 3500);
+                                    }
+                                });
+                            });
+                        </script>
                     </div>
 
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function () {
-                            const form = document.getElementById("custom-consultation-form");
-                            const submitBtn = document.getElementById("custom-submit-btn");
-                            const responseMsg = document.getElementById("custom-response-msg");
-                            const phoneInput = document.getElementById("custom-phone");
-
-                            let isSubmitting = false;
-
-                            phoneInput.addEventListener("input", function (e) {
-                                let value = e.target.value.replace(/\D/g, "");
-                                if (value.startsWith("7")) value = value.slice(1);
-                                if (value.length > 10) value = value.slice(0, 10);
-
-                                let formatted = "+7";
-                                if (value.length > 0) formatted += " (" + value.slice(0, 3);
-                                if (value.length > 3) formatted += ") " + value.slice(3, 6);
-                                if (value.length > 6) formatted += "-" + value.slice(6, 8);
-                                if (value.length > 8) formatted += "-" + value.slice(8, 10);
-
-                                e.target.value = formatted;
-                            });
-
-                            form.addEventListener("submit", async function (e) {
-                                e.preventDefault();
-
-                                if (isSubmitting) return;
-
-                                const phone = phoneInput.value.trim();
-                                const phonePattern = /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/;
-
-                                if (!phonePattern.test(phone)) {
-                                    responseMsg.className = "show error";
-                                    responseMsg.innerText = "Телефон введён неверно! Пожалуйста, используйте формат: +7 (XXX) XXX-XX-XX.";
-                                    setTimeout(() => {
-                                        responseMsg.classList.remove("show", "error");
-                                    }, 3500);
-                                    return;
-                                }
-
-                                isSubmitting = true;
-                                submitBtn.disabled = true;
-                                responseMsg.className = "";
-
-                                const formData = new FormData(form);
-                                const token = document.querySelector('input[name="_token"]').value;
-
-                                try {
-                                    const response = await fetch("{{ route('consultation.store') }}", {
-                                        method: "POST",
-                                        headers: { "X-CSRF-TOKEN": token },
-                                        body: formData
-                                    });
-
-                                    const data = await response.json();
-                                    responseMsg.classList.add("show");
-
-                                    if (response.ok && data.success) {
-                                        responseMsg.classList.add("success");
-                                        responseMsg.innerText = "Ваш запрос успешно отправлен!";
-                                        form.reset();
-                                    } else {
-                                        responseMsg.classList.add("error");
-                                        responseMsg.innerText = "Ошибка при отправке!";
-                                    }
-                                } catch (error) {
-                                    console.error(error);
-                                    responseMsg.classList.add("show", "error");
-                                    responseMsg.innerText = "Не удалось связаться с сервером!";
-                                } finally {
-                                    setTimeout(() => {
-                                        responseMsg.classList.remove("show", "success", "error");
-                                        isSubmitting = false;
-                                        submitBtn.disabled = false;
-                                    }, 3500);
-                                }
-                            });
-                        });
-                    </script>
                 </div>
             </div>
             <script>t_onReady(function () { t_onFuncLoad('t702_initPopup', function () { t702_initPopup('653299529'); }); });</script>
