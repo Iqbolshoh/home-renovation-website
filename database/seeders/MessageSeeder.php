@@ -14,24 +14,24 @@ class MessageSeeder extends Seeder
     {
         $messages = [
             [
-                'name' => 'Ali Rahmon',
+                'name' => 'Али Рахмон',
                 'number' => '+998901112233',
                 'email' => 'ali@example.com',
-                'message' => 'Салом! Ман мехостам маълумоти бештар гирам.',
+                'message' => 'Здравствуйте! Хотел бы получить больше информации.',
                 'status' => 'unread',
             ],
             [
-                'name' => 'Zarina Karimova',
+                'name' => 'Зарина Каримова',
                 'number' => '+998935551122',
                 'email' => 'zarina@example.com',
-                'message' => 'Лутфан ба ман занг занед, савол дорам.',
+                'message' => 'Пожалуйста, перезвоните мне, у меня есть вопрос.',
                 'status' => 'unread',
             ],
             [
-                'name' => 'Farid Usmonov',
+                'name' => 'Фарид Усмонов',
                 'number' => '+998902223344',
                 'email' => 'farid@example.com',
-                'message' => 'Хоҳиш мекунам пешниҳоди маро баррасӣ кунед.',
+                'message' => 'Прошу рассмотреть моё предложение.',
                 'status' => 'unread',
             ],
         ];
@@ -40,6 +40,6 @@ class MessageSeeder extends Seeder
             Message::create($message);
         }
 
-        $this->command->info('Messages seeded successfully!');
+        $this->command->info('Сообщения успешно добавлены!');
     }
 }
