@@ -49,6 +49,7 @@ class ContactResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\TextColumn::make('id')->label('ID')->sortable()->searchable(),
                 Tables\Columns\TextColumn::make('id')->label('ID')->sortable(),
                 Tables\Columns\TextColumn::make('name')->label('Название')->sortable()->searchable(),
                 Tables\Columns\TextColumn::make('value')->label('Значение')->limit(30)->sortable()->searchable(),

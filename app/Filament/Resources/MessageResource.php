@@ -71,6 +71,7 @@ class MessageResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\TextColumn::make('id')->label('ID')->sortable()->searchable(),
                 TextColumn::make('name')->label('Имя')->sortable()->searchable(),
                 TextColumn::make('email')->label('Email')->sortable()->searchable(),
                 TextColumn::make('number')->label('Телефон')->sortable()->searchable(),

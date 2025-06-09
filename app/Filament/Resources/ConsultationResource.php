@@ -44,6 +44,7 @@ class ConsultationResource extends Resource
     {
         return $table
             ->columns([
+                TextColumn::make('id')->label('ID')->sortable()->searchable(),
                 TextColumn::make('name')->label('Имя')->sortable()->searchable(),
                 TextColumn::make('email')->label('Email')->sortable()->searchable(),
                 TextColumn::make('phone')->label('Телефон')->sortable()->searchable(),

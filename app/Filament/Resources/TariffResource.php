@@ -63,6 +63,7 @@ class TariffResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\TextColumn::make('id')->label('ID')->sortable()->searchable(),
                 Tables\Columns\TextColumn::make('title')->label('Название')->sortable()->searchable(),
                 Tables\Columns\TextColumn::make('subtitle')->label('Подзаголовок')->limit(30)->sortable()->searchable(),
                 Tables\Columns\TextColumn::make('price')->label('Цена')->sortable()->searchable(),

@@ -45,6 +45,7 @@ class HowWeWorkResource extends Resource
     public static function table(Table $table): Table
     {
         return $table->columns([
+            Tables\Columns\TextColumn::make('id')->label('ID')->sortable()->searchable(),
             Tables\Columns\TextColumn::make('title')->label('Заголовок')->sortable()->searchable(),
             Tables\Columns\TextColumn::make('value')->label('Описание')->sortable()->searchable()->limit(50),
             Tables\Columns\TextColumn::make('updated_at')->label('Обновлён')->sortable()->dateTime('d.m.Y H:i')->since(),
