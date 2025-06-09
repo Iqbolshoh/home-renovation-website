@@ -707,7 +707,8 @@
                         data-field-left-res-960-value="118" data-field-width-res-960-value="566"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 386px; left: 176px; width: 986px; height: auto;">
-                        <h1 class="tn-atom" field="tn_text_1695797803907" style="line-height: 96px;">Дизайн интерьера
+                        <h1 class="tn-atom" field="tn_text_1695797803907" style="line-height: 96px;">
+                            {{ $project->title }}
                         </h1>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6617306041695797803912" data-elem-id="1695797803912"
@@ -721,8 +722,9 @@
                         data-field-left-res-960-value="120" data-field-width-res-960-value="361"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 619px; left: 180px; width: 446px; height: auto;">
-                        <div class="tn-atom" field="tn_text_1695797803912" style="line-height: 29px;">Разрабатываем
-                            грамотные проекты квартир, домов и офисов под ваш бюджет</div>
+                        <div class="tn-atom" field="tn_text_1695797803912" style="line-height: 29px;">
+                            {{ $project->apartment_info }}
+                        </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6637435581695797803912" data-elem-id="1695797803912"
                         data-elem-type="text" data-field-top-value="-446" data-field-left-value="180"
@@ -740,7 +742,7 @@
                         style="top: 336px; left: 180px; width: 294px; height: auto;">
                         <div class="tn-atom" field="tn_text_1695797803912" style=""><a href="/"
                                 style="color: rgb(255, 255, 255);">Главная</a> → <a href="/projects"
-                                style="color: rgb(255, 255, 255);">Проекты</a> → Проект {{ 3 }}</div>
+                                style="color: rgb(255, 255, 255);">Проекты</a> → Проект {{ $project->id }}</div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6617306041695797803957" data-elem-id="1695797803957"
                         data-elem-type="text" data-field-top-value="-134" data-field-left-value="-108"
@@ -889,8 +891,8 @@
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 139px; left: 180.5px; width: 1057px; height: auto;">
                         <div class="tn-atom__sbs-anim-wrapper" id="sbs-645332199-1695915205005">
-                            <div class="tn-atom" field="tn_text_1695915205005" style="line-height: 98px;">Какие задачи
-                                клиентов решили
+                            <div class="tn-atom" field="tn_text_1695915205005" style="line-height: 98px;">
+                                {{$project->client_solution}}
                             </div>
                         </div>
                     </div>
@@ -924,24 +926,10 @@
                 <div class="t-container">
                     <div class="t-row">
                         <div class="t-col t-col_6 ">
-                            <div class="t005__text t-text t-text_md" field="text">Проект для молодого человека,
-                                расположенный у залива, недалеко от центра Санкт-Петербурга. Весь проект выполнен в
-                                современном стиле, с применением современных материалов. Планировка от застройщика
-                                полностью устроила заказчика, единственное что сделали-это объединили санузел и ванную.
-                                Была демонтирована вся некачественная отделка от застройщика, разведена новая электрика,
-                                разведена заново вся сантехника, заменены радиаторы от застройщика. Все работы выполнены
-                                с соблюдением всех норм и правил.</div>
+                            <div class="t005__text t-text t-text_md" field="text">{{ $project->text_1 }}</div>
                         </div>
                         <div class="t-col t-col_6 ">
-                            <div class="t005__text t-text t-text_md" field="text2">Интерьер квартиры выполнен в темных
-                                тонах. Дизайн современный и минималистичный. Главной деталью является совмещенная кухня
-                                и гостиная, которая создает пространство для отдыха, и благодаря встроенному биокамину,
-                                уютную и домашнюю атмосферу. Также размещена небольшая но функциональная зона столовой,
-                                с раздвижным обеденным столом. Для гостей в квартире предусмотрели отдельную комнату, с
-                                раздвижным диваном. Также это помещение оборудовано вместительным встроенным шкафом и
-                                рабочим местом, и выполняет роль кабинета. Спальня также выполнена в темных тонах, с
-                                минимальным количеством мебели и максимально продуманным функционалом.<br><br>Предлагаем
-                                не томить Вас описаниями и посмотреть все в живую!</div>
+                            <div class="t005__text t-text t-text_md" field="text2">{{ $project->text_1 }}</div>
                         </div>
                     </div>
                 </div>
@@ -952,226 +940,18 @@
             data-animationappear="off" data-record-type="552"> <!-- t552--> <!-- @classes: t-descr t-descr_xxs -->
             <div class="t552">
                 <div class="t552__container t-container_100">
-                    <div class="t552__tile t552__tile_50" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <div class="t552__blockimg t552__blockimg_animated t-bgimg t-zoomable"
-                            data-original="https://static.tildacdn.com/tild3466-3734-4630-b662-306235333661/2.jpg"
-                            bgimgfield="gi_img__0" data-zoom-target="0" data-zoomable="yes"
-                            data-img-zoom-url="https://static.tildacdn.com/tild3466-3734-4630-b662-306235333661/2.jpg"
-                            style="background: url(&quot;https://thb.tildacdn.com/tild3466-3734-4630-b662-306235333661/-/resizeb/20x/2.jpg&quot;) center center / cover no-repeat; height: 570px;"
-                            data-lazy-rule="comm:resize,round:100">
-                            <meta itemprop="image"
-                                content="https://static.tildacdn.com/tild3466-3734-4630-b662-306235333661/2.jpg">
+                    @foreach($project['images'] as $index => $image)
+                        <div class="t552__tile t552__tile_50" itemscope itemtype="http://schema.org/ImageObject">
+                            <div class="t552__blockimg t552__blockimg_animated t-bgimg t-zoomable"
+                                data-original="{{ asset('storage/' . $image->image) }}" bgimgfield="gi_img__{{ $index }}"
+                                data-zoom-target="{{ $index }}" data-zoomable="yes"
+                                data-img-zoom-url="{{ asset('storage/' . $image->image) }}"
+                                style="background: url('{{ asset('storage/' . $image->image) }}') center center / cover no-repeat; height: 570px;"
+                                data-lazy-rule="comm:resize,round:100">
+                                <meta itemprop="image" content="{{ asset('storage/' . $image->image) }}">
+                            </div>
                         </div>
-                    </div>
-                    <div class="t552__tile t552__tile_50" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <div class="t552__blockimg t552__blockimg_animated t-bgimg t-zoomable"
-                            data-original="https://static.tildacdn.com/tild3136-3262-4163-a265-326464346562/3.jpg"
-                            bgimgfield="gi_img__1" data-zoom-target="1" data-zoomable="yes"
-                            data-img-zoom-url="https://static.tildacdn.com/tild3136-3262-4163-a265-326464346562/3.jpg"
-                            style="background: url(&quot;https://thb.tildacdn.com/tild3136-3262-4163-a265-326464346562/-/resizeb/20x/3.jpg&quot;) center center / cover no-repeat; height: 570px;"
-                            data-lazy-rule="comm:resize,round:100">
-                            <meta itemprop="image"
-                                content="https://static.tildacdn.com/tild3136-3262-4163-a265-326464346562/3.jpg">
-                        </div>
-                    </div>
-                    <div class="t552__tile t552__tile_50" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <div class="t552__blockimg t552__blockimg_animated t-bgimg t-zoomable"
-                            data-original="https://static.tildacdn.com/tild3961-6364-4531-a233-313233353363/6.jpg"
-                            bgimgfield="gi_img__2" data-zoom-target="2" data-zoomable="yes"
-                            data-img-zoom-url="https://static.tildacdn.com/tild3961-6364-4531-a233-313233353363/6.jpg"
-                            style="background: url(&quot;https://thb.tildacdn.com/tild3961-6364-4531-a233-313233353363/-/resizeb/20x/6.jpg&quot;) center center / cover no-repeat; height: 570px;"
-                            data-lazy-rule="comm:resize,round:100">
-                            <meta itemprop="image"
-                                content="https://static.tildacdn.com/tild3961-6364-4531-a233-313233353363/6.jpg">
-                        </div>
-                    </div>
-                    <div class="t552__tile t552__tile_50" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <div class="t552__blockimg t552__blockimg_animated t-bgimg t-zoomable"
-                            data-original="https://static.tildacdn.com/tild3133-3662-4139-b338-633831616239/_1.jpg"
-                            bgimgfield="gi_img__3" data-zoom-target="3" data-zoomable="yes"
-                            data-img-zoom-url="https://static.tildacdn.com/tild3133-3662-4139-b338-633831616239/_1.jpg"
-                            style="background: url(&quot;https://thb.tildacdn.com/tild3133-3662-4139-b338-633831616239/-/resizeb/20x/_1.jpg&quot;) center center / cover no-repeat; height: 570px;"
-                            data-lazy-rule="comm:resize,round:100">
-                            <meta itemprop="image"
-                                content="https://static.tildacdn.com/tild3133-3662-4139-b338-633831616239/_1.jpg">
-                        </div>
-                    </div>
-                    <div class="t552__tile t552__tile_50" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <div class="t552__blockimg t552__blockimg_animated t-bgimg t-zoomable"
-                            data-original="https://static.tildacdn.com/tild6432-6333-4639-a466-323966626533/_2.jpg"
-                            bgimgfield="gi_img__4" data-zoom-target="4" data-zoomable="yes"
-                            data-img-zoom-url="https://static.tildacdn.com/tild6432-6333-4639-a466-323966626533/_2.jpg"
-                            style="background: url(&quot;https://thb.tildacdn.com/tild6432-6333-4639-a466-323966626533/-/resizeb/20x/_2.jpg&quot;) center center / cover no-repeat; height: 570px;"
-                            data-lazy-rule="comm:resize,round:100">
-                            <meta itemprop="image"
-                                content="https://static.tildacdn.com/tild6432-6333-4639-a466-323966626533/_2.jpg">
-                        </div>
-                    </div>
-                    <div class="t552__tile t552__tile_50" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <div class="t552__blockimg t552__blockimg_animated t-bgimg t-zoomable"
-                            data-original="https://static.tildacdn.com/tild3266-3830-4435-a433-353264613938/_3.jpg"
-                            bgimgfield="gi_img__5" data-zoom-target="5" data-zoomable="yes"
-                            data-img-zoom-url="https://static.tildacdn.com/tild3266-3830-4435-a433-353264613938/_3.jpg"
-                            style="background: url(&quot;https://thb.tildacdn.com/tild3266-3830-4435-a433-353264613938/-/resizeb/20x/_3.jpg&quot;) center center / cover no-repeat; height: 570px;"
-                            data-lazy-rule="comm:resize,round:100">
-                            <meta itemprop="image"
-                                content="https://static.tildacdn.com/tild3266-3830-4435-a433-353264613938/_3.jpg">
-                        </div>
-                    </div>
-                    <div class="t552__tile t552__tile_50" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <div class="t552__blockimg t552__blockimg_animated t-bgimg t-zoomable"
-                            data-original="https://static.tildacdn.com/tild6565-3265-4365-a235-323333353537/-_2.jpg"
-                            bgimgfield="gi_img__6" data-zoom-target="6" data-zoomable="yes"
-                            data-img-zoom-url="https://static.tildacdn.com/tild6565-3265-4365-a235-323333353537/-_2.jpg"
-                            style="background: url(&quot;https://thb.tildacdn.com/tild6565-3265-4365-a235-323333353537/-/resizeb/20x/-_2.jpg&quot;) center center / cover no-repeat; height: 570px;"
-                            data-lazy-rule="comm:resize,round:100">
-                            <meta itemprop="image"
-                                content="https://static.tildacdn.com/tild6565-3265-4365-a235-323333353537/-_2.jpg">
-                        </div>
-                    </div>
-                    <div class="t552__tile t552__tile_50" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <div class="t552__blockimg t552__blockimg_animated t-bgimg t-zoomable"
-                            data-original="https://static.tildacdn.com/tild6332-3330-4561-b966-376661396336/-_3.jpg"
-                            bgimgfield="gi_img__7" data-zoom-target="7" data-zoomable="yes"
-                            data-img-zoom-url="https://static.tildacdn.com/tild6332-3330-4561-b966-376661396336/-_3.jpg"
-                            style="background: url(&quot;https://thb.tildacdn.com/tild6332-3330-4561-b966-376661396336/-/resizeb/20x/-_3.jpg&quot;) center center / cover no-repeat; height: 570px;"
-                            data-lazy-rule="comm:resize,round:100">
-                            <meta itemprop="image"
-                                content="https://static.tildacdn.com/tild6332-3330-4561-b966-376661396336/-_3.jpg">
-                        </div>
-                    </div>
-                    <div class="t552__tile t552__tile_50" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <div class="t552__blockimg t552__blockimg_animated t-bgimg t-zoomable"
-                            data-original="https://static.tildacdn.com/tild6234-6137-4239-a236-383937353633/-_5.jpg"
-                            bgimgfield="gi_img__8" data-zoom-target="8" data-zoomable="yes"
-                            data-img-zoom-url="https://static.tildacdn.com/tild6234-6137-4239-a236-383937353633/-_5.jpg"
-                            style="background: url(&quot;https://thb.tildacdn.com/tild6234-6137-4239-a236-383937353633/-/resizeb/20x/-_5.jpg&quot;) center center / cover no-repeat; height: 570px;"
-                            data-lazy-rule="comm:resize,round:100">
-                            <meta itemprop="image"
-                                content="https://static.tildacdn.com/tild6234-6137-4239-a236-383937353633/-_5.jpg">
-                        </div>
-                    </div>
-                    <div class="t552__tile t552__tile_50" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <div class="t552__blockimg t552__blockimg_animated t-bgimg t-zoomable"
-                            data-original="https://static.tildacdn.com/tild3663-3239-4533-b835-333635313232/1.jpg"
-                            bgimgfield="gi_img__9" data-zoom-target="9" data-zoomable="yes"
-                            data-img-zoom-url="https://static.tildacdn.com/tild3663-3239-4533-b835-333635313232/1.jpg"
-                            style="background: url(&quot;https://thb.tildacdn.com/tild3663-3239-4533-b835-333635313232/-/resizeb/20x/1.jpg&quot;) center center / cover no-repeat; height: 570px;"
-                            data-lazy-rule="comm:resize,round:100">
-                            <meta itemprop="image"
-                                content="https://static.tildacdn.com/tild3663-3239-4533-b835-333635313232/1.jpg">
-                        </div>
-                    </div>
-                    <div class="t552__tile t552__tile_50" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <div class="t552__blockimg t552__blockimg_animated t-bgimg t-zoomable"
-                            data-original="https://static.tildacdn.com/tild6165-6463-4032-b933-306436383465/-_6.jpg"
-                            bgimgfield="gi_img__10" data-zoom-target="10" data-zoomable="yes"
-                            data-img-zoom-url="https://static.tildacdn.com/tild6165-6463-4032-b933-306436383465/-_6.jpg"
-                            style="background: url(&quot;https://thb.tildacdn.com/tild6165-6463-4032-b933-306436383465/-/resizeb/20x/-_6.jpg&quot;) center center / cover no-repeat; height: 570px;"
-                            data-lazy-rule="comm:resize,round:100">
-                            <meta itemprop="image"
-                                content="https://static.tildacdn.com/tild6165-6463-4032-b933-306436383465/-_6.jpg">
-                        </div>
-                    </div>
-                    <div class="t552__tile t552__tile_50" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <div class="t552__blockimg t552__blockimg_animated t-bgimg t-zoomable"
-                            data-original="https://static.tildacdn.com/tild3261-3732-4237-a536-623065326636/-_8.jpg"
-                            bgimgfield="gi_img__11" data-zoom-target="11" data-zoomable="yes"
-                            data-img-zoom-url="https://static.tildacdn.com/tild3261-3732-4237-a536-623065326636/-_8.jpg"
-                            style="background: url(&quot;https://thb.tildacdn.com/tild3261-3732-4237-a536-623065326636/-/resizeb/20x/-_8.jpg&quot;) center center / cover no-repeat; height: 570px;"
-                            data-lazy-rule="comm:resize,round:100">
-                            <meta itemprop="image"
-                                content="https://static.tildacdn.com/tild3261-3732-4237-a536-623065326636/-_8.jpg">
-                        </div>
-                    </div>
-                    <div class="t552__tile t552__tile_50" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <div class="t552__blockimg t552__blockimg_animated t-bgimg t-zoomable"
-                            data-original="https://static.tildacdn.com/tild3964-3533-4961-b862-316265346434/-_9.jpg"
-                            bgimgfield="gi_img__12" data-zoom-target="12" data-zoomable="yes"
-                            data-img-zoom-url="https://static.tildacdn.com/tild3964-3533-4961-b862-316265346434/-_9.jpg"
-                            style="background: url(&quot;https://thb.tildacdn.com/tild3964-3533-4961-b862-316265346434/-/resizeb/20x/-_9.jpg&quot;) center center / cover no-repeat; height: 570px;"
-                            data-lazy-rule="comm:resize,round:100">
-                            <meta itemprop="image"
-                                content="https://static.tildacdn.com/tild3964-3533-4961-b862-316265346434/-_9.jpg">
-                        </div>
-                    </div>
-                    <div class="t552__tile t552__tile_50" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <div class="t552__blockimg t552__blockimg_animated t-bgimg t-zoomable"
-                            data-original="https://static.tildacdn.com/tild3334-6235-4731-b732-366638323738/-_11.jpg"
-                            bgimgfield="gi_img__13" data-zoom-target="13" data-zoomable="yes"
-                            data-img-zoom-url="https://static.tildacdn.com/tild3334-6235-4731-b732-366638323738/-_11.jpg"
-                            style="background: url(&quot;https://thb.tildacdn.com/tild3334-6235-4731-b732-366638323738/-/resizeb/20x/-_11.jpg&quot;) center center / cover no-repeat; height: 570px;"
-                            data-lazy-rule="comm:resize,round:100">
-                            <meta itemprop="image"
-                                content="https://static.tildacdn.com/tild3334-6235-4731-b732-366638323738/-_11.jpg">
-                        </div>
-                    </div>
-                    <div class="t552__tile t552__tile_50" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <div class="t552__blockimg t552__blockimg_animated t-bgimg t-zoomable"
-                            data-original="https://static.tildacdn.com/tild3838-3032-4339-a137-313837633462/-_12.jpg"
-                            bgimgfield="gi_img__14" data-zoom-target="14" data-zoomable="yes"
-                            data-img-zoom-url="https://static.tildacdn.com/tild3838-3032-4339-a137-313837633462/-_12.jpg"
-                            style="background: url(&quot;https://thb.tildacdn.com/tild3838-3032-4339-a137-313837633462/-/resizeb/20x/-_12.jpg&quot;) center center / cover no-repeat; height: 570px;"
-                            data-lazy-rule="comm:resize,round:100">
-                            <meta itemprop="image"
-                                content="https://static.tildacdn.com/tild3838-3032-4339-a137-313837633462/-_12.jpg">
-                        </div>
-                    </div>
-                    <div class="t552__tile t552__tile_50" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <div class="t552__blockimg t552__blockimg_animated t-bgimg t-zoomable"
-                            data-original="https://static.tildacdn.com/tild6230-3433-4235-a233-323737656634/_2.jpg"
-                            bgimgfield="gi_img__15" data-zoom-target="15" data-zoomable="yes"
-                            data-img-zoom-url="https://static.tildacdn.com/tild6230-3433-4235-a233-323737656634/_2.jpg"
-                            style="background: url(&quot;https://thb.tildacdn.com/tild6230-3433-4235-a233-323737656634/-/resizeb/20x/_2.jpg&quot;) center center / cover no-repeat; height: 570px;"
-                            data-lazy-rule="comm:resize,round:100">
-                            <meta itemprop="image"
-                                content="https://static.tildacdn.com/tild6230-3433-4235-a233-323737656634/_2.jpg">
-                        </div>
-                    </div>
-                    <div class="t552__tile t552__tile_50" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <div class="t552__blockimg t552__blockimg_animated t-bgimg t-zoomable"
-                            data-original="https://static.tildacdn.com/tild6238-3466-4939-b164-396664343265/_3.jpg"
-                            bgimgfield="gi_img__16" data-zoom-target="16" data-zoomable="yes"
-                            data-img-zoom-url="https://static.tildacdn.com/tild6238-3466-4939-b164-396664343265/_3.jpg"
-                            style="background: url(&quot;https://thb.tildacdn.com/tild6238-3466-4939-b164-396664343265/-/resizeb/20x/_3.jpg&quot;) center center / cover no-repeat; height: 570px;"
-                            data-lazy-rule="comm:resize,round:100">
-                            <meta itemprop="image"
-                                content="https://static.tildacdn.com/tild6238-3466-4939-b164-396664343265/_3.jpg">
-                        </div>
-                    </div>
-                    <div class="t552__tile t552__tile_50" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <div class="t552__blockimg t552__blockimg_animated t-bgimg t-zoomable"
-                            data-original="https://static.tildacdn.com/tild3963-6263-4665-a664-323539313161/_1.jpg"
-                            bgimgfield="gi_img__17" data-zoom-target="17" data-zoomable="yes"
-                            data-img-zoom-url="https://static.tildacdn.com/tild3963-6263-4665-a664-323539313161/_1.jpg"
-                            style="background: url(&quot;https://thb.tildacdn.com/tild3963-6263-4665-a664-323539313161/-/resizeb/20x/_1.jpg&quot;) center center / cover no-repeat; height: 570px;"
-                            data-lazy-rule="comm:resize,round:100">
-                            <meta itemprop="image"
-                                content="https://static.tildacdn.com/tild3963-6263-4665-a664-323539313161/_1.jpg">
-                        </div>
-                    </div>
-                    <div class="t552__tile t552__tile_50" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <div class="t552__blockimg t552__blockimg_animated t-bgimg t-zoomable"
-                            data-original="https://static.tildacdn.com/tild6162-6339-4637-b338-616561383433/_2.jpg"
-                            bgimgfield="gi_img__18" data-zoom-target="18" data-zoomable="yes"
-                            data-img-zoom-url="https://static.tildacdn.com/tild6162-6339-4637-b338-616561383433/_2.jpg"
-                            style="background: url(&quot;https://thb.tildacdn.com/tild6162-6339-4637-b338-616561383433/-/resizeb/20x/_2.jpg&quot;) center center / cover no-repeat; height: 570px;"
-                            data-lazy-rule="comm:resize,round:100">
-                            <meta itemprop="image"
-                                content="https://static.tildacdn.com/tild6162-6339-4637-b338-616561383433/_2.jpg">
-                        </div>
-                    </div>
-                    <div class="t552__tile t552__tile_50" itemscope="" itemtype="http://schema.org/ImageObject">
-                        <div class="t552__blockimg t552__blockimg_animated t-bgimg t-zoomable"
-                            data-original="https://static.tildacdn.com/tild6130-3639-4333-b761-663962333362/_5.jpg"
-                            bgimgfield="gi_img__19" data-zoom-target="19" data-zoomable="yes"
-                            data-img-zoom-url="https://static.tildacdn.com/tild6130-3639-4333-b761-663962333362/_5.jpg"
-                            style="background: url(&quot;https://thb.tildacdn.com/tild6130-3639-4333-b761-663962333362/-/resizeb/20x/_5.jpg&quot;) center center / cover no-repeat; height: 570px;"
-                            data-lazy-rule="comm:resize,round:100">
-                            <meta itemprop="image"
-                                content="https://static.tildacdn.com/tild6130-3639-4333-b761-663962333362/_5.jpg">
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
             <script>t_onReady(function () { t_onFuncLoad('t552_init', function () { t552_init('663743567', '0.75'); }); });</script>
