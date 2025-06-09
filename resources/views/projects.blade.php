@@ -682,8 +682,136 @@
                         data-field-left-res-960-value="118" data-field-width-res-960-value="566"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 386px; left: 176px; width: 986px; height: auto;">
-                        <h1 class="tn-atom" field="tn_text_1695797803907" style="line-height: 96px;">Наши проекты</h1>
+                        <h1 class="tn-atom" field="tn_text_1695797803907" style="line-height: 96px;">
+                            Все наши проекты
+                        </h1>
                     </div>
+                    <div class="t396__elem tn-elem tn-elem__6617306041695797803912" data-elem-id="1695797803912"
+                        data-elem-type="text" data-field-top-value="-124" data-field-left-value="180"
+                        data-field-width-value="446" data-field-axisy-value="bottom" data-field-axisx-value="left"
+                        data-field-container-value="window" data-field-topunits-value="px"
+                        data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+                        data-field-top-res-320-value="-165" data-field-left-res-320-value="20"
+                        data-field-width-res-320-value="272" data-field-top-res-640-value="-109"
+                        data-field-left-res-640-value="47" data-field-top-res-960-value="-92"
+                        data-field-left-res-960-value="120" data-field-width-res-960-value="361"
+                        data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
+                        style="top: 619px; left: 180px; width: 446px; height: auto;">
+                        <div class="tn-atom" field="tn_text_1695797803912" style="line-height: 29px;">
+                            Мы делаем сайты, которые помогают бизнесу расти. Вот наши проекты, которые мы сделали для
+                            наших клиентов.
+                        </div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6637435581695797803912" data-elem-id="1695797803912"
+                        data-elem-type="text" data-field-top-value="-446" data-field-left-value="180"
+                        data-field-width-value="294" data-field-axisy-value="bottom" data-field-axisx-value="left"
+                        data-field-container-value="window" data-field-topunits-value="px"
+                        data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+                        data-field-top-res-320-value="253" data-field-left-res-320-value="20"
+                        data-field-width-res-320-value="272" data-field-top-res-640-value="217"
+                        data-field-left-res-640-value="47" data-field-width-res-640-value="186"
+                        data-field-axisy-res-640-value="top" data-field-container-res-640-value="window"
+                        data-field-topunits-res-640-value="px" data-field-leftunits-res-640-value="px"
+                        data-field-top-res-960-value="-340" data-field-left-res-960-value="120"
+                        data-field-width-res-960-value="361"
+                        data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
+                        style="top: 336px; left: 180px; width: 294px; height: auto;">
+                        <div class="tn-atom" field="tn_text_1695797803912" style=""><a href="/"
+                                style="color: rgb(255, 255, 255);">Главная</a> → <a href="/projects"
+                                style="color: rgb(255, 255, 255);">Проекты</a>
+                            </div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6617306041695797803957" data-elem-id="1695797803957"
+                        data-elem-type="text" data-field-top-value="-134" data-field-left-value="-108"
+                        data-field-width-value="322" data-field-axisy-value="bottom" data-field-axisx-value="right"
+                        data-field-container-value="window" data-field-topunits-value="px"
+                        data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+                        data-field-top-res-320-value="-64" data-field-left-res-320-value="20"
+                        data-field-top-res-640-value="-57" data-field-left-res-640-value="47"
+                        data-field-axisx-res-640-value="left" data-field-top-res-960-value="-93"
+                        data-field-left-res-960-value="-99" data-field-width-res-960-value="242"
+                        data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
+                        style="top: 640px; left: 1091px; width: 322px; height: auto;">
+                        <div class="tn-atom" field="tn_text_1695797803957" style="line-height: 26px;">Бесплатная
+                            консультация</div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6617306041695797803958" data-elem-id="1695797803958"
+                        data-elem-type="shape" data-field-top-value="-123" data-field-left-value="-70"
+                        data-field-height-value="2" data-field-width-value="360" data-field-axisy-value="bottom"
+                        data-field-axisx-value="right" data-field-container-value="window"
+                        data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px"
+                        data-field-widthunits-value="px" data-field-top-res-320-value="-58"
+                        data-field-left-res-320-value="20" data-field-width-res-320-value="280"
+                        data-field-top-res-640-value="-51" data-field-left-res-640-value="47"
+                        data-field-axisx-res-640-value="left" data-field-top-res-960-value="-87"
+                        data-field-left-res-960-value="-41" data-field-width-res-960-value="300"
+                        data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
+                        style="width: 360px; left: 1091px; top: 675px; height: 2px;">
+                        <div class="tn-atom"> </div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6617306041695909801635" data-elem-id="1695909801635"
+                        data-elem-type="shape" data-field-top-value="0" data-field-left-value="80"
+                        data-field-height-value="100" data-field-width-value="1" data-field-axisy-value="top"
+                        data-field-axisx-value="left" data-field-container-value="window" data-field-topunits-value="px"
+                        data-field-leftunits-value="px" data-field-heightunits-value="%"
+                        data-field-widthunits-value="px" data-field-top-res-640-value="-710"
+                        data-field-left-res-640-value="60" data-field-left-res-960-value="70"
+                        data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
+                        style="width: 1px; left: 80px; top: 0px; height: 800px;">
+                        <div class="tn-atom"> </div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6617306041696001042438" data-elem-id="1696001042438"
+                        data-elem-type="text" data-field-top-value="-151" data-field-left-value="13"
+                        data-field-width-value="52" data-field-axisy-value="bottom" data-field-axisx-value="left"
+                        data-field-container-value="window" data-field-topunits-value="px"
+                        data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+                        data-animate-sbs-event="hover"
+                        data-animate-sbs-opts="[{'ti':'0','mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':'0','bl':'0','ea':'','dt':'0'},{'ti':200,'mx':'0','my':'0','sx':'1','sy':'1','op':0.7,'ro':'0','bl':'0','ea':'','dt':'0'}]"
+                        data-field-top-res-640-value="-658" data-field-top-res-960-value="-118"
+                        data-field-left-res-960-value="5"
+                        data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
+                        style="top: 635px; left: 13px; width: 52px; height: auto; transition: none;">
+                        <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
+                            id="sbs-661730604-1696001042438"
+                            style="display: table; width: inherit; height: inherit; pointer-events: none;">
+                            <div class="tn-atom" style="pointer-events: auto; line-height: 14px;"><a href="/"
+                                    style="color: inherit">Главная</a></div>
+                        </div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6637435581696001042449" data-elem-id="1696001042449"
+                        data-elem-type="text" data-field-top-value="-286" data-field-left-value="-18"
+                        data-field-width-value="117" data-field-axisy-value="bottom" data-field-axisx-value="left"
+                        data-field-container-value="window" data-field-topunits-value="px"
+                        data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+                        data-animate-sbs-event="hover"
+                        data-animate-sbs-opts="[{'ti':'0','mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':'0','bl':'0','ea':'','dt':'0'},{'ti':200,'mx':'0','my':'0','sx':'1','sy':'1','op':0.7,'ro':'0','bl':'0','ea':'','dt':'0'}]"
+                        data-field-top-res-640-value="-775" data-field-left-res-640-value="-28"
+                        data-field-top-res-960-value="-235" data-field-left-res-960-value="-27"
+                        data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
+                        style="top: 500px; left: -18px; width: 117px; height: auto;">
+                        <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
+                            id="sbs-663743558-1696001042449"
+                            style="display: table; width: inherit; height: inherit; pointer-events: none;">
+                            <div class="tn-atom" style="pointer-events: auto;"><a href="/projects"
+                                    style="color: inherit">Проекты</a></div>
+                        </div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6617306041697392484171 js-sbs-anim-trigger_hover"
+                        data-elem-id="1697392484171" data-elem-type="shape" data-field-top-value="-123"
+                        data-field-left-value="-70" data-field-height-value="35" data-field-width-value="360"
+                        data-field-axisy-value="bottom" data-field-axisx-value="right"
+                        data-field-container-value="window" data-field-topunits-value="px"
+                        data-field-leftunits-value="px" data-field-heightunits-value="px"
+                        data-field-widthunits-value="px" data-field-top-res-320-value="-61"
+                        data-field-left-res-320-value="20" data-field-width-res-320-value="280"
+                        data-field-top-res-640-value="-52" data-field-left-res-640-value="46"
+                        data-field-width-res-640-value="303" data-field-axisx-res-640-value="left"
+                        data-field-top-res-960-value="-90" data-field-left-res-960-value="-40"
+                        data-field-height-res-960-value="27" data-field-width-res-960-value="301"
+                        data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
+                        style="width: 360px; left: 1091px; top: 642px; height: 35px; pointer-events: none;"> <a
+                            class="tn-atom" href="#popup:consultation" role="button" aria-haspopup="dialog"
+                            style="pointer-events: auto;"> </a> </div>
                 </div>
             </div>
             <script>t_onReady(function () { t_onFuncLoad('t396_init', function () { t396_init('661730604'); }); });</script>

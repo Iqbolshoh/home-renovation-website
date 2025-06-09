@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Project;
 use Illuminate\Http\Request;
 use App\Models\AboutStudia;
 use App\Models\About;
@@ -20,6 +21,11 @@ class HomeController extends Controller
         $advantages = Advantage::all();
         $tariffs = Tariff::all();
         $contacts = Contact::all();
-        return view('home', compact('about', 'aboutStudia', 'howWeWork', 'advantages', 'tariffs', 'contacts'));
+        $projects = Project::with([
+            'images' => function ($query) {
+                $query->limit(3);
+            }
+        ])->limit(2)->get();
+        return view('home', compact('about', 'aboutStudia', 'howWeWork', 'advantages', 'tariffs', 'contacts', 'projects'));
     }
 }
