@@ -1398,65 +1398,6 @@
                                             ОТПРАВИТЬ ЗАЯВКУ
                                         </button>
                                     </div>
-                                    <style>
-                                        .t-submit {
-                                            padding: 0px 15px;
-                                            display: block;
-                                            width: 360px;
-                                            height: 65px;
-                                            font-weight: 600;
-                                            background-color: #004aad;
-                                            color: white;
-                                            border: none;
-                                            border-radius: 10px;
-                                            cursor: pointer;
-                                            transition: all 0.3s ease-in-out;
-                                            position: relative;
-                                            font-size: 18px;
-                                        }
-
-                                        .t-submit:hover {
-                                            background-color: #003580;
-                                            transform: translateY(-2px);
-                                            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-                                        }
-
-                                        .t-submit:active {
-                                            transform: scale(0.97);
-                                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-                                        }
-
-                                        .t-submit:focus {
-                                            outline: none;
-                                            box-shadow: 0 0 0 3px rgba(0, 128, 255, 0.4);
-                                        }
-
-                                        .t-submit.loading {
-                                            opacity: 0.7;
-                                            pointer-events: none;
-                                            background-color: #666 !important;
-                                        }
-
-                                        .t-submit.loading::after {
-                                            content: "";
-                                            position: absolute;
-                                            right: 20px;
-                                            top: 50%;
-                                            transform: translateY(-50%);
-                                            width: 18px;
-                                            height: 18px;
-                                            border: 2px solid #fff;
-                                            border-top-color: transparent;
-                                            border-radius: 50%;
-                                            animation: spin 1s linear infinite;
-                                        }
-
-                                        @keyframes spin {
-                                            to {
-                                                transform: translateY(-50%) rotate(360deg);
-                                            }
-                                        }
-                                    </style>
                                 </div>
                                 <div
                                     style="text-align: left; color: rgb(0, 0, 0); font-weight: 400; font-family: TildaSans; margin-top: 15px; font-size: 13px;">
@@ -1779,130 +1720,6 @@
             <!-- /T396 -->
         </div>
         <!-- contact -->
-        <style>
-            #minimal-white-footer {
-                background-color: #17161c;
-                color: #999999;
-                padding: 50px 0 20px;
-                font-family: 'Arial', sans-serif;
-                box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
-            }
-
-            #minimal-white-footer .footer-container {
-                max-width: 1200px;
-                margin: 0 auto;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                gap: 30px;
-                padding: 0 20px;
-            }
-
-            #minimal-white-footer .footer-section {
-                flex: 1;
-                min-width: 220px;
-                margin-bottom: 30px;
-            }
-
-            #minimal-white-footer .footer-section h3 {
-                color: #ffffff;
-                font-size: 1.3rem;
-                margin-bottom: 20px;
-                position: relative;
-                padding-bottom: 10px;
-            }
-
-            #minimal-white-footer .footer-section h3::after {
-                content: '';
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 50px;
-                height: 2px;
-                background: #ffffff;
-            }
-
-            #minimal-white-footer .footer-section p {
-                color: #999999;
-                line-height: 1.6;
-                margin: 15px 0;
-            }
-
-            #minimal-white-footer .footer-section a {
-                color: #999999;
-                text-decoration: none;
-                display: block;
-                margin: 10px 0;
-                transition: transform 0.3s ease;
-            }
-
-            #minimal-white-footer .footer-section a:hover {
-                color: #ffffff;
-                transform: translateX(5px);
-            }
-
-            #minimal-white-footer .social-icons {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 8px;
-            }
-
-            #minimal-white-footer .social-icons a {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 1.4rem;
-                transition: all 0.3s ease;
-            }
-
-            #minimal-white-footer .social-icons a:hover {
-                color: #555555;
-                transform: translateY(-5px);
-            }
-
-            #minimal-white-footer .copyright {
-                text-align: center;
-                margin-top: 50px;
-                padding-top: 20px;
-                border-top: 1px solid rgba(255, 255, 255, 0.1);
-                color: #ffffff;
-                font-size: 0.9rem;
-            }
-
-            #minimal-white-footer .contact-item i,
-            #minimal-white-footer .footer-section a i {
-                color: #999999;
-                margin-right: 10px;
-            }
-
-            #minimal-white-footer .footer-section a i:hover {
-                color: #ffffff;
-            }
-
-            @media (max-width: 768px) {
-                #minimal-white-footer .footer-container {
-                    flex-direction: column;
-                    gap: 30px;
-                }
-
-                #minimal-white-footer .footer-section {
-                    text-align: center;
-                }
-
-                #minimal-white-footer .footer-section h3::after {
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
-
-                #minimal-white-footer .social-icons {
-                    justify-content: center;
-                }
-
-                #minimal-white-footer .footer-section a:hover {
-                    transform: none;
-                }
-            }
-        </style>
 
         <footer id="minimal-white-footer">
             <div class="footer-container">
@@ -1958,6 +1775,74 @@
                 &copy; {{ date('Y') }} {{ config('app.name') }}. Все права защищены.
             </div>
         </footer>
+
+        <div id="rec653299402" class="r t-rec" style="opacity: 1;" data-animationappear="off" data-record-type="890">
+            <!-- t890 -->
+            <div class="t890" style="display: none; opacity:1; position:fixed; z-index:99990; bottom:20px;right:20px;">
+                <button type="button" class="t890__arrow" aria-label="Вернуться к началу страницы"
+                    style="box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);"> <svg role="presentation" width="50"
+                        height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="50" height="50" rx="50" fill="#ffffff" fill-opacity="0.90" stroke="none">
+                        </rect>
+                        <path d="M14 28L25 18l10 10" stroke="#17161c" stroke-width="1" fill="none"></path>
+                    </svg> </button>
+            </div>
+            <script
+                type="text/javascript">t_onReady(function () { t_onFuncLoad('t890_init', function () { t890_init('653299402', '1000'); }); });</script>
+        </div>
+        <div id="rec653299529" class="r t-rec" style="opacity: 1;" data-animationappear="off" data-record-type="702"
+            data-popup-subscribe-inited="y"> <!-- T702 -->
+            <div class="t702">
+                <div class="t-popup" data-tooltip-hook="#popup:consultation" role="dialog" aria-modal="true"
+                    tabindex="-1" aria-label="Бесплатная консультация">
+                    <div class="t-popup__close t-popup__block-close"> <button type="button"
+                            class="t-popup__close-wrapper t-popup__block-close-button"
+                            aria-label="Закрыть диалоговое окно"> <svg role="presentation" class="t-popup__close-icon"
+                                width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                                    <rect
+                                        transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                                        x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                                    <rect
+                                        transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                                        x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                                </g>
+                            </svg> </button> </div>
+
+                    <div>
+                        <div class="custom-popup__container">
+                            <div class="custom-popup__wrapper">
+                                <div class="custom-popup__text">
+                                    <div class="custom-popup__title">Бесплатная консультация</div>
+                                    <div class="custom-popup__description">Заполните форму, и мы свяжемся с вами в
+                                        ближайшее время.</div>
+                                </div>
+
+                                <form id="custom-consultation-form">
+                                    @csrf
+                                    <input type="text" name="name" placeholder="Ваше имя" required>
+                                    <input type="email" name="email" placeholder="Ваш email" required>
+                                    <input type="tel" name="phone" id="custom-phone" placeholder="+7 (___) ___-__-__"
+                                        required>
+                                    <button type="submit" id="custom-submit-btn">Отправить</button>
+                                </form>
+
+                                <div id="custom-response-msg"></div>
+
+                                <div class="custom-popup__bottom-text">
+                                    Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и политику
+                                    конфиденциальности.
+                                </div>
+                            </div>
+                        </div>
+                        <script>document.addEventListener("DOMContentLoaded", function () { let e = document.getElementById("custom-consultation-form"), t = document.getElementById("custom-submit-btn"), s = document.getElementById("custom-response-msg"), n = document.getElementById("custom-phone"), l = !1; n.addEventListener("input", function (e) { let t = e.target.value.replace(/\D/g, ""); t.startsWith("7") && (t = t.slice(1)), t.length > 10 && (t = t.slice(0, 10)); let s = "+7"; t.length > 0 && (s += " (" + t.slice(0, 3)), t.length > 3 && (s += ") " + t.slice(3, 6)), t.length > 6 && (s += "-" + t.slice(6, 8)), t.length > 8 && (s += "-" + t.slice(8, 10)), e.target.value = s }), e.addEventListener("submit", async function (r) { if (r.preventDefault(), l) return; let a = n.value.trim(); if (!/^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/.test(a)) { s.className = "show error", s.innerText = "Телефон введён неверно! Пожалуйста, используйте формат: +7 (XXX) XXX-XX-XX.", setTimeout(() => { s.classList.remove("show", "error") }, 3500); return } l = !0, t.disabled = !0, s.className = "", t.classList.add("loading"); let i = new FormData(e), o = document.querySelector('input[name="_token"]').value; try { let c = await fetch("{{ route('consultation.send') }}", { method: "POST", headers: { "X-CSRF-TOKEN": o }, body: i }), d = await c.json(); s.classList.add("show"), c.ok && d.success ? (s.classList.add("success"), s.innerText = "Ваш запрос успешно отправлен!", e.reset()) : (s.classList.add("error"), s.innerText = "Ошибка при отправке!") } catch (u) { console.error(u), s.classList.add("show", "error"), s.innerText = "Не удалось связаться с сервером!" } finally { setTimeout(() => { s.classList.remove("show", "success", "error"), l = !1, t.disabled = !1, t.classList.remove("loading") }, 3500) } }) });</script>
+                    </div>
+
+                </div>
+            </div>
+            <script>t_onReady(function () { t_onFuncLoad('t702_initPopup', function () { t702_initPopup('653299529'); }); });</script>
+        </div>
 
     </div>
 </body>

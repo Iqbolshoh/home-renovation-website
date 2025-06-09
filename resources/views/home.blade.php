@@ -48,89 +48,7 @@
     <script src="{{ asset('js/tilda-zero-fixed-1.0.min.js') }}" async></script>
     <script src="{{ asset('js/tilda-skiplink-1.0.min.js') }}" async></script>
     <script src="{{ asset('js/tilda-events-1.0.min.js') }}" async></script>
-    <script>
-        function t_onReady(t) {
-            "loading" != document.readyState ? t() : document.addEventListener("DOMContentLoaded", t);
-        }
-
-        function t_onFuncLoad(t, e, a) {
-            "function" == typeof window[t] ? e() : setTimeout(function () {
-                t_onFuncLoad(t, e, a);
-            }, a || 100);
-        }
-
-        function t396_initialScale(t) {
-            if ((t = document.getElementById("rec" + t)) && (t = t.querySelector(".t396__artboard"))) {
-                var e, a = document.documentElement.clientWidth,
-                    r = [];
-                if (i = t.getAttribute("data-artboard-screens"))
-                    for (var i = i.split(","), o = 0; o < i.length; o++) r[o] = parseInt(i[o], 10);
-                else r = [320, 480, 640, 960, 1200];
-                for (o = 0; o < r.length; o++) {
-                    var n = r[o];
-                    n <= a && (e = n);
-                }
-                var l = "edit" === window.allrecords.getAttribute("data-tilda-mode"),
-                    d = "center" === t396_getFieldValue(t, "valign", e, r),
-                    c = "grid" === t396_getFieldValue(t, "upscale", e, r),
-                    s = t396_getFieldValue(t, "height_vh", e, r),
-                    u = t396_getFieldValue(t, "height", e, r),
-                    f = !!window.opr && !!window.opr.addons || !!window.opera || -1 !== navigator.userAgent.indexOf(" OPR/");
-                if (!l && d && !c && !s && u && !f) {
-                    for (var g = parseFloat((a / e).toFixed(3)), b = [t, t.querySelector(".t396__carrier"), t.querySelector(".t396__filter")], o = 0; o < b.length; o++) b[o].style.height = Math.floor(parseInt(u, 10) * g) + "px";
-                    t396_scaleInitial__getElementsToScale(t).forEach(function (t) {
-                        t.style.zoom = g;
-                    });
-                }
-            }
-        }
-
-        function t396_scaleInitial__getElementsToScale(t) {
-            return t ? Array.prototype.slice.call(t.children).filter(function (t) {
-                return t && (t.classList.contains("t396__elem") || t.classList.contains("t396__group"));
-            }) : [];
-        }
-
-        function t396_getFieldValue(t, e, a, r) {
-            var i = r[r.length - 1],
-                o = a === i ? t.getAttribute("data-artboard-" + e) : t.getAttribute("data-artboard-" + e + "-res-" + a);
-            if (!o)
-                for (var n = 0; n < r.length; n++) {
-                    var l = r[n];
-                    if (!(l <= a) && (o = l === i ? t.getAttribute("data-artboard-" + e) : t.getAttribute("data-artboard-" + e + "-res-" + l))) break;
-                }
-            return o;
-        }
-
-        window.dataLayer = window.dataLayer || [];
-        if (!/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(navigator.userAgent) && "undefined" != typeof sessionStorage && "y" !== sessionStorage.getItem("visited") && document.visibilityState) {
-            document.addEventListener("DOMContentLoaded", function t() {
-                var e = document.querySelectorAll(".t-records");
-                Array.prototype.forEach.call(e, function (t) {
-                    t.classList.add("t-records_animated");
-                });
-                setTimeout(function () {
-                    Array.prototype.forEach.call(e, function (t) {
-                        t.classList.add("t-records_visible");
-                    });
-                    sessionStorage.setItem("visited", "y");
-                }, 400);
-            });
-        }
-    </script>
-    <style>
-        body {
-            font-family: 'Tilda Sans', 'Segoe UI', 'Roboto', sans-serif !important;
-            color: #222 !important;
-            background-color: #ffffff !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            line-height: 1.6 !important;
-            font-size: 16px !important;
-            -webkit-font-smoothing: antialiased !important;
-            -moz-osx-font-smoothing: grayscale !important;
-        }
-    </style>
+    <script>function t_onReady(t) { "loading" != document.readyState ? t() : document.addEventListener("DOMContentLoaded", t) } function t_onFuncLoad(t, e, a) { "function" == typeof window[t] ? e() : setTimeout(function () { t_onFuncLoad(t, e, a) }, a || 100) } function t396_initialScale(t) { if ((t = document.getElementById("rec" + t)) && (t = t.querySelector(".t396__artboard"))) { var e, a = document.documentElement.clientWidth, r = []; if (i = t.getAttribute("data-artboard-screens")) for (var i = i.split(","), o = 0; o < i.length; o++)r[o] = parseInt(i[o], 10); else r = [320, 480, 640, 960, 1200]; for (o = 0; o < r.length; o++) { var n = r[o]; n <= a && (e = n) } var l = "edit" === window.allrecords.getAttribute("data-tilda-mode"), d = "center" === t396_getFieldValue(t, "valign", e, r), c = "grid" === t396_getFieldValue(t, "upscale", e, r), s = t396_getFieldValue(t, "height_vh", e, r), u = t396_getFieldValue(t, "height", e, r), f = !!window.opr && !!window.opr.addons || !!window.opera || -1 !== navigator.userAgent.indexOf(" OPR/"); if (!l && d && !c && !s && u && !f) { for (var g = parseFloat((a / e).toFixed(3)), b = [t, t.querySelector(".t396__carrier"), t.querySelector(".t396__filter")], o = 0; o < b.length; o++)b[o].style.height = Math.floor(parseInt(u, 10) * g) + "px"; t396_scaleInitial__getElementsToScale(t).forEach(function (t) { t.style.zoom = g }) } } } function t396_scaleInitial__getElementsToScale(t) { return t ? Array.prototype.slice.call(t.children).filter(function (t) { return t && (t.classList.contains("t396__elem") || t.classList.contains("t396__group")) }) : [] } function t396_getFieldValue(t, e, a, r) { var i = r[r.length - 1], o = a === i ? t.getAttribute("data-artboard-" + e) : t.getAttribute("data-artboard-" + e + "-res-" + a); if (!o) for (var n = 0; n < r.length; n++) { var l = r[n]; if (!(l <= a) && (o = l === i ? t.getAttribute("data-artboard-" + e) : t.getAttribute("data-artboard-" + e + "-res-" + l))) break } return o } window.dataLayer = window.dataLayer || [], !/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(navigator.userAgent) && "undefined" != typeof sessionStorage && "y" !== sessionStorage.getItem("visited") && document.visibilityState && document.addEventListener("DOMContentLoaded", function t() { var e = document.querySelectorAll(".t-records"); Array.prototype.forEach.call(e, function (t) { t.classList.add("t-records_animated") }), setTimeout(function () { Array.prototype.forEach.call(e, function (t) { t.classList.add("t-records_visible") }), sessionStorage.setItem("visited", "y") }, 400) });</script>
 </head>
 
 <body class="t-body" style="margin:0;">
@@ -150,54 +68,8 @@
             <div id="rec653298887" class="r t-rec" style="opacity: 1;" data-animationappear="off"
                 data-record-type="360">
                 <!-- T360 -->
-                <script>
-                    t_onReady(function () {
-                        var allRecords = document.querySelector('.t-records');
-                        window.addEventListener('pageshow', function (event) {
-                            if (event.persisted) {
-                                allRecords.classList.add('t-records_visible');
-                            }
-                        });
-                        var rec = document.querySelector('#rec653298887');
-                        if (!rec) return;
-                        rec.setAttribute('data-animationappear', 'off');
-                        rec.style.opacity = '1';
-                        allRecords.classList.add('t-records_animated');
-                        setTimeout(function () {
-                            allRecords.classList.add('t-records_visible');
-                        }, 200);
-                    });
-                </script>
-                <script>
-                    t_onReady(function () {
-                        var selects = 'button:not(.t-submit):not(.t835__btn_next):not(.t835__btn_prev):not(.t835__btn_result):not(.t862__btn_next):not(.t862__btn_prev):not(.t862__btn_result):not(.t854__news-btn):not(.t862__btn_next),' +
-                            'a:not([href*="#"]):not(.carousel-control):not(.t-carousel__control):not(.t807__btn_reply):not([href^="#price"]):not([href^="javascript"]):not([href^="mailto"]):not([href^="tel"]):not([href^="link_sub"]):not(.js-feed-btn-show-more):not(.t367__opener):not([href^="https://www.dropbox.com/"])';
-                        var elements = document.querySelectorAll(selects);
-                        Array.prototype.forEach.call(elements, function (element) {
-                            if (element.getAttribute('data-menu-submenu-hook')) return;
-                            element.addEventListener('click', function (event) {
-                                var goTo = this.getAttribute('href');
-                                if (goTo !== null) {
-                                    var ctrl = event.ctrlKey;
-                                    var cmd = event.metaKey && navigator.platform.indexOf('Mac') !== -1;
-                                    if (!ctrl && !cmd) {
-                                        var target = this.getAttribute('target');
-                                        if (target !== '_blank') {
-                                            event.preventDefault();
-                                            var allRecords = document.querySelector('.t-records');
-                                            if (allRecords) {
-                                                allRecords.classList.remove('t-records_visible');
-                                            }
-                                            setTimeout(function () {
-                                                window.location = goTo;
-                                            }, 500);
-                                        }
-                                    }
-                                }
-                            });
-                        });
-                    });
-                </script>
+                <script>t_onReady(function () { var e = document.querySelector(".t-records"); window.addEventListener("pageshow", function (t) { t.persisted && e.classList.add("t-records_visible") }); var t = document.querySelector("#rec653298887"); t && (t.setAttribute("data-animationappear", "off"), t.style.opacity = "1", e.classList.add("t-records_animated"), setTimeout(function () { e.classList.add("t-records_visible") }, 200)) });</script>
+                <script> t_onReady(function () { var t = document.querySelectorAll('button:not(.t-submit):not(.t835__btn_next):not(.t835__btn_prev):not(.t835__btn_result):not(.t862__btn_next):not(.t862__btn_prev):not(.t862__btn_result):not(.t854__news-btn):not(.t862__btn_next),a:not([href*="#"]):not(.carousel-control):not(.t-carousel__control):not(.t807__btn_reply):not([href^="#price"]):not([href^="javascript"]):not([href^="mailto"]):not([href^="tel"]):not([href^="link_sub"]):not(.js-feed-btn-show-more):not(.t367__opener):not([href^="https://www.dropbox.com/"])'); Array.prototype.forEach.call(t, function (t) { t.getAttribute("data-menu-submenu-hook") || t.addEventListener("click", function (t) { var e = this.getAttribute("href"); if (null !== e) { var n = t.ctrlKey, o = t.metaKey && -1 !== navigator.platform.indexOf("Mac"); if (!n && !o && "_blank" !== this.getAttribute("target")) { t.preventDefault(); var r = document.querySelector(".t-records"); r && r.classList.remove("t-records_visible"), setTimeout(function () { window.location = e }, 500) } } }) }) });</script>
             </div>
             <div id="rec653298888" class="r t-rec t-rec_pt_0 t-rec_pb_0"
                 style="padding-top: 0px; padding-bottom: 0px; --zoom: 1;" data-animationappear="off"
@@ -358,13 +230,7 @@
                         </div>
                     </div>
                 </div>
-                <script>
-                    t_onReady(function () {
-                        t_onFuncLoad('t396_init', function () {
-                            t396_init('653298888');
-                        });
-                    });
-                </script>
+                <script>t_onReady(function () { t_onFuncLoad("t396_init", function () { t396_init("653298888") }) });</script>
                 <!-- /T396 -->
             </div>
 
@@ -458,8 +324,8 @@
                             data-field-left-res-960-value="20"
                             data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
                             style="left: 40px; top: 5px; width: 100px;">
-                            <a href="{{ url('/') }}"
-                                style="font-size: 24px; font-weight: bold; color: #222; text-decoration: none; font-family: Arial, sans-serif;"
+                            <a href="{{ config('app.url') }}"
+                                style="font-size: 20px; font-weight: bold; color: #222; text-decoration: none; font-family: Arial, sans-serif;"
                                 aria-label="Главная страница">
                                 {{ config('app.name') }}
                             </a>
@@ -888,6 +754,24 @@
                             style="display: table; width: inherit; height: inherit; pointer-events: none;">
                             <div class="tn-atom" style="pointer-events: auto; line-height: 14px;"><a href="./"
                                     style="color: inherit">Главная</a></div>
+                        </div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6637435581696001042449" data-elem-id="1696001042449"
+                        data-elem-type="text" data-field-top-value="-286" data-field-left-value="-18"
+                        data-field-width-value="117" data-field-axisy-value="bottom" data-field-axisx-value="left"
+                        data-field-container-value="window" data-field-topunits-value="px"
+                        data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+                        data-animate-sbs-event="hover"
+                        data-animate-sbs-opts="[{'ti':'0','mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':'0','bl':'0','ea':'','dt':'0'},{'ti':200,'mx':'0','my':'0','sx':'1','sy':'1','op':0.7,'ro':'0','bl':'0','ea':'','dt':'0'}]"
+                        data-field-top-res-640-value="-775" data-field-left-res-640-value="-28"
+                        data-field-top-res-960-value="-235" data-field-left-res-960-value="-27"
+                        data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
+                        style="top: 500px; left: -18px; width: 117px; height: auto;">
+                        <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
+                            id="sbs-663743558-1696001042449"
+                            style="display: table; width: inherit; height: inherit; pointer-events: none;">
+                            <div class="tn-atom" style="pointer-events: auto;"><a href="/projects"
+                                    style="color: inherit">Проекты</a></div>
                         </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6617306041697392484171 js-sbs-anim-trigger_hover"
@@ -3416,65 +3300,6 @@
                                             ОТПРАВИТЬ ЗАЯВКУ
                                         </button>
                                     </div>
-                                    <style>
-                                        .t-submit {
-                                            padding: 0px 15px;
-                                            display: block;
-                                            width: 360px;
-                                            height: 65px;
-                                            font-weight: 600;
-                                            background-color: #004aad;
-                                            color: white;
-                                            border: none;
-                                            border-radius: 10px;
-                                            cursor: pointer;
-                                            transition: all 0.3s ease-in-out;
-                                            position: relative;
-                                            font-size: 18px;
-                                        }
-
-                                        .t-submit:hover {
-                                            background-color: #003580;
-                                            transform: translateY(-2px);
-                                            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-                                        }
-
-                                        .t-submit:active {
-                                            transform: scale(0.97);
-                                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-                                        }
-
-                                        .t-submit:focus {
-                                            outline: none;
-                                            box-shadow: 0 0 0 3px rgba(0, 128, 255, 0.4);
-                                        }
-
-                                        .t-submit.loading {
-                                            opacity: 0.7;
-                                            pointer-events: none;
-                                            background-color: #666 !important;
-                                        }
-
-                                        .t-submit.loading::after {
-                                            content: "";
-                                            position: absolute;
-                                            right: 20px;
-                                            top: 50%;
-                                            transform: translateY(-50%);
-                                            width: 18px;
-                                            height: 18px;
-                                            border: 2px solid #fff;
-                                            border-top-color: transparent;
-                                            border-radius: 50%;
-                                            animation: spin 1s linear infinite;
-                                        }
-
-                                        @keyframes spin {
-                                            to {
-                                                transform: translateY(-50%) rotate(360deg);
-                                            }
-                                        }
-                                    </style>
                                 </div>
                                 <div
                                     style="text-align: left; color: rgb(0, 0, 0); font-weight: 400; font-family: TildaSans; margin-top: 15px; font-size: 13px;">
@@ -3797,130 +3622,6 @@
             <!-- /T396 -->
         </div>
         <!-- contact -->
-        <style>
-            #minimal-white-footer {
-                background-color: #17161c;
-                color: #999999;
-                padding: 50px 0 20px;
-                font-family: 'Arial', sans-serif;
-                box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
-            }
-
-            #minimal-white-footer .footer-container {
-                max-width: 1200px;
-                margin: 0 auto;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                gap: 30px;
-                padding: 0 20px;
-            }
-
-            #minimal-white-footer .footer-section {
-                flex: 1;
-                min-width: 220px;
-                margin-bottom: 30px;
-            }
-
-            #minimal-white-footer .footer-section h3 {
-                color: #ffffff;
-                font-size: 1.3rem;
-                margin-bottom: 20px;
-                position: relative;
-                padding-bottom: 10px;
-            }
-
-            #minimal-white-footer .footer-section h3::after {
-                content: '';
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 50px;
-                height: 2px;
-                background: #ffffff;
-            }
-
-            #minimal-white-footer .footer-section p {
-                color: #999999;
-                line-height: 1.6;
-                margin: 15px 0;
-            }
-
-            #minimal-white-footer .footer-section a {
-                color: #999999;
-                text-decoration: none;
-                display: block;
-                margin: 10px 0;
-                transition: transform 0.3s ease;
-            }
-
-            #minimal-white-footer .footer-section a:hover {
-                color: #ffffff;
-                transform: translateX(5px);
-            }
-
-            #minimal-white-footer .social-icons {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 8px;
-            }
-
-            #minimal-white-footer .social-icons a {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 1.4rem;
-                transition: all 0.3s ease;
-            }
-
-            #minimal-white-footer .social-icons a:hover {
-                color: #555555;
-                transform: translateY(-5px);
-            }
-
-            #minimal-white-footer .copyright {
-                text-align: center;
-                margin-top: 50px;
-                padding-top: 20px;
-                border-top: 1px solid rgba(255, 255, 255, 0.1);
-                color: #ffffff;
-                font-size: 0.9rem;
-            }
-
-            #minimal-white-footer .contact-item i,
-            #minimal-white-footer .footer-section a i {
-                color: #999999;
-                margin-right: 10px;
-            }
-
-            #minimal-white-footer .footer-section a i:hover {
-                color: #ffffff;
-            }
-
-            @media (max-width: 768px) {
-                #minimal-white-footer .footer-container {
-                    flex-direction: column;
-                    gap: 30px;
-                }
-
-                #minimal-white-footer .footer-section {
-                    text-align: center;
-                }
-
-                #minimal-white-footer .footer-section h3::after {
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
-
-                #minimal-white-footer .social-icons {
-                    justify-content: center;
-                }
-
-                #minimal-white-footer .footer-section a:hover {
-                    transform: none;
-                }
-            }
-        </style>
 
         <footer id="minimal-white-footer">
             <div class="footer-container">
@@ -4012,150 +3713,6 @@
                             </svg> </button> </div>
 
                     <div>
-                        <style>
-                            .custom-popup__wrapper {
-                                background: #17161c;
-                                padding: 40px;
-                                max-width: 500px;
-                                margin: 100px auto;
-                                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
-                            }
-
-                            .custom-popup__title {
-                                color: #fbfbfb;
-                                font-size: 28px;
-                                font-weight: 700;
-                                margin-bottom: 20px;
-                                text-align: center;
-                            }
-
-                            .custom-popup__description {
-                                color: #fbfbfb;
-                                font-size: 16px;
-                                margin-bottom: 30px;
-                                opacity: 0.85;
-                                line-height: 1.6;
-                                text-align: center;
-                            }
-
-                            #custom-consultation-form {
-                                display: flex;
-                                flex-direction: column;
-                                gap: 20px;
-                                max-width: 400px;
-                                margin: 0 auto;
-                            }
-
-                            #custom-consultation-form input {
-                                padding: 16px;
-                                border: 1px solid #464646;
-                                border-radius: 8px;
-                                font-size: 16px;
-                                background: #2a2a2a;
-                                color: #fbfbfb;
-                                box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
-                                transition: all 0.3s ease;
-                                outline: none;
-                            }
-
-                            #custom-consultation-form input:focus {
-                                border-color: #fbfbfb;
-                                background: #3a3a3a;
-                                box-shadow: 0 0 0 3px rgba(251, 251, 251, 0.3);
-                            }
-
-                            #custom-consultation-form input:hover {
-                                border-color: #fbfbfb;
-                            }
-
-                            #custom-submit-btn {
-                                padding: 16px;
-                                background: linear-gradient(135deg, #464646, #17161c);
-                                color: #fbfbfb;
-                                font-size: 16px;
-                                font-weight: 600;
-                                border: none;
-                                border-radius: 8px;
-                                cursor: pointer;
-                                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-                                transition: all 0.3s ease;
-                            }
-
-                            #custom-submit-btn:hover {
-                                background: linear-gradient(135deg, #555555, #2a2a2a);
-                                transform: translateY(-2px);
-                                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-                            }
-
-                            #custom-submit-btn.loading {
-                                position: relative;
-                                color: transparent;
-                            }
-
-                            #custom-submit-btn.loading::after {
-                                content: "";
-                                position: absolute;
-                                width: 20px;
-                                height: 20px;
-                                top: 0;
-                                left: 0;
-                                right: 0;
-                                bottom: 0;
-                                margin: auto;
-                                border: 3px solid transparent;
-                                border-top-color: #fbfbfb;
-                                border-radius: 50%;
-                                animation: button-loading-spinner 1s ease infinite;
-                            }
-
-                            #custom-submit-btn:disabled {
-                                background: linear-gradient(135deg, #333333, #222222);
-                                cursor: not-allowed;
-                            }
-
-                            #custom-response-msg {
-                                position: fixed;
-                                top: 25px;
-                                right: 25px;
-                                padding: 18px 30px;
-                                font-size: 16px;
-                                font-weight: 600;
-                                color: #fbfbfb;
-                                display: none;
-                                opacity: 0;
-                                transform: translateY(-30px);
-                                border-radius: 10px;
-                                z-index: 1000;
-                                background: linear-gradient(135deg, #464646, #17161c);
-                                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-                                backdrop-filter: blur(8px);
-                                border: 1px solid rgba(255, 255, 255, 0.1);
-                                transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                            }
-
-                            #custom-response-msg.show {
-                                display: block;
-                                opacity: 1;
-                                transform: translateY(0);
-                            }
-
-                            #custom-response-msg.success {
-                                background: linear-gradient(135deg, #28a745, #5cb85c);
-                            }
-
-                            #custom-response-msg.error {
-                                background: linear-gradient(135deg, #dc3545, #d9534f);
-                            }
-
-                            .custom-popup__bottom-text {
-                                margin-top: 25px;
-                                font-size: 13px;
-                                color: #fbfbfb;
-                                opacity: 0.7;
-                                line-height: 1.6;
-                                text-align: center;
-                            }
-                        </style>
                         <div class="custom-popup__container">
                             <div class="custom-popup__wrapper">
                                 <div class="custom-popup__text">
@@ -4181,87 +3738,7 @@
                                 </div>
                             </div>
                         </div>
-                        <script>
-                            document.addEventListener("DOMContentLoaded", function () {
-                                const form = document.getElementById("custom-consultation-form");
-                                const submitBtn = document.getElementById("custom-submit-btn");
-                                const responseMsg = document.getElementById("custom-response-msg");
-                                const phoneInput = document.getElementById("custom-phone");
-
-                                let isSubmitting = false;
-
-                                phoneInput.addEventListener("input", function (e) {
-                                    let value = e.target.value.replace(/\D/g, "");
-                                    if (value.startsWith("7")) value = value.slice(1);
-                                    if (value.length > 10) value = value.slice(0, 10);
-
-                                    let formatted = "+7";
-                                    if (value.length > 0) formatted += " (" + value.slice(0, 3);
-                                    if (value.length > 3) formatted += ") " + value.slice(3, 6);
-                                    if (value.length > 6) formatted += "-" + value.slice(6, 8);
-                                    if (value.length > 8) formatted += "-" + value.slice(8, 10);
-
-                                    e.target.value = formatted;
-                                });
-
-                                form.addEventListener("submit", async function (e) {
-                                    e.preventDefault();
-
-                                    if (isSubmitting) return;
-
-                                    const phone = phoneInput.value.trim();
-                                    const phonePattern = /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/;
-
-                                    if (!phonePattern.test(phone)) {
-                                        responseMsg.className = "show error";
-                                        responseMsg.innerText = "Телефон введён неверно! Пожалуйста, используйте формат: +7 (XXX) XXX-XX-XX.";
-                                        setTimeout(() => {
-                                            responseMsg.classList.remove("show", "error");
-                                        }, 3500);
-                                        return;
-                                    }
-
-                                    isSubmitting = true;
-                                    submitBtn.disabled = true;
-                                    responseMsg.className = "";
-                                    submitBtn.classList.add('loading');
-
-                                    const formData = new FormData(form);
-                                    const token = document.querySelector('input[name="_token"]').value;
-
-                                    try {
-                                        const response = await fetch("{{ route('consultation.send') }}", {
-                                            method: "POST",
-                                            headers: { "X-CSRF-TOKEN": token },
-                                            body: formData
-                                        });
-
-                                        const data = await response.json();
-                                        responseMsg.classList.add("show");
-
-                                        if (response.ok && data.success) {
-                                            responseMsg.classList.add("success");
-                                            responseMsg.innerText = "Ваш запрос успешно отправлен!";
-                                            form.reset();
-                                        } else {
-                                            responseMsg.classList.add("error");
-                                            responseMsg.innerText = "Ошибка при отправке!";
-                                        }
-                                    } catch (error) {
-                                        console.error(error);
-                                        responseMsg.classList.add("show", "error");
-                                        responseMsg.innerText = "Не удалось связаться с сервером!";
-                                    } finally {
-                                        setTimeout(() => {
-                                            responseMsg.classList.remove("show", "success", "error");
-                                            isSubmitting = false;
-                                            submitBtn.disabled = false;
-                                            submitBtn.classList.remove('loading');
-                                        }, 3500);
-                                    }
-                                });
-                            });
-                        </script>
+                        <script>document.addEventListener("DOMContentLoaded",function(){let e=document.getElementById("custom-consultation-form"),t=document.getElementById("custom-submit-btn"),s=document.getElementById("custom-response-msg"),n=document.getElementById("custom-phone"),l=!1;n.addEventListener("input",function(e){let t=e.target.value.replace(/\D/g,"");t.startsWith("7")&&(t=t.slice(1)),t.length>10&&(t=t.slice(0,10));let s="+7";t.length>0&&(s+=" ("+t.slice(0,3)),t.length>3&&(s+=") "+t.slice(3,6)),t.length>6&&(s+="-"+t.slice(6,8)),t.length>8&&(s+="-"+t.slice(8,10)),e.target.value=s}),e.addEventListener("submit",async function(r){if(r.preventDefault(),l)return;let a=n.value.trim();if(!/^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/.test(a)){s.className="show error",s.innerText="Телефон введён неверно! Пожалуйста, используйте формат: +7 (XXX) XXX-XX-XX.",setTimeout(()=>{s.classList.remove("show","error")},3500);return}l=!0,t.disabled=!0,s.className="",t.classList.add("loading");let i=new FormData(e),o=document.querySelector('input[name="_token"]').value;try{let c=await fetch("{{ route('consultation.send') }}",{method:"POST",headers:{"X-CSRF-TOKEN":o},body:i}),d=await c.json();s.classList.add("show"),c.ok&&d.success?(s.classList.add("success"),s.innerText="Ваш запрос успешно отправлен!",e.reset()):(s.classList.add("error"),s.innerText="Ошибка при отправке!")}catch(u){console.error(u),s.classList.add("show","error"),s.innerText="Не удалось связаться с сервером!"}finally{setTimeout(()=>{s.classList.remove("show","success","error"),l=!1,t.disabled=!1,t.classList.remove("loading")},3500)}})});</script>
                     </div>
 
                 </div>
