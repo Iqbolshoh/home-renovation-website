@@ -22,6 +22,11 @@ class TariffResource extends Resource
     protected static ?string $pluralModelLabel = 'Тарифы';
     protected static ?string $modelLabel = 'Тариф';
 
+    public static function canAccess(): bool
+    {
+        return auth()->user()?->can('tariff.view') ?? false;
+    }
+
     public static function form(Form $form): Form
     {
         return $form
@@ -29,17 +34,21 @@ class TariffResource extends Resource
                 Forms\Components\TextInput::make('title')
                     ->label('Название тарифа')
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(255)
+                    ->disabled(fn() => !auth()->user()?->can('tariff.edit')),
 
                 Forms\Components\Textarea::make('subtitle')
                     ->label('Подзаголовок')
                     ->rows(2)
-                    ->maxLength(255),
+                    ->maxLength(255)
+                    ->required()
+                    ->disabled(fn() => !auth()->user()?->can('tariff.edit')),
 
                 Forms\Components\TextInput::make('price')
                     ->label('Цена')
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(255)
+                    ->disabled(fn() => !auth()->user()?->can('tariff.edit')),
 
                 RichEditor::make('description')
                     ->label('Описание')
@@ -54,22 +63,16 @@ class TariffResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('title')->label('Название')->searchable(),
-                Tables\Columns\TextColumn::make('subtitle')->label('Подзаголовок')->limit(30),
-                Tables\Columns\TextColumn::make('price')->label('Цена'),
-                Tables\Columns\TextColumn::make('created_at')->label('Дата создания')->dateTime('d.m.Y H:i'),
+                Tables\Columns\TextColumn::make('title')->label('Название')->sortable()->searchable(),
+                Tables\Columns\TextColumn::make('subtitle')->label('Подзаголовок')->limit(30)->sortable()->searchable(),
+                Tables\Columns\TextColumn::make('price')->label('Цена')->sortable()->searchable(),
+                Tables\Columns\TextColumn::make('updated_at')->label('Обновлён')->dateTime()->sortable()->since(),
             ])
             ->filters([
                 //
             ])
             ->actions([
-                Tables\Actions\EditAction::make()->label('Редактировать'),
-                Tables\Actions\DeleteAction::make()->label('Удалить'),
-            ])
-            ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make()->label('Удалить выбранное'),
-                ]),
+                Tables\Actions\EditAction::make()->label('Редактировать')->visible(fn() => auth()->user()?->can('tariff.edit')),
             ]);
     }
 
@@ -84,7 +87,6 @@ class TariffResource extends Resource
     {
         return [
             'index' => Pages\ListTariffs::route('/'),
-            'create' => Pages\CreateTariff::route('/create'),
             'edit' => Pages\EditTariff::route('/{record}/edit'),
         ];
     }

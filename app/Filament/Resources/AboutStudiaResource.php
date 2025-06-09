@@ -20,6 +20,12 @@ class AboutStudiaResource extends Resource
     protected static ?int $navigationSort = 7;
     protected static ?string $navigationLabel = 'О студии';
     protected static ?string $modelLabel = 'О студии';
+    protected static ?string $pluralModelLabel = 'О студии';
+
+    public static function canAccess(): bool
+    {
+        return auth()->user()?->can('about-studia.view') ?? false;
+    }
 
     public static function form(Form $form): Form
     {
@@ -28,26 +34,28 @@ class AboutStudiaResource extends Resource
                 Forms\Components\TextInput::make('title')
                     ->label('Заголовок')
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(255)
+                    ->disabled(fn() => !auth()->user()?->can('about-studia.edit')),
 
                 Forms\Components\TextInput::make('subtitle')
                     ->label('Подзаголовок')
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(255)
+                    ->disabled(fn() => !auth()->user()?->can('about-studia.edit')),
 
                 RichEditor::make('text_1')
                     ->label('Текст 1')
                     ->required()
                     ->disableToolbarButtons(['attachFiles'])
                     ->maxLength(65535)
-                    ->disabled(fn() => !auth()->user()?->can('about.edit')),
+                    ->disabled(fn() => !auth()->user()?->can('about-studia.edit')),
 
-                    RichEditor::make('text_2')
+                RichEditor::make('text_2')
                     ->label('Текст 2')
                     ->required()
                     ->disableToolbarButtons(['attachFiles'])
                     ->maxLength(65535)
-                    ->disabled(fn() => !auth()->user()?->can('about.edit')),
+                    ->disabled(fn() => !auth()->user()?->can('about-studia.edit')),
             ]);
     }
 
@@ -55,15 +63,12 @@ class AboutStudiaResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('title')->label('Заголовок')->sortable(),
-                Tables\Columns\TextColumn::make('subtitle')->label('Подзаголовок')->sortable(),
-                Tables\Columns\TextColumn::make('created_at')->label('Создано')->dateTime('d.m.Y'),
+                Tables\Columns\TextColumn::make('title')->label('Заголовок'),
+                Tables\Columns\TextColumn::make('subtitle')->label('Подзаголовок'),
+                Tables\Columns\TextColumn::make('updated_at')->label('Обновлён')->dateTime('d.m.Y H:i')->since(),
             ])
             ->actions([
-                Tables\Actions\EditAction::make()->label('Редактировать'),
-            ])
-            ->bulkActions([
-                Tables\Actions\DeleteBulkAction::make()->label('Удалить'),
+                Tables\Actions\EditAction::make()->label('Редактировать')->visible(fn() => auth()->user()?->can('about-studia.edit')),
             ]);
     }
 
@@ -71,7 +76,6 @@ class AboutStudiaResource extends Resource
     {
         return [
             'index' => Pages\ListAboutStudias::route('/'),
-            'create' => Pages\CreateAboutStudia::route('/create'),
             'edit' => Pages\EditAboutStudia::route('/{record}/edit'),
         ];
     }

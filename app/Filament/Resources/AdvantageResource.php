@@ -22,6 +22,12 @@ class AdvantageResource extends Resource
     protected static ?int $navigationSort = 9;
     protected static ?string $navigationLabel = 'Наши преимущества';
     protected static ?string $modelLabel = 'Преимущество';
+    protected static ?string $pluralModelLabel = 'Преимущества';
+
+    public static function canAccess(): bool
+    {
+        return auth()->user()?->can('advantage.view') ?? false;
+    }
 
     public static function form(Forms\Form $form): Forms\Form
     {
@@ -30,7 +36,8 @@ class AdvantageResource extends Resource
                 Forms\Components\TextInput::make('title')
                     ->label('Название')
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(255)
+                    ->disabled(fn() => !auth()->user()?->can('advantage.edit')),
             ]);
     }
 
@@ -38,20 +45,15 @@ class AdvantageResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('id')->label('ID')->sortable(),
-                Tables\Columns\TextColumn::make('title')->label('Название')->searchable()->sortable(),
-                Tables\Columns\TextColumn::make('created_at')->label('Дата создания')->dateTime()->sortable(),
-                Tables\Columns\TextColumn::make('updated_at')->label('Дата обновления')->dateTime()->sortable(),
+                Tables\Columns\TextColumn::make('id')->label('ID')->sortable()->searchable(),
+                Tables\Columns\TextColumn::make('title')->label('Название')->searchable()->sortable()->searchable(),
+                Tables\Columns\TextColumn::make('updated_at')->label('Обновлён')->dateTime('d.m.Y H:i')->since()->sortable(),
             ])
             ->filters([
                 //
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
-            ])
-            ->bulkActions([
-                Tables\Actions\DeleteBulkAction::make(),
+                Tables\Actions\EditAction::make()->label('Редактировать')->visible(fn() => auth()->user()?->can('advantage.edit')),
             ]);
     }
 
@@ -59,7 +61,6 @@ class AdvantageResource extends Resource
     {
         return [
             'index' => Pages\ListAdvantages::route('/'),
-            'create' => Pages\CreateAdvantage::route('/create'),
             'edit' => Pages\EditAdvantage::route('/{record}/edit'),
         ];
     }

@@ -25,13 +25,18 @@ class ConsultationResource extends Resource
     protected static ?string $pluralModelLabel = 'Консультации';
     protected static ?string $modelLabel = 'Консультация';
 
+    public static function canAccess(): bool
+    {
+        return auth()->user()?->can('consultation.view') ?? false;
+    }
+
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name')->required()->label('Имя'),
-                Forms\Components\TextInput::make('email')->email()->required()->label('Email'),
-                Forms\Components\TextInput::make('phone')->required()->label('Телефон'),
+                Forms\Components\TextInput::make('name')->required()->label('Имя')->maxLength(255),
+                Forms\Components\TextInput::make('email')->email()->required()->label('Email')->maxLength(255),
+                Forms\Components\TextInput::make('phone')->required()->label('Телефон')->maxLength(255),
             ]);
     }
 
@@ -41,10 +46,10 @@ class ConsultationResource extends Resource
             ->columns([
                 TextColumn::make('name')->label('Имя')->sortable()->searchable(),
                 TextColumn::make('email')->label('Email')->sortable()->searchable(),
-                TextColumn::make('phone')->label('Телефон')->sortable(),
+                TextColumn::make('phone')->label('Телефон')->sortable()->searchable(),
                 BadgeColumn::make('status')
                     ->label('Статус')
-                    ->sortable()
+                    ->sortable()->searchable()
                     ->colors([
                         'success' => 'read',
                         'danger' => 'unread',
@@ -54,7 +59,7 @@ class ConsultationResource extends Resource
                         'unread' => 'Не прочитано',
                         default => $state,
                     }),
-                TextColumn::make('created_at')->label('Дата')->dateTime('d.m.Y H:i')->since(),
+                TextColumn::make('created_at')->label('Дата')->dateTime('d.m.Y H:i')->since()->sortable(),
             ])
             ->filters([
                 Tables\Filters\SelectFilter::make('status')
@@ -74,13 +79,12 @@ class ConsultationResource extends Resource
                         $record->status = 'read';
                         $record->save();
                     })
-                    ->visible(fn(Consultation $record) => $record->status !== 'read'),
-                Tables\Actions\ViewAction::make()->label('Просмотреть'),
-                Tables\Actions\DeleteAction::make()->label('Удалить'),
+                    ->visible(fn(Consultation $record) => $record->status !== 'read' && auth()->user()?->can('consultation.read')),
+                Tables\Actions\ViewAction::make()->label('Просмотреть')->visible(fn() => auth()->user()?->can('consultation.edit')),
+                Tables\Actions\DeleteAction::make()->label('Удалить')->visible(fn() => auth()->user()?->can('consultation.delete')),
             ])
             ->bulkActions([
-                Tables\Actions\DeleteBulkAction::make()->label('Удалить выбранное'),
-
+                Tables\Actions\DeleteBulkAction::make()->label('Удалить выбранное')->visible(fn() => auth()->user()?->can('consultation.delete')),
                 BulkAction::make('mark_read_bulk')
                     ->label('Читать')
                     ->icon('heroicon-o-check-circle')
@@ -88,7 +92,7 @@ class ConsultationResource extends Resource
                     ->requiresConfirmation()
                     ->action(function (Collection $records) {
                         $records->each(fn($record) => $record->update(['status' => 'read']));
-                    }),
+                    })->visible(fn() => auth()->user()?->can('consultation.read')),
             ]);
     }
 

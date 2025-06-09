@@ -18,7 +18,7 @@ class MessageSeeder extends Seeder
                 'number' => '+998901112233',
                 'email' => 'ali@example.com',
                 'message' => 'Здравствуйте! Хотел бы получить больше информации.',
-                'status' => 'unread',
+                'status' => 'read',
             ],
             [
                 'name' => 'Зарина Каримова',
@@ -34,6 +34,13 @@ class MessageSeeder extends Seeder
                 'message' => 'Прошу рассмотреть моё предложение.',
                 'status' => 'unread',
             ],
+            [
+                'name' => 'Мадина Ахмедова',
+                'number' => '+998911223344',
+                'email' => 'madina@example.com',
+                'message' => 'Добрый день! Интересуюсь вашими услугами.',
+                'status' => 'unread',
+            ]
         ];
 
         foreach ($messages as $message) {

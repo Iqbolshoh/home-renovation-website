@@ -71,6 +71,6 @@ class ProjectsSeeder extends Seeder
             ProjectImage::create($image);
         }
 
-        $this->command->info('✅ Projects and images seeded successfully!');
+        $this->command->info('Projects and images seeded successfully!');
     }
 }

@@ -21,6 +21,12 @@ class AboutResource extends Resource
     protected static ?int $navigationSort = 6;
     protected static ?string $navigationLabel = 'Обо мне';
     protected static ?string $modelLabel = 'Обо мне';
+    protected static ?string $pluralModelLabel = 'Обо мне';
+
+    public static function canAccess(): bool
+    {
+        return auth()->user()?->can('about.view') ?? false;
+    }
 
     public static function form(Form $form): Form
     {
@@ -47,35 +53,22 @@ class AboutResource extends Resource
                     ->disabled(fn() => !auth()->user()?->can('about.edit')),
             ]);
     }
-
+    
     public static function table(Table $table): Table
     {
         return $table
             ->columns([
-                Tables\Columns\ImageColumn::make('image')
-                    ->label('Изображение')
-                    ->rounded(),
-
-                Tables\Columns\TextColumn::make('bio')
-                    ->label('Биография')
-                    ->limit(80)
-                    ->toggleable(isToggledHiddenByDefault: true),
-
-                Tables\Columns\TextColumn::make('created_at')
-                    ->label('Создано')
-                    ->dateTime('d.m.Y H:i'),
+                Tables\Columns\ImageColumn::make('image')->label('Изображение')->rounded(),
+                Tables\Columns\TextColumn::make('bio')->label('Биография')->limit(80),
+                Tables\Columns\TextColumn::make('updated_at')->label('Обновлён')->dateTime('d.m.Y H:i')->since(),
             ])
             ->filters([
                 //
             ])
             ->actions([
-                Tables\Actions\EditAction::make()->label('Редактировать'),
+                Tables\Actions\EditAction::make()->label('Редактировать')->visible(fn() => auth()->user()?->can('about.edit')),
             ])
-            ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make()->label('Удалить'),
-                ]),
-            ]);
+            ->bulkActions([]);
     }
 
     public static function getRelations(): array

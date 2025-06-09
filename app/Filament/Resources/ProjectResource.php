@@ -21,32 +21,42 @@ class ProjectResource extends Resource
     protected static ?string $pluralModelLabel = 'Проекты';
     protected static ?string $modelLabel = 'Проект';
 
+    public static function canAccess(): bool
+    {
+        return auth()->user()?->can('project.view') ?? false;
+    }
+
     public static function form(Form $form): Form
     {
         return $form->schema([
             Forms\Components\TextInput::make('title')
-                ->label('Project Title')
+                ->label('Название проекта')
                 ->required()
-                ->maxLength(255),
+                ->maxLength(255)
+                ->disabled(fn() => !auth()->user()?->can('project.edit')),
 
             Forms\Components\Textarea::make('apartment_info')
-                ->label('Apartment Info')
-                ->required(),
+                ->label('Информация о квартире')
+                ->required()
+                ->disabled(fn() => !auth()->user()?->can('project.edit')),
 
             Forms\Components\Textarea::make('client_solution')
-                ->label('Client Solution')
-                ->required(),
+                ->label('Решение для клиента')
+                ->required()
+                ->disabled(fn() => !auth()->user()?->can('project.edit')),
 
             Forms\Components\Textarea::make('text_1')
-                ->label('Text Block 1')
-                ->required(),
+                ->label('Описание №1')
+                ->required()
+                ->disabled(fn() => !auth()->user()?->can('project.edit')),
 
             Forms\Components\Textarea::make('text_2')
-                ->label('Text Block 2')
-                ->required(),
+                ->label('Описание №2')
+                ->required()
+                ->disabled(fn() => !auth()->user()?->can('project.edit')),
 
             Forms\Components\Repeater::make('images')
-                ->label('Project Images')
+                ->label('Изображения проекта')
                 ->relationship('images')
                 ->required()
                 ->minItems(3)
@@ -54,19 +64,19 @@ class ProjectResource extends Resource
                 ->columns(1)
                 ->reorderable(true)
                 ->cloneable()
-                ->addActionLabel('Add Image')
+                ->addActionLabel('Добавить изображение')
                 ->schema([
                     Forms\Components\FileUpload::make('image')
-                        ->label('Upload Image')
+                        ->label('Загрузить изображение')
                         ->required()
                         ->image()
                         ->directory('projects-images')
-                        ->acceptedFileTypes(['image/jpeg', 'image/png'])
+                        ->acceptedFileTypes(['image/jpeg', 'image/png', 'image/jpg'])
                         ->openable()
                         ->downloadable()
                         ->previewable()
                         ->imageEditor(),
-                ]),
+                ])->disabled(fn() => !auth()->user()?->can('project.edit')),
         ]);
     }
 
@@ -74,21 +84,19 @@ class ProjectResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('title')->label('Title')->searchable()->sortable(),
-                Tables\Columns\TextColumn::make('apartment_info')->label('Apartment Info')->limit(50),
-                Tables\Columns\TextColumn::make('client_solution')->label('Client Solution')->limit(50),
-                Tables\Columns\TextColumn::make('created_at')->label('Created At')->dateTime()->sortable()->since(),
+                Tables\Columns\TextColumn::make('id')->label('ID')->sortable(),
+                Tables\Columns\TextColumn::make('title')->label('Название')->searchable()->sortable(),
+                Tables\Columns\TextColumn::make('apartment_info')->label('Информация о квартире')->limit(50),
+                Tables\Columns\TextColumn::make('client_solution')->label('Решение клиента')->limit(50),
+                Tables\Columns\TextColumn::make('created_at')->label('Создан')->dateTime()->sortable()->since(),
+                Tables\Columns\TextColumn::make('updated_at')->label('Обновлён')->dateTime()->sortable()->since(),
             ])
             ->filters([
-                //
+                // Фильтры можно добавить позже
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
-            ])
-            ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
-                ]),
+                Tables\Actions\EditAction::make()->visible(fn() => auth()->user()?->can('project.edit')),
+                Tables\Actions\DeleteAction::make()->visible(fn() => auth()->user()?->can('project.delete')),
             ]);
     }
 

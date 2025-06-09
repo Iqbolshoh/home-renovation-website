@@ -25,27 +25,36 @@ class MessageResource extends Resource
     protected static ?string $pluralModelLabel = 'Сообщения';
     protected static ?string $modelLabel = 'Сообщение';
 
+    public static function canAccess(): bool
+    {
+        return auth()->user()?->can('message.view') ?? false;
+    }
+
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
                 Forms\Components\TextInput::make('name')
                     ->required()
-                    ->label('Имя'),
+                    ->label('Имя')
+                    ->maxLength(255),
 
                 Forms\Components\TextInput::make('email')
                     ->email()
                     ->required()
-                    ->label('Email'),
+                    ->label('Email')
+                    ->maxLength(255),
 
                 Forms\Components\TextInput::make('number')
                     ->required()
-                    ->label('Телефон'),
+                    ->label('Телефон')
+                    ->maxLength(255),
 
                 Forms\Components\Textarea::make('message')
                     ->label('Сообщение')
                     ->rows(5)
-                    ->required(),
+                    ->required()
+                    ->maxLength(65535),
 
                 Forms\Components\Select::make('status')
                     ->label('Статус')
@@ -64,29 +73,14 @@ class MessageResource extends Resource
             ->columns([
                 TextColumn::make('name')->label('Имя')->sortable()->searchable(),
                 TextColumn::make('email')->label('Email')->sortable()->searchable(),
-                TextColumn::make('number')->label('Телефон')->sortable(),
-                TextColumn::make('message')
-                    ->label('Сообщение')
-                    ->limit(50)
-                    ->sortable()
-                    ->searchable()
-                    ->toggleable(),
-                BadgeColumn::make('status')
-                    ->label('Статус')
-                    ->sortable()
-                    ->colors([
-                        'success' => 'read',
-                        'danger' => 'unread',
-                    ])
+                TextColumn::make('number')->label('Телефон')->sortable()->searchable(),
+                BadgeColumn::make('status')->label('Статус')->sortable()->colors(['success' => 'read', 'danger' => 'unread',])
                     ->formatStateUsing(fn($state) => match ($state) {
                         'read' => 'Прочитано',
                         'unread' => 'Не прочитано',
                         default => $state,
                     }),
-                TextColumn::make('created_at')
-                    ->label('Дата')
-                    ->dateTime('d.m.Y H:i')
-                    ->since(),
+                TextColumn::make('created_at')->label('Дата')->dateTime('d.m.Y H:i')->since()->sortable(),
             ])
             ->filters([
                 Tables\Filters\SelectFilter::make('status')
@@ -105,14 +99,13 @@ class MessageResource extends Resource
                     ->action(function (Message $record) {
                         $record->update(['status' => 'read']);
                     })
-                    ->visible(fn(Message $record) => $record->status !== 'read'),
+                    ->visible(fn(Message $record) => $record->status !== 'read' && auth()->user()?->can('message.read')),
 
-                Tables\Actions\ViewAction::make()->label('Просмотреть'),
-                Tables\Actions\DeleteAction::make()->label('Удалить'),
+                Tables\Actions\ViewAction::make()->label('Просмотреть')->visible(fn() => auth()->user()?->can('message.edit')),
+                Tables\Actions\DeleteAction::make()->label('Удалить')->visible(fn() => auth()->user()?->can('message.delete')),
             ])
             ->bulkActions([
-                Tables\Actions\DeleteBulkAction::make()->label('Удалить выбранные'),
-                
+                Tables\Actions\DeleteBulkAction::make()->label('Удалить выбранные')->visible(fn() => auth()->user()?->can('message.delete')),
                 BulkAction::make('mark_read_bulk')
                     ->label('Читать')
                     ->icon('heroicon-o-check-circle')
@@ -122,8 +115,7 @@ class MessageResource extends Resource
                         $records->each(function (Message $record) {
                             $record->update(['status' => 'read']);
                         });
-                    }),
-                
+                    })->visible(fn() => auth()->user()?->can('message.read')),
             ]);
     }
 

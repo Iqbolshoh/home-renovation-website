@@ -42,6 +42,15 @@ class RolePermissionSeeder extends Seeder
                 'user' => ['view', 'create', 'edit', 'delete'],
                 'profile' => ['view', 'edit'],
                 'session' => ['view', 'delete'],
+                'about' => ['view', 'edit'],
+                'about-studia' => ['view', 'edit'],
+                'we-work' => ['view', 'edit'],
+                'advantage' => ['view', 'edit'],
+                'tariff' => ['view', 'edit'],
+                'consultation' => ['view', 'read', 'delete'],
+                'message' => ['view', 'read', 'delete'],
+                'contact' => ['view', 'edit'],
+                'project' => ['view', 'create', 'edit', 'delete'],
             ],
 
             /*
@@ -52,15 +61,19 @@ class RolePermissionSeeder extends Seeder
             |
             */
             'roles' => [
-                'superadmin' => [], // Automatically assigned all permissions
-                'manager' => [
-                    'user' => ['view', 'create', 'edit', 'delete'],
-                    'profile' => ['view', 'edit'],
-                    'session' => ['view', 'delete'],
-                ],
+                'superadmin' => [],
                 'user' => [
                     'profile' => ['view', 'edit'],
                     'session' => ['view', 'delete'],
+                    'about' => ['view'],
+                    'about-studia' => ['view'],
+                    'we-work' => ['view'],
+                    'advantage' => ['view'],
+                    'tariff' => ['view'],
+                    'consultation' => ['view'],
+                    'message' => ['view'],
+                    'contact' => ['view'],
+                    'project' => ['view'],
                 ],
             ],
 
@@ -74,9 +87,6 @@ class RolePermissionSeeder extends Seeder
             'users_by_role' => [
                 'superadmin' => [
                     ['name' => 'Super Admin', 'email' => 'admin@iqbolshoh.uz', 'password' => bcrypt('IQBOLSHOH')],
-                ],
-                'manager' => [
-                    ['name' => 'Manager User', 'email' => 'manager@iqbolshoh.uz', 'password' => bcrypt('IQBOLSHOH')],
                 ],
                 'user' => [
                     ['name' => 'Simple User', 'email' => 'user@iqbolshoh.uz', 'password' => bcrypt('IQBOLSHOH')],
