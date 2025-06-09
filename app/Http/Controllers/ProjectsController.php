@@ -10,9 +10,15 @@ class ProjectsController extends Controller
 {
     public function index()
     {
-        $projects = ['id' => 1];
+        $projects = Project::with([
+            'images' => function ($query) {
+                $query->limit(3);
+            }
+        ])->get();
+
         $contacts = Contact::all();
-        return view('projects', compact('contacts', 'projects'));
+
+        return view('projects', compact('projects', 'contacts'));
     }
 
     public function show($id)
