@@ -349,10 +349,9 @@
                             data-field-left-res-960-value="20"
                             data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
                             style="left: 40px; top: 5px; width: 100px;">
-                            <a href="{{ config('app.url') }}"
-                                style="font-size: 20px; font-weight: bold; color: #222; text-decoration: none; font-family: Arial, sans-serif;"
-                                aria-label="Главная страница">
-                                {{ config('app.name') }}
+                            <a href="{{ config('app.url') }}" aria-label="Главная страница">
+                                <img src="{{ asset('storage/logo.jpg') }}" alt="Logo"
+                                    style="width: 100%; height: auto;">
                             </a>
                         </div>
                         <div class="t396__elem tn-elem tn-elem__6710239361696008238634" data-elem-id="1696008238634"
