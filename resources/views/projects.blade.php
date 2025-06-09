@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="{{ asset('css/tilda-zero-gallery-1.0.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/fonts-tildasans.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
@@ -900,155 +901,33 @@
             @php
                 $projectImages = $project->images->take(3)->values();
             @endphp
-
-            <div id="rec659342017" class="r t-rec" style="--zoom: 1;" data-animationappear="off" data-record-type="396">
-                <!-- T396 -->
-                <div class="t396">
-                    <div class="t396__artboard rendered" data-artboard-recid="659342017"
-                        data-artboard-screens="320,640,960,1200" data-artboard-height="545" data-artboard-valign="center"
-                        data-artboard-upscale="grid" data-artboard-height-res-320="1080" data-artboard-height-res-640="1150"
-                        data-artboard-height-res-960="450" data-artboard-proxy-min-offset-top="0"
-                        data-artboard-proxy-min-height="545" data-artboard-proxy-max-height="545">
-                        <div class="t396__carrier" data-artboard-recid="659342017"></div>
-                        <div class="t396__filter" data-artboard-recid="659342017"></div>
-                        <div class="t396__elem tn-elem tn-elem__6593420171695798587077" data-elem-id="1695798587077"
-                            data-elem-type="text" data-field-top-value="55" data-field-left-value="820"
-                            data-field-width-value="156" data-field-axisy-value="top" data-field-axisx-value="left"
-                            data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px"
-                            data-field-heightunits-value="" data-field-widthunits-value="px"
-                            data-field-top-res-320-value="986" data-field-left-res-320-value="10"
-                            data-field-width-res-320-value="137" data-field-top-res-640-value="1065"
-                            data-field-left-res-640-value="10" data-field-top-res-960-value="42"
-                            data-field-left-res-960-value="650" data-field-width-res-960-value="299"
-                            data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
-                            style="top: 55px; left: 980.5px; width: 156px; height: auto;">
-                            <div class="tn-atom" field="tn_text_1695798587077" style="line-height: 20px;">смотреть проект
+            <div class="container mx-auto px-4 py-8">
+                <div class="mb-8">
+                    <h2 class="text-3xl font-bold mb-4 text-gray-800 md:text-4xl">{{ $project->title }}</h2>
+                    <div class="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6">
+                        @foreach ($projectImages as $index => $image)
+                            <div class="fade-in-up" data-animate="fade-in-up">
+                                <img src="{{ asset('storage/' . $image->image) }}"
+                                    alt="{{ $project->title }} image {{ $index + 1 }}"
+                                    class="w-full h-64 object-cover rounded-lg shadow-md hover-scale">
                             </div>
-                        </div>
-                        <div class="t396__elem tn-elem tn-elem__6593420171697391386752 js-sbs-anim-trigger_hover"
-                            data-elem-id="1697391386752" data-elem-type="shape" data-field-top-value="50"
-                            data-field-left-value="820" data-field-height-value="30" data-field-width-value="360"
-                            data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid"
-                            data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px"
-                            data-field-widthunits-value="px" data-field-top-res-320-value="979"
-                            data-field-left-res-320-value="10" data-field-width-res-320-value="300"
-                            data-field-top-res-640-value="1057" data-field-left-res-640-value="10"
-                            data-field-width-res-640-value="300" data-field-top-res-960-value="35"
-                            data-field-left-res-960-value="650" data-field-width-res-960-value="300"
-                            data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
-                            style="width: 360px; left: 980.5px; top: 50px; height: 30px; pointer-events: none;">
-                            <a class="tn-atom" href="/project/{{ $project->id }}" style="pointer-events: auto;"> </a>
-                        </div>
-                        <div class="t396__elem tn-elem tn-elem__6593420171695798587108 t-animate t-animate_wait"
-                            data-elem-id="1695798587108" data-elem-type="shape" data-field-top-value="116"
-                            data-field-left-value="820" data-field-height-value="350" data-field-width-value="360"
-                            data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid"
-                            data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px"
-                            data-field-widthunits-value="px" data-animate-style="fadeinup" data-animate-duration="2"
-                            data-animate-distance="50" data-field-top-res-320-value="666" data-field-top-res-640-value="730"
-                            data-field-left-res-640-value="10" data-field-top-res-960-value="88"
-                            data-field-left-res-960-value="650" data-field-height-res-960-value="294"
-                            data-field-width-res-960-value="300"
-                            data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
-                            data-observer-ready="true"
-                            style="width: 360px; left: 980.5px; top: 116px; height: 350px; transform: unset; transition-duration: 2s;">
-                            <div class="tn-atom t-bgimg" data-original="{{ asset('storage/' . $projectImages[2]->image) }}"
-                                aria-label="" role="img"> </div>
-                        </div>
-                        <div class="t396__elem tn-elem tn-elem__6593420171695798587105 t-animate t-animate_wait"
-                            data-elem-id="1695798587105" data-elem-type="shape" data-field-top-value="116"
-                            data-field-left-value="420" data-field-height-value="350" data-field-width-value="360"
-                            data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid"
-                            data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px"
-                            data-field-widthunits-value="px" data-animate-style="fadeinup" data-animate-duration="2"
-                            data-animate-distance="50" data-field-top-res-320-value="362" data-field-left-res-320-value="10"
-                            data-field-top-res-640-value="417" data-field-left-res-640-value="10"
-                            data-field-top-res-960-value="88" data-field-left-res-960-value="330"
-                            data-field-height-res-960-value="294" data-field-width-res-960-value="300"
-                            data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
-                            data-observer-ready="true"
-                            style="width: 360px; left: 580.5px; top: 116px; height: 350px; transform: unset; transition-duration: 2s;">
-                            <div class="tn-atom t-bgimg" data-original="{{ asset('storage/' . $projectImages[1]->image) }}"
-                                aria-label="" role="img"> </div>
-                        </div>
-                        <div class="t396__elem tn-elem tn-elem__6593420171695798587102 t-animate t-animate_wait"
-                            data-elem-id="1695798587102" data-elem-type="shape" data-field-top-value="116"
-                            data-field-left-value="20" data-field-height-value="350" data-field-width-value="360"
-                            data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid"
-                            data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px"
-                            data-field-widthunits-value="px" data-animate-style="fadeinup" data-animate-duration="2"
-                            data-animate-distance="50" data-field-top-res-320-value="58" data-field-top-res-640-value="102"
-                            data-field-left-res-640-value="10" data-field-top-res-960-value="88"
-                            data-field-left-res-960-value="10" data-field-height-res-960-value="294"
-                            data-field-width-res-960-value="300"
-                            data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
-                            data-observer-ready="true"
-                            style="width: 360px; left: 180.5px; top: 116px; height: 350px; transform: unset; transition-duration: 2s;">
-                            <div class="tn-atom t-bgimg" data-original="{{ asset('storage/' . $projectImages[0]->image) }}"
-                                aria-label="" role="img"> </div>
-                        </div>
-                        <div class="t396__elem tn-elem tn-elem__6593420171695798587075" data-elem-id="1695798587075"
-                            data-elem-type="text" data-field-top-value="41" data-field-left-value="20"
-                            data-field-width-value="516" data-field-axisy-value="top" data-field-axisx-value="left"
-                            data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px"
-                            data-field-heightunits-value="" data-field-widthunits-value="px"
-                            data-field-top-res-320-value="20" data-field-width-res-320-value="303"
-                            data-field-top-res-960-value="40" data-field-left-res-960-value="10"
-                            data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
-                            style="top: 41px; left: 180.5px; width: 516px; height: auto;">
-                            <div class="tn-atom" field="tn_text_1695798587075" style="line-height: 45px;">
-                                {{ $project->title }}
-                            </div>
-                        </div>
-                        <div class="t396__elem tn-elem tn-elem__6593420171695798587099" data-elem-id="1695798587099"
-                            data-elem-type="shape" data-field-top-value="0" data-field-left-value="20"
-                            data-field-height-value="1" data-field-width-value="1160" data-field-axisy-value="top"
-                            data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
-                            data-field-leftunits-value="px" data-field-heightunits-value="px"
-                            data-field-widthunits-value="px" data-field-width-res-320-value="300"
-                            data-field-width-res-640-value="620" data-field-top-res-960-value="0"
-                            data-field-left-res-960-value="10" data-field-width-res-960-value="940"
-                            data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
-                            style="width: 1160px; left: 180.5px; top: 0px; height: 1px;">
-                            <div class="tn-atom"> </div>
-                        </div>
-                        <div class="t396__elem tn-elem tn-elem__6593420171695798587079" data-elem-id="1695798587079"
-                            data-elem-type="shape" data-field-top-value="80" data-field-left-value="820"
-                            data-field-height-value="2" data-field-width-value="360" data-field-axisy-value="top"
-                            data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
-                            data-field-leftunits-value="px" data-field-heightunits-value="px"
-                            data-field-widthunits-value="px" data-field-top-res-320-value="1008"
-                            data-field-left-res-320-value="10" data-field-top-res-640-value="1088"
-                            data-field-left-res-640-value="10" data-field-top-res-960-value="65"
-                            data-field-left-res-960-value="650" data-field-width-res-960-value="299"
-                            data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
-                            style="width: 360px; left: 980.5px; top: 80px; height: 2px;"> <a class="tn-atom" href="#">
-                            </a>
-                        </div>
-                        <div class="t396__elem tn-elem tn-elem__6593420171695804277528" data-elem-id="1695804277528"
-                            data-elem-type="image" data-field-top-value="55" data-field-left-value="1165"
-                            data-field-width-value="15" data-field-axisy-value="top" data-field-axisx-value="left"
-                            data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px"
-                            data-field-heightunits-value="" data-field-widthunits-value="px" data-animate-mobile="y"
-                            data-animate-sbs-event="hover" data-animate-sbs-trgels="1633960220381,1697391386752"
-                            data-animate-sbs-opts="[{'ti':0,'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':0,'bl':'0','ea':'','dt':0},{'ti':200,'mx':0,'my':0,'sx':1,'sy':1,'op':1,'ro':45,'bl':'0','ea':'','dt':0}]"
-                            data-field-filewidth-value="15" data-field-fileheight-value="15"
-                            data-field-top-res-320-value="989" data-field-left-res-320-value="295"
-                            data-field-top-res-640-value="1067" data-field-left-res-640-value="293"
-                            data-field-top-res-960-value="43" data-field-left-res-960-value="931"
-                            data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-                            style="left: 1325.5px; top: 55px; width: 15px;">
-                            <div class="tn-atom__sbs-anim-wrapper" id="sbs-659342017-1695804277528"
-                                style="display: inherit; width: inherit; height: inherit;"><a class="tn-atom" href="#"> <img
-                                        class="tn-atom__img t-img"
-                                        data-original="https://static.tildacdn.com/tild6134-3135-4034-a333-616334336531/arrow.svg"
-                                        alt="" imgfield="tn_img_1695804277528"> </a></div>
-                        </div>
+                        @endforeach
                     </div>
+                    <div class="mt-6 text-center md:text-right">
+                        <a href="/project/{{ $project->id }}"
+                            class="inline-block text-lg text-blue-600 font-semibold underline-animation">
+                            Смотреть проект
+                            <svg class="inline-block ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <hr class="my-8 border-gray-300">
                 </div>
-                <script>t_onReady(function () { t_onFuncLoad('t396_init', function () { t396_init('659342017'); }); });</script>
             </div>
         @endforeach
+        <script> document.addEventListener("DOMContentLoaded", () => { let e = document.querySelectorAll('[data-animate="fade-in-up"]'), t = new IntersectionObserver(e => { e.forEach(e => { e.isIntersecting && (e.target.classList.add("visible"), t.unobserve(e.target)) }) }, { threshold: .1 }); e.forEach(e => t.observe(e)) }); </script>
         <!-- Projects -->
 
         <!-- contact -->
