@@ -714,8 +714,7 @@
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 336px; left: 180px; width: 294px; height: auto;">
                         <div class="tn-atom" field="tn_text_1695797803912" style=""><a href="/"
-                                style="color: rgb(255, 255, 255);">Главная</a> → <a
-                                href="/projects"
+                                style="color: rgb(255, 255, 255);">Главная</a> → <a href="/projects"
                                 style="color: rgb(255, 255, 255);">Проекты</a></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6617306041695797803957" data-elem-id="1695797803957"
@@ -863,8 +862,7 @@
                         data-field-left-res-960-value="10"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 114px; left: 180.5px; width: 780px; height: auto;">
-                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645332199-1695915205005"
-                            style="display: table; width: inherit; height: inherit; opacity: 0;">
+                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645332199-1695915205005">
                             <div class="tn-atom" field="tn_text_1695915205005" style="line-height: 98px;">Наши проекты
                             </div>
                         </div>

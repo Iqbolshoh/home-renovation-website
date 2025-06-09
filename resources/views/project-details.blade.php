@@ -888,10 +888,10 @@
                         data-field-width-res-960-value="931"
                         data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
                         style="top: 139px; left: 180.5px; width: 1057px; height: auto;">
-                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-663743560-1695915205005"
-                            style="display: table; width: inherit; height: inherit; opacity: 0;">
-                            <div class="tn-atom" field="tn_text_1695915205005" style="line-height: 84px;">Какие задачи
-                                клиентов решили</div>
+                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-645332199-1695915205005">
+                            <div class="tn-atom" field="tn_text_1695915205005" style="line-height: 98px;">Какие задачи
+                                клиентов решили
+                            </div>
                         </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6637435601695915205013 t-sbs-anim_started"
