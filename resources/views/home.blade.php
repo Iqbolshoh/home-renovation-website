@@ -166,7 +166,7 @@
                             <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
                                 id="sbs-653298888-1695797803922"
                                 style="display: table; width: inherit; height: inherit; pointer-events: none;">
-                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;"><a href="./#about"
+                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;"><a href="/#about"
                                         style="color: inherit">О нас</a></div>
                             </div>
                         </div>
@@ -185,7 +185,7 @@
                                 id="sbs-653298888-1695797803924"
                                 style="display: table; width: inherit; height: inherit; pointer-events: none;">
                                 <div class="tn-atom" style="pointer-events: auto; line-height: 20px;">
-                                    <a href="./#price" style="color: inherit" class="t794__tm-link"
+                                    <a href="/#price" style="color: inherit" class="t794__tm-link"
                                         data-tooltip-menu-id="671035158">Стоимость</a>
                                 </div>
                             </div>
@@ -205,7 +205,7 @@
                                 id="sbs-653298888-1695797803926"
                                 style="display: table; width: inherit; height: inherit; pointer-events: none;">
                                 <div class="tn-atom" style="pointer-events: auto; line-height: 20px;">
-                                    <a href="./#projects" style="color: inherit">Портфолио</a>
+                                    <a href="/#projects" style="color: inherit">Портфолио</a>
                                 </div>
                             </div>
                         </div>
@@ -254,21 +254,21 @@
                         <div class="t450__top">
                             <nav class="t450__menu">
                                 <ul role="list" class="t450__list t-menu__list">
-                                    <li class="t450__list_item"> <a class="t-menu__link-item t-active" href="./"
+                                    <li class="t450__list_item"> <a class="t-menu__link-item t-active" href="/"
                                             data-menu-submenu-hook="" data-menu-item-number="1">
                                             Главная
                                         </a> </li>
-                                    <li class="t450__list_item"> <a class="t-menu__link-item" href="./#about"
+                                    <li class="t450__list_item"> <a class="t-menu__link-item" href="/#about"
                                             data-menu-submenu-hook="" data-menu-item-number="2">
                                             О нас
                                         </a>
                                     </li>
-                                    <li class="t450__list_item"> <a class="t-menu__link-item" href="./#projects"
+                                    <li class="t450__list_item"> <a class="t-menu__link-item" href="/#projects"
                                             data-menu-submenu-hook="" data-menu-item-number="4">
                                             Портфолио
                                         </a>
                                     </li>
-                                    <li class="t450__list_item"> <a class="t-menu__link-item" href="./#price"
+                                    <li class="t450__list_item"> <a class="t-menu__link-item" href="/#price"
                                             data-menu-submenu-hook="" data-menu-item-number="4">
                                             Стоимость
                                         </a>
@@ -363,7 +363,7 @@
                             <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
                                 id="sbs-671023936-1695797803922"
                                 style="display: table; width: inherit; height: inherit; pointer-events: none;">
-                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;"><a href="./"
+                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;"><a href="/"
                                         style="color: inherit">Главная</a></div>
                             </div>
                         </div>
@@ -383,7 +383,7 @@
                             <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
                                 id="sbs-671023936-1700654464285"
                                 style="display: table; width: inherit; height: inherit; pointer-events: none;">
-                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;"><a href="./#about"
+                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;"><a href="/#about"
                                         style="color: inherit">О нас</a></div>
                             </div>
                         </div>
@@ -403,7 +403,7 @@
                             <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
                                 id="sbs-671023936-1695797803926"
                                 style="display: table; width: inherit; height: inherit; pointer-events: none;">
-                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;"><a href="./#price"
+                                <div class="tn-atom" style="pointer-events: auto; line-height: 20px;"><a href="/#price"
                                         style="color: inherit">Стоимость</a>
                                 </div>
                             </div>
@@ -425,7 +425,7 @@
                                 id="sbs-671023936-1695797803924"
                                 style="display: table; width: inherit; height: inherit; pointer-events: none;">
                                 <div class="tn-atom" style="pointer-events: auto; line-height: 20px;"><a
-                                        href="./#projects" style="color: inherit" class="t794__tm-link"
+                                        href="/#projects" style="color: inherit" class="t794__tm-link"
                                         data-tooltip-menu-id="671035158">Портфолио</a>
                                 </div>
                             </div>
@@ -699,6 +699,24 @@
                         <div class="tn-atom" field="tn_text_1695797803912" style="line-height: 29px;">Разрабатываем
                             грамотные проекты квартир, домов и офисов под ваш бюджет</div>
                     </div>
+                    <div class="t396__elem tn-elem tn-elem__6637435581695797803912" data-elem-id="1695797803912"
+                        data-elem-type="text" data-field-top-value="-446" data-field-left-value="180"
+                        data-field-width-value="294" data-field-axisy-value="bottom" data-field-axisx-value="left"
+                        data-field-container-value="window" data-field-topunits-value="px"
+                        data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+                        data-field-top-res-320-value="253" data-field-left-res-320-value="20"
+                        data-field-width-res-320-value="272" data-field-top-res-640-value="217"
+                        data-field-left-res-640-value="47" data-field-width-res-640-value="186"
+                        data-field-axisy-res-640-value="top" data-field-container-res-640-value="window"
+                        data-field-topunits-res-640-value="px" data-field-leftunits-res-640-value="px"
+                        data-field-top-res-960-value="-340" data-field-left-res-960-value="120"
+                        data-field-width-res-960-value="361"
+                        data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
+                        style="top: 336px; left: 180px; width: 294px; height: auto;">
+                        <div class="tn-atom" field="tn_text_1695797803912" style=""><a href="/"
+                                style="color: rgb(255, 255, 255);">Главная</a>
+                        </div>
+                    </div>
                     <div class="t396__elem tn-elem tn-elem__6617306041695797803957" data-elem-id="1695797803957"
                         data-elem-type="text" data-field-top-value="-134" data-field-left-value="-108"
                         data-field-width-value="322" data-field-axisy-value="bottom" data-field-axisx-value="right"
@@ -752,26 +770,8 @@
                         <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
                             id="sbs-661730604-1696001042438"
                             style="display: table; width: inherit; height: inherit; pointer-events: none;">
-                            <div class="tn-atom" style="pointer-events: auto; line-height: 14px;"><a href="./"
+                            <div class="tn-atom" style="pointer-events: auto; line-height: 14px;"><a href="/"
                                     style="color: inherit">Главная</a></div>
-                        </div>
-                    </div>
-                    <div class="t396__elem tn-elem tn-elem__6637435581696001042449" data-elem-id="1696001042449"
-                        data-elem-type="text" data-field-top-value="-286" data-field-left-value="-18"
-                        data-field-width-value="117" data-field-axisy-value="bottom" data-field-axisx-value="left"
-                        data-field-container-value="window" data-field-topunits-value="px"
-                        data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-                        data-animate-sbs-event="hover"
-                        data-animate-sbs-opts="[{'ti':'0','mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':'0','bl':'0','ea':'','dt':'0'},{'ti':200,'mx':'0','my':'0','sx':'1','sy':'1','op':0.7,'ro':'0','bl':'0','ea':'','dt':'0'}]"
-                        data-field-top-res-640-value="-775" data-field-left-res-640-value="-28"
-                        data-field-top-res-960-value="-235" data-field-left-res-960-value="-27"
-                        data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
-                        style="top: 500px; left: -18px; width: 117px; height: auto;">
-                        <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
-                            id="sbs-663743558-1696001042449"
-                            style="display: table; width: inherit; height: inherit; pointer-events: none;">
-                            <div class="tn-atom" style="pointer-events: auto;"><a href="/projects"
-                                    style="color: inherit">Проекты</a></div>
                         </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__6617306041697392484171 js-sbs-anim-trigger_hover"
@@ -1150,7 +1150,7 @@
                         data-field-left-res-960-value="650" data-field-width-res-960-value="300"
                         data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
                         style="width: 360px; left: 980.5px; top: 50px; height: 30px; pointer-events: none;"> <a
-                            class="tn-atom" href="./project-1" style="pointer-events: auto;">
+                            class="tn-atom" href="/project/1" style="pointer-events: auto;">
                         </a> </div>
                     <div class="t396__elem tn-elem tn-elem__6533311341695798587108 t-animate t-animate_wait"
                         data-elem-id="1695798587108" data-elem-type="shape" data-field-top-value="116"
@@ -1238,7 +1238,7 @@
                         data-field-left-res-960-value="650" data-field-width-res-960-value="299"
                         data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
                         style="width: 360px; left: 980.5px; top: 80px; height: 2px;"> <a class="tn-atom"
-                            href="./project1">
+                            href="/project/1">
                         </a> </div>
                     <div class="t396__elem tn-elem tn-elem__6533311341695804277528" data-elem-id="1695804277528"
                         data-elem-type="image" data-field-top-value="55" data-field-left-value="1165"
@@ -1255,7 +1255,7 @@
                         style="left: 1325.5px; top: 55px; width: 15px;">
                         <div class="tn-atom__sbs-anim-wrapper" id="sbs-653331134-1695804277528"
                             style="display: inherit; width: inherit; height: inherit;"><a class="tn-atom"
-                                href="./project1">
+                                href="/project/1">
                                 <img class="tn-atom__img t-img"
                                     data-original="https://static.tildacdn.com/tild6134-3135-4034-a333-616334336531/arrow.svg"
                                     alt="" imgfield="tn_img_1695804277528"> </a></div>
@@ -1389,7 +1389,7 @@
                         data-field-left-res-960-value="650" data-field-width-res-960-value="299"
                         data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
                         style="width: 360px; left: 980.5px; top: 80px; height: 2px;"> <a class="tn-atom"
-                            href="./project1">
+                            href="/project/1">
                         </a> </div>
                     <div class="t396__elem tn-elem tn-elem__6593420171695804277528" data-elem-id="1695804277528"
                         data-elem-type="image" data-field-top-value="55" data-field-left-value="1165"
@@ -1406,7 +1406,7 @@
                         style="left: 1325.5px; top: 55px; width: 15px;">
                         <div class="tn-atom__sbs-anim-wrapper" id="sbs-659342017-1695804277528"
                             style="display: inherit; width: inherit; height: inherit;"><a class="tn-atom"
-                                href="./project1">
+                                href="/project/1">
                                 <img class="tn-atom__img t-img"
                                     data-original="https://static.tildacdn.com/tild6134-3135-4034-a333-616334336531/arrow.svg"
                                     alt="" imgfield="tn_img_1695804277528"> </a></div>
@@ -3636,11 +3636,11 @@
                 <!-- Навигация -->
                 <div class="footer-section">
                     <h3 style="color: white;">Навигация</h3>
-                    <a href="./">Главная</a>
-                    <a href="#about">О нас</a>
-                    <a href="#price">Стоимость</a>
-                    <a href="#projects">Портфолио</a>
-                    <a href="#contacts">Контакты</a>
+                    <a href="/">Главная</a>
+                    <a href="/#about">О нас</a>
+                    <a href="/#price">Стоимость</a>
+                    <a href="/#projects">Портфолио</a>
+                    <a href="/#contacts">Контакты</a>
                 </div>
 
                 <!-- Контакты -->
@@ -3738,7 +3738,7 @@
                                 </div>
                             </div>
                         </div>
-                        <script>document.addEventListener("DOMContentLoaded",function(){let e=document.getElementById("custom-consultation-form"),t=document.getElementById("custom-submit-btn"),s=document.getElementById("custom-response-msg"),n=document.getElementById("custom-phone"),l=!1;n.addEventListener("input",function(e){let t=e.target.value.replace(/\D/g,"");t.startsWith("7")&&(t=t.slice(1)),t.length>10&&(t=t.slice(0,10));let s="+7";t.length>0&&(s+=" ("+t.slice(0,3)),t.length>3&&(s+=") "+t.slice(3,6)),t.length>6&&(s+="-"+t.slice(6,8)),t.length>8&&(s+="-"+t.slice(8,10)),e.target.value=s}),e.addEventListener("submit",async function(r){if(r.preventDefault(),l)return;let a=n.value.trim();if(!/^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/.test(a)){s.className="show error",s.innerText="Телефон введён неверно! Пожалуйста, используйте формат: +7 (XXX) XXX-XX-XX.",setTimeout(()=>{s.classList.remove("show","error")},3500);return}l=!0,t.disabled=!0,s.className="",t.classList.add("loading");let i=new FormData(e),o=document.querySelector('input[name="_token"]').value;try{let c=await fetch("{{ route('consultation.send') }}",{method:"POST",headers:{"X-CSRF-TOKEN":o},body:i}),d=await c.json();s.classList.add("show"),c.ok&&d.success?(s.classList.add("success"),s.innerText="Ваш запрос успешно отправлен!",e.reset()):(s.classList.add("error"),s.innerText="Ошибка при отправке!")}catch(u){console.error(u),s.classList.add("show","error"),s.innerText="Не удалось связаться с сервером!"}finally{setTimeout(()=>{s.classList.remove("show","success","error"),l=!1,t.disabled=!1,t.classList.remove("loading")},3500)}})});</script>
+                        <script>document.addEventListener("DOMContentLoaded", function () { let e = document.getElementById("custom-consultation-form"), t = document.getElementById("custom-submit-btn"), s = document.getElementById("custom-response-msg"), n = document.getElementById("custom-phone"), l = !1; n.addEventListener("input", function (e) { let t = e.target.value.replace(/\D/g, ""); t.startsWith("7") && (t = t.slice(1)), t.length > 10 && (t = t.slice(0, 10)); let s = "+7"; t.length > 0 && (s += " (" + t.slice(0, 3)), t.length > 3 && (s += ") " + t.slice(3, 6)), t.length > 6 && (s += "-" + t.slice(6, 8)), t.length > 8 && (s += "-" + t.slice(8, 10)), e.target.value = s }), e.addEventListener("submit", async function (r) { if (r.preventDefault(), l) return; let a = n.value.trim(); if (!/^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/.test(a)) { s.className = "show error", s.innerText = "Телефон введён неверно! Пожалуйста, используйте формат: +7 (XXX) XXX-XX-XX.", setTimeout(() => { s.classList.remove("show", "error") }, 3500); return } l = !0, t.disabled = !0, s.className = "", t.classList.add("loading"); let i = new FormData(e), o = document.querySelector('input[name="_token"]').value; try { let c = await fetch("{{ route('consultation.send') }}", { method: "POST", headers: { "X-CSRF-TOKEN": o }, body: i }), d = await c.json(); s.classList.add("show"), c.ok && d.success ? (s.classList.add("success"), s.innerText = "Ваш запрос успешно отправлен!", e.reset()) : (s.classList.add("error"), s.innerText = "Ошибка при отправке!") } catch (u) { console.error(u), s.classList.add("show", "error"), s.innerText = "Не удалось связаться с сервером!" } finally { setTimeout(() => { s.classList.remove("show", "success", "error"), l = !1, t.disabled = !1, t.classList.remove("loading") }, 3500) } }) });</script>
                     </div>
 
                 </div>
