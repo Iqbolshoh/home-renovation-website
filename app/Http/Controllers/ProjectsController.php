@@ -14,4 +14,12 @@ class ProjectsController extends Controller
         $contacts = Contact::all();
         return view('projects', compact('contacts', 'projects'));
     }
+
+    public function show($id)
+    {
+        $project = Project::with('images')->findOrFail($id);
+        $contacts = Contact::all();
+
+        return view('project-details', compact('project', 'contacts'));
+    }
 }
