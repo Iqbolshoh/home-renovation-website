@@ -16,7 +16,7 @@ class ProjectResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-briefcase';
     protected static ?string $navigationGroup = 'Проекты';
-    protected static ?int $navigationSort = 13;
+    protected static ?int $navigationSort = 14;
     protected static ?string $navigationLabel = 'Проекты';
     protected static ?string $pluralModelLabel = 'Проекты';
     protected static ?string $modelLabel = 'Проект';
@@ -92,7 +92,6 @@ class ProjectResource extends Resource
                 Tables\Columns\TextColumn::make('updated_at')->label('Обновлён')->dateTime()->sortable()->since(),
             ])
             ->filters([
-                // Фильтры можно добавить позже
             ])
             ->actions([
                 Tables\Actions\EditAction::make()->visible(fn() => auth()->user()?->can('project.edit')),

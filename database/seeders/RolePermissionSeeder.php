@@ -50,6 +50,7 @@ class RolePermissionSeeder extends Seeder
                 'consultation' => ['view', 'read', 'delete'],
                 'message' => ['view', 'read', 'delete'],
                 'contact' => ['view', 'edit'],
+                'telegram-bot' => ['view', 'create', 'edit', 'delete'],
                 'project' => ['view', 'create', 'edit', 'delete'],
             ],
 
@@ -73,6 +74,7 @@ class RolePermissionSeeder extends Seeder
                     'consultation' => ['view'],
                     'message' => ['view'],
                     'contact' => ['view'],
+                    'telegram-bot' => ['view'],
                     'project' => ['view'],
                 ],
             ],
