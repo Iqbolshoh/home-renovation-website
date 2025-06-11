@@ -47,6 +47,6 @@ class MessageSeeder extends Seeder
             Message::create($message);
         }
 
-        $this->command->info('Сообщения успешно добавлены!');
+        $this->command->info('Messages seeded successfully!');
     }
 }
