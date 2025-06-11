@@ -29,7 +29,7 @@ class MessageController extends Controller
             . "👤 <b>Имя:</b> {$validated['name']}\n"
             . "📱 <b>Номер:</b> {$validated['number']}\n"
             . "📧 <b>Email:</b> {$validated['email']}\n"
-            . "📝 <b>Сообщение:</b>\n<pre>{$validated['message']}</pre>\n\n"
+            . "📝 <b>Сообщение:</b> {$validated['message']}\n"
             . "🔗 <b>Открыть:</b> <a href=\"{$url}\">Перейти к сообщению</a>";
 
         $adminUsers = TelegramBotUser::pluck('chat_id');
@@ -43,7 +43,7 @@ class MessageController extends Controller
 
         return response()->json([
             'success' => true,
-            'message' => 'Форма успешно отправлена!'
+            'message' => 'Форма успешно отправлена! 😊'
         ], 200);
     }
 }
