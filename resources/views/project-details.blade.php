@@ -977,7 +977,7 @@
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
                         data-field-top-res-320-value="240" data-field-width-res-320-value="300"
-                        data-field-top-res-640-value="299" data-field-left-res-640-value="10"
+                        data-field-top-res-640-value="299" data-field-left-res-640-value="-15"
                         data-field-width-res-640-value="620" data-field-top-res-960-value="237"
                         data-field-left-res-960-value="330" data-field-width-res-960-value="621"
                         data-field-inputpos-value="v" data-field-inputfontfamily-value="TildaSans"
