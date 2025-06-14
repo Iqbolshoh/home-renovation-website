@@ -39,6 +39,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- JS -->
+    <script src="{{ asset('js/tilda-scripts-3.0.min.js') }}"></script>
+    <script src="{{ asset('js/tilda-events-1.0.min.js') }}"></script>
+    <script src="{{ asset('js/tilda-cover-1.0.min.js') }}"></script>
+    <script src="{{ asset('js/tilda-zero-1.1.min.js') }}"></script>
+    <script src="{{ asset('js/tilda-video-1.0.min.js') }}"></script>
+    <script src="{{ asset('js/tilda-animation-sbs-1.0.min.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
     <script async id="tildastatscript" src="{{ asset('js/tilda-stat-1.0.min.js') }}"></script>
     <script async id="t-phonemask-script" src="{{ asset('js/tilda-phone-mask-1.1.min.js') }}"></script>
@@ -484,27 +490,27 @@
 
         <div id="t-main-content"></div>
 
-<div id="rec661730604" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top: 0px; padding-bottom: 0px; --zoom: 1;"
-    data-animationappear="off" data-record-type="396">
-    <!-- T396 -->
-    <div class="t396">
-        <div class="t396__artboard rendered" data-artboard-recid="661730604" data-artboard-screens="320,640,960,1200"
-            data-artboard-height="800" data-artboard-valign="center" data-artboard-height_vh="100"
-            data-artboard-upscale="grid" data-artboard-height-res-640="500" data-artboard-height-res-960="600"
-            data-artboard-proxy-min-offset-top="0" data-artboard-proxy-min-height="800"
-            data-artboard-proxy-max-height="800">
-            <div class="t396__carrier" data-artboard-recid="661730604"></div>
-            <div class="t396__filter" data-artboard-recid="661730604"></div>
-            <div class="t396__elem tn-elem tn-elem__6617306041698922282904 t-sbs-anim_started tn-elem__gallery_arrows-none"
-                data-elem-id="1698922282904" data-elem-type="gallery" data-field-top-value="0" data-field-left-value="0"
-                data-field-height-value="100" data-field-width-value="100" data-field-axisy-value="top"
-                data-field-axisx-value="left" data-field-container-value="window" data-field-topunits-value="px"
-                data-field-leftunits-value="px" data-field-heightunits-value="%" data-field-widthunits-value="%"
-                data-animate-mobile="y" data-animate-sbs-event="intoview" data-animate-sbs-trg="1"
-                data-animate-sbs-trgofst="0" data-animate-sbs-loop="loop"
-                data-animate-sbs-opts="[{'ti':'0','mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':'0','bl':'0','ea':'','dt':'0'},{'ti':30000,'mx':'0','my':'0','sx':1.3,'sy':1.3,'op':'1','ro':'0','bl':'0','ea':'easeInOut','dt':'0'},{'ti':20000,'mx':'0','my':'0','sx':1,'sy':1,'op':'1','ro':'0','bl':'0','ea':'easeInOut','dt':'0'}]"
-                data-field-imgs-value='[
-                     {"lid":1698922282904,"li_img":"{{ asset(' storage/1/1.jpg')
+        <div id="rec661730604" class="r t-rec t-rec_pt_0 t-rec_pb_0"
+            style="padding-top: 0px; padding-bottom: 0px; --zoom: 1;" data-animationappear="off" data-record-type="396">
+            <!-- T396 -->
+            <div class="t396">
+                <div class="t396__artboard rendered" data-artboard-recid="661730604"
+                    data-artboard-screens="320,640,960,1200" data-artboard-height="800" data-artboard-valign="center"
+                    data-artboard-height_vh="100" data-artboard-upscale="grid" data-artboard-height-res-640="500"
+                    data-artboard-height-res-960="600" data-artboard-proxy-min-offset-top="0"
+                    data-artboard-proxy-min-height="800" data-artboard-proxy-max-height="800">
+                    <div class="t396__carrier" data-artboard-recid="661730604"></div>
+                    <div class="t396__filter" data-artboard-recid="661730604"></div>
+                    <div class="t396__elem tn-elem tn-elem__6617306041698922282904 t-sbs-anim_started tn-elem__gallery_arrows-none"
+                        data-elem-id="1698922282904" data-elem-type="gallery" data-field-top-value="0"
+                        data-field-left-value="0" data-field-height-value="100" data-field-width-value="100"
+                        data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="window"
+                        data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="%"
+                        data-field-widthunits-value="%" data-animate-mobile="y" data-animate-sbs-event="intoview"
+                        data-animate-sbs-trg="1" data-animate-sbs-trgofst="0" data-animate-sbs-loop="loop"
+                        data-animate-sbs-opts="[{'ti':'0','mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':'0','bl':'0','ea':'','dt':'0'},{'ti':30000,'mx':'0','my':'0','sx':1.3,'sy':1.3,'op':'1','ro':'0','bl':'0','ea':'easeInOut','dt':'0'},{'ti':20000,'mx':'0','my':'0','sx':1,'sy':1,'op':'1','ro':'0','bl':'0','ea':'easeInOut','dt':'0'}]"
+                        data-field-imgs-value='[
+                     {"lid":1698922282904,"li_img":"{{ asset('storage/1/1.jpg')
                 }}","li_imgalt":"","li_imgtitle":"","li_youtube":"","li_vimeo":"","li_imgurl":"","li_imgtarget":false,"li_imgnofollow":false},
                 {"lid":1698922282905,"li_img":"{{ asset('storage/1/2.jpg')
                 }}","li_imgalt":"","li_imgtitle":"","li_youtube":"","li_vimeo":"","li_imgurl":"","li_imgtarget":false,"li_imgnofollow":false},
@@ -515,392 +521,405 @@
                 {"lid":1698922282908,"li_img":"{{ asset('storage/1/5.jpg')
                 }}","li_imgalt":"","li_imgtitle":"","li_youtube":"","li_vimeo":"","li_imgurl":"","li_imgtarget":false,"li_imgnofollow":false}
                 ]' data-field-slds_arrowcolor-value="#000000" data-field-slds_arrowbgcolor-value="#e8e8e8"
-                data-field-slds_dotsbgcolor-value="#999999" data-field-slds_dotsbgcoloractive-value="#222222"
-                data-field-slds_speed-value="fast" data-field-slds_autoplay-value="3"
-                data-field-slds_playiconcolor-value="#ffffff" data-field-slds_stretch-value="cover"
-                data-field-slds_imgposition-value="center center" data-field-slds_loop-value="loop"
-                data-field-slds_arrowalign-value="center" data-field-slds_arrowbetweenmargin-value="10"
-                data-field-slds_playiconsize-value="70" data-field-slds_dotssize-value="8"
-                data-field-slds_dotscontrols-value="none" data-field-slds_arrowcontrols-value="none"
-                data-field-slds_arrowsize-value="s" data-field-slds_arrowlinesize-value="1"
-                data-field-slds_captiontopmargin-value="20" data-field-slds_dotsvmargin-value="10"
-                data-field-slds_captionwidth-value="80" data-field-slds_arrowhmargin-value="20"
-                data-field-slds_dotshmargin-value="15" data-field-slds_arrowvmargin-value="10"
-                data-field-borderstyle-value="solid"
-                data-fields="width,height,top,left,imgs,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
-                style="width: calc(1521px * var(--zoom, 1)); left: calc(0px * var(--zoom, 1)); top: calc(0px * var(--zoom, 1)); height: calc(800px * var(--zoom, 1));">
-                <div class="tn-atom__sbs-anim-wrapper" id="sbs-661730604-1698922282904"
-                    style="display: table; width: inherit; height: inherit;">
-                    <div class="tn-atom tn-atom__gallery">
-                        <div class="t-slds" style="visibility: visible;">
-                            <div class="t-slds__main"
-                                style="width: calc(1521px * var(--zoom, 1)); height: calc(800px * var(--zoom, 1)); touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-                                <div class="t-slds__container">
-                                    <div class="t-slds__items-wrapper t-slds_animated-fast" data-slider-transition="300"
-                                        data-slider-with-cycle="true" data-slider-correct-height="true"
-                                        data-auto-correct-mobile-width="false" data-slider-is-preview="true"
-                                        data-slider-initialized="true" data-slider-totalslides="5" data-slider-pos="1"
-                                        data-slider-cycle="yes" data-slider-animated="" data-swiper-initialized="true"
-                                        style="width: 15210px; height: 800px; transform: translateX(-1521px);"
-                                        data-slider-timeout="3000" data-slider-interval-id="268" data-slider-stopped="">
-                                        <div class="t-slds__item t-slds__item-loaded" data-slide-index="0"
-                                            aria-hidden="true" style="width: 1521px; opacity: 0;">
-                                            <div class="t-width">
-                                                <div itemscope=""
-                                                    class="t-null__slds-wrapper t-slds__wrapper t-slds__wrapper_100 t-align_center">
-                                                    <meta itemprop="image" content="">
-                                                    <meta itemprop="caption" content="SEO">
-                                                    <div data-img-lid="1698922282904"
-                                                        class="tn-atom__slds-img t-bgimg loaded"
-                                                        data-original="{{ asset('storage/1/1.jpg') }}"
-                                                        style="background-image: url('{{ asset('storage/1/1.jpg') }}'); width: calc(1521px * var(--zoom, 1)); height: calc(800px * var(--zoom, 1));"
-                                                        width="100%" imgfield="tn_img_1698922282904"
-                                                        data-tu-noclick="yes" data-tu-is-image="yes"
-                                                        data-tu-multiple="no"></div>
+                        data-field-slds_dotsbgcolor-value="#999999" data-field-slds_dotsbgcoloractive-value="#222222"
+                        data-field-slds_speed-value="fast" data-field-slds_autoplay-value="3"
+                        data-field-slds_playiconcolor-value="#ffffff" data-field-slds_stretch-value="cover"
+                        data-field-slds_imgposition-value="center center" data-field-slds_loop-value="loop"
+                        data-field-slds_arrowalign-value="center" data-field-slds_arrowbetweenmargin-value="10"
+                        data-field-slds_playiconsize-value="70" data-field-slds_dotssize-value="8"
+                        data-field-slds_dotscontrols-value="none" data-field-slds_arrowcontrols-value="none"
+                        data-field-slds_arrowsize-value="s" data-field-slds_arrowlinesize-value="1"
+                        data-field-slds_captiontopmargin-value="20" data-field-slds_dotsvmargin-value="10"
+                        data-field-slds_captionwidth-value="80" data-field-slds_arrowhmargin-value="20"
+                        data-field-slds_dotshmargin-value="15" data-field-slds_arrowvmargin-value="10"
+                        data-field-borderstyle-value="solid"
+                        data-fields="width,height,top,left,imgs,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
+                        style="width: calc(1521px * var(--zoom, 1)); left: calc(0px * var(--zoom, 1)); top: calc(0px * var(--zoom, 1)); height: calc(800px * var(--zoom, 1));">
+                        <div class="tn-atom__sbs-anim-wrapper" id="sbs-661730604-1698922282904"
+                            style="display: table; width: inherit; height: inherit;">
+                            <div class="tn-atom tn-atom__gallery">
+                                <div class="t-slds" style="visibility: visible;">
+                                    <div class="t-slds__main"
+                                        style="width: calc(1521px * var(--zoom, 1)); height: calc(800px * var(--zoom, 1)); touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                                        <div class="t-slds__container">
+                                            <div class="t-slds__items-wrapper t-slds_animated-fast"
+                                                data-slider-transition="300" data-slider-with-cycle="true"
+                                                data-slider-correct-height="true" data-auto-correct-mobile-width="false"
+                                                data-slider-is-preview="true" data-slider-initialized="true"
+                                                data-slider-totalslides="5" data-slider-pos="1" data-slider-cycle="yes"
+                                                data-slider-animated="" data-swiper-initialized="true"
+                                                style="width: 15210px; height: 800px; transform: translateX(-1521px);"
+                                                data-slider-timeout="3000" data-slider-interval-id="268"
+                                                data-slider-stopped="">
+                                                <div class="t-slds__item t-slds__item-loaded" data-slide-index="0"
+                                                    aria-hidden="true" style="width: 1521px; opacity: 0;">
+                                                    <div class="t-width">
+                                                        <div itemscope=""
+                                                            class="t-null__slds-wrapper t-slds__wrapper t-slds__wrapper_100 t-align_center">
+                                                            <meta itemprop="image" content="">
+                                                            <meta itemprop="caption" content="SEO">
+                                                            <div data-img-lid="1698922282904"
+                                                                class="tn-atom__slds-img t-bgimg loaded"
+                                                                data-original="{{ asset('storage/1/1.jpg') }}"
+                                                                style="background-image: url('{{ asset('storage/1/1.jpg') }}'); width: calc(1521px * var(--zoom, 1)); height: calc(800px * var(--zoom, 1));"
+                                                                width="100%" imgfield="tn_img_1698922282904"
+                                                                data-tu-noclick="yes" data-tu-is-image="yes"
+                                                                data-tu-multiple="no"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="t-slds__item t-slds__item-loaded t-slds__item_active"
+                                                    data-slide-index="1" aria-hidden="false"
+                                                    style="width: 1521px; opacity: 1;">
+                                                    <div class="t-width">
+                                                        <div itemscope=""
+                                                            class="t-null__slds-wrapper t-slds__wrapper t-slds__wrapper_100 t-align_center">
+                                                            <meta itemprop="image" content="">
+                                                            <meta itemprop="caption" content="SEO">
+                                                            <div data-img-lid="1698922282905"
+                                                                class="tn-atom__slds-img t-bgimg loaded"
+                                                                data-original="{{ asset('storage/1/2.jpg') }}"
+                                                                style="background-image: url('{{ asset('storage/1/2.jpg') }}'); width: calc(1521px * var(--zoom, 1)); height: calc(800px * var(--zoom, 1));"
+                                                                width="100%" imgfield="tn_img_1698922282905"
+                                                                data-tu-noclick="yes" data-tu-is-image="yes"
+                                                                data-tu-multiple="no"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="t-slds__item t-slds__item-loaded" data-slide-index="2"
+                                                    aria-hidden="true" style="width: 1521px; opacity: 0;">
+                                                    <div class="t-width">
+                                                        <div itemscope=""
+                                                            class="t-null__slds-wrapper t-slds__wrapper t-slds__wrapper_100 t-align_center">
+                                                            <meta itemprop="image" content="">
+                                                            <meta itemprop="caption" content="SEO">
+                                                            <div data-img-lid="1698922282906"
+                                                                class="tn-atom__slds-img t-bgimg loaded"
+                                                                data-original="{{ asset('storage/1/3.jpg') }}"
+                                                                style="background-image: url('{{ asset('storage/1/3.jpg') }}'); width: calc(1521px * var(--zoom, 1)); height: calc(800px * var(--zoom, 1));"
+                                                                width="100%" imgfield="tn_img_1698922282906"
+                                                                data-tu-noclick="yes" data-tu-is-image="yes"
+                                                                data-tu-multiple="no"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="t-slds__item t-slds__item-loaded" data-slide-index="3"
+                                                    aria-hidden="true" style="width: 1521px; opacity: 0;">
+                                                    <div class="t-width">
+                                                        <div itemscope=""
+                                                            class="t-null__slds-wrapper t-slds__wrapper t-slds__wrapper_100 t-align_center">
+                                                            <meta itemprop="image" content="">
+                                                            <meta itemprop="caption" content="SEO">
+                                                            <div data-img-lid="1698922282907"
+                                                                class="tn-atom__slds-img t-bgimg loaded"
+                                                                data-original="{{ asset('storage/1/4.jpg') }}"
+                                                                style="background-image: url('{{ asset('storage/1/4.jpg') }}'); width: calc(1521px * var(--zoom, 1)); height: calc(800px * var(--zoom, 1));"
+                                                                width="100%" imgfield="tn_img_1698922282907"
+                                                                data-tu-noclick="yes" data-tu-is-image="yes"
+                                                                data-tu-multiple="no"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="t-slds__item t-slds__item-loaded" data-slide-index="4"
+                                                    aria-hidden="true" style="width: 1521px; opacity: 0;">
+                                                    <div class="t-width">
+                                                        <div itemscope=""
+                                                            class="t-null__slds-wrapper t-slds__wrapper t-slds__wrapper_100 t-align_center">
+                                                            <meta itemprop="image" content="">
+                                                            <meta itemprop="caption" content="SEO">
+                                                            <div data-img-lid="1698922282908"
+                                                                class="tn-atom__slds-img t-bgimg loaded"
+                                                                data-original="{{ asset('storage/1/5.jpg') }}"
+                                                                style="background-image: url('{{ asset('storage/1/5.jpg') }}'); width: calc(1521px * var(--zoom, 1)); height: calc(800px * var(--zoom, 1));"
+                                                                width="100%" imgfield="tn_img_1698922282908"
+                                                                data-tu-noclick="yes" data-tu-is-image="yes"
+                                                                data-tu-multiple="no"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="t-slds__item t-slds__item-loaded" data-slide-index="5"
+                                                    aria-hidden="true" style="width: 1521px; opacity: 0;">
+                                                    <div class="t-width">
+                                                        <div itemscope=""
+                                                            class="t-null__slds-wrapper t-slds__wrapper t-slds__wrapper_100 t-align_center">
+                                                            <meta itemprop="image" content="">
+                                                            <meta itemprop="caption" content="SEO">
+                                                            <div data-img-lid="1698922282904"
+                                                                class="tn-atom__slds-img t-bgimg loaded"
+                                                                data-original="{{ asset('storage/1/1.jpg') }}"
+                                                                style="background-image: url('{{ asset('storage/1/1.jpg') }}'); width: calc(1521px * var(--zoom, 1)); height: calc(800px * var(--zoom, 1));"
+                                                                width="100%" imgfield="tn_img_1698922282904"
+                                                                data-tu-noclick="yes" data-tu-is-image="yes"
+                                                                data-tu-multiple="no"></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="t-slds__item t-slds__item-loaded t-slds__item_active"
-                                            data-slide-index="1" aria-hidden="false" style="width: 1521px; opacity: 1;">
-                                            <div class="t-width">
-                                                <div itemscope=""
-                                                    class="t-null__slds-wrapper t-slds__wrapper t-slds__wrapper_100 t-align_center">
-                                                    <meta itemprop="image" content="">
-                                                    <meta itemprop="caption" content="SEO">
-                                                    <div data-img-lid="1698922282905"
-                                                        class="tn-atom__slds-img t-bgimg loaded"
-                                                        data-original="{{ asset('storage/1/2.jpg') }}"
-                                                        style="background-image: url('{{ asset('storage/1/2.jpg') }}'); width: calc(1521px * var(--zoom, 1)); height: calc(800px * var(--zoom, 1));"
-                                                        width="100%" imgfield="tn_img_1698922282905"
-                                                        data-tu-noclick="yes" data-tu-is-image="yes"
-                                                        data-tu-multiple="no"></div>
-                                                </div>
+                                    </div>
+                                    <div class="t-slds__bullet_wrapper"
+                                        style="display: none; margin-bottom: 0px; padding-bottom: 10px;">
+                                        <div class="t-slds__bullet t-slds__bullet_active" data-slide-bullet-for="1">
+                                            <div class="t-slds__bullet_body"
+                                                style="width: calc(8px * var(--zoom, 1)); height: calc(8px * var(--zoom, 1)); background-color: rgb(153, 153, 153);"
+                                                aria-current="true"></div>
+                                        </div>
+                                        <div class="t-slds__bullet" data-slide-bullet-for="2">
+                                            <div class="t-slds__bullet_body"
+                                                style="width: calc(8px * var(--zoom, 1)); height: calc(8px * var(--zoom, 1)); background-color: rgb(153, 153, 153);">
                                             </div>
                                         </div>
-                                        <div class="t-slds__item t-slds__item-loaded" data-slide-index="2"
-                                            aria-hidden="true" style="width: 1521px; opacity: 0;">
-                                            <div class="t-width">
-                                                <div itemscope=""
-                                                    class="t-null__slds-wrapper t-slds__wrapper t-slds__wrapper_100 t-align_center">
-                                                    <meta itemprop="image" content="">
-                                                    <meta itemprop="caption" content="SEO">
-                                                    <div data-img-lid="1698922282906"
-                                                        class="tn-atom__slds-img t-bgimg loaded"
-                                                        data-original="{{ asset('storage/1/3.jpg') }}"
-                                                        style="background-image: url('{{ asset('storage/1/3.jpg') }}'); width: calc(1521px * var(--zoom, 1)); height: calc(800px * var(--zoom, 1));"
-                                                        width="100%" imgfield="tn_img_1698922282906"
-                                                        data-tu-noclick="yes" data-tu-is-image="yes"
-                                                        data-tu-multiple="no"></div>
-                                                </div>
+                                        <div class="t-slds__bullet" data-slide-bullet-for="3">
+                                            <div class="t-slds__bullet_body"
+                                                style="width: calc(8px * var(--zoom, 1)); height: calc(8px * var(--zoom, 1)); background-color: rgb(153, 153, 153);">
                                             </div>
                                         </div>
-                                        <div class="t-slds__item t-slds__item-loaded" data-slide-index="3"
-                                            aria-hidden="true" style="width: 1521px; opacity: 0;">
-                                            <div class="t-width">
-                                                <div itemscope=""
-                                                    class="t-null__slds-wrapper t-slds__wrapper t-slds__wrapper_100 t-align_center">
-                                                    <meta itemprop="image" content="">
-                                                    <meta itemprop="caption" content="SEO">
-                                                    <div data-img-lid="1698922282907"
-                                                        class="tn-atom__slds-img t-bgimg loaded"
-                                                        data-original="{{ asset('storage/1/4.jpg') }}"
-                                                        style="background-image: url('{{ asset('storage/1/4.jpg') }}'); width: calc(1521px * var(--zoom, 1)); height: calc(800px * var(--zoom, 1));"
-                                                        width="100%" imgfield="tn_img_1698922282907"
-                                                        data-tu-noclick="yes" data-tu-is-image="yes"
-                                                        data-tu-multiple="no"></div>
-                                                </div>
+                                        <div class="t-slds__bullet" data-slide-bullet-for="4">
+                                            <div class="t-slds__bullet_body"
+                                                style="width: calc(8px * var(--zoom, 1)); height: calc(8px * var(--zoom, 1)); background-color: rgb(153, 153, 153);">
                                             </div>
                                         </div>
-                                        <div class="t-slds__item t-slds__item-loaded" data-slide-index="4"
-                                            aria-hidden="true" style="width: 1521px; opacity: 0;">
-                                            <div class="t-width">
-                                                <div itemscope=""
-                                                    class="t-null__slds-wrapper t-slds__wrapper t-slds__wrapper_100 t-align_center">
-                                                    <meta itemprop="image" content="">
-                                                    <meta itemprop="caption" content="SEO">
-                                                    <div data-img-lid="1698922282908"
-                                                        class="tn-atom__slds-img t-bgimg loaded"
-                                                        data-original="{{ asset('storage/1/5.jpg') }}"
-                                                        style="background-image: url('{{ asset('storage/1/5.jpg') }}'); width: calc(1521px * var(--zoom, 1)); height: calc(800px * var(--zoom, 1));"
-                                                        width="100%" imgfield="tn_img_1698922282908"
-                                                        data-tu-noclick="yes" data-tu-is-image="yes"
-                                                        data-tu-multiple="no"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="t-slds__item t-slds__item-loaded" data-slide-index="5"
-                                            aria-hidden="true" style="width: 1521px; opacity: 0;">
-                                            <div class="t-width">
-                                                <div itemscope=""
-                                                    class="t-null__slds-wrapper t-slds__wrapper t-slds__wrapper_100 t-align_center">
-                                                    <meta itemprop="image" content="">
-                                                    <meta itemprop="caption" content="SEO">
-                                                    <div data-img-lid="1698922282904"
-                                                        class="tn-atom__slds-img t-bgimg loaded"
-                                                        data-original="{{ asset('storage/1/1.jpg') }}"
-                                                        style="background-image: url('{{ asset('storage/1/1.jpg') }}'); width: calc(1521px * var(--zoom, 1)); height: calc(800px * var(--zoom, 1));"
-                                                        width="100%" imgfield="tn_img_1698922282904"
-                                                        data-tu-noclick="yes" data-tu-is-image="yes"
-                                                        data-tu-multiple="no"></div>
-                                                </div>
+                                        <div class="t-slds__bullet" data-slide-bullet-for="5">
+                                            <div class="t-slds__bullet_body"
+                                                style="width: calc(8px * var(--zoom, 1)); height: calc(8px * var(--zoom, 1)); background-color: rgb(153, 153, 153);">
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="t-slds__bullet_wrapper"
-                                style="display: none; margin-bottom: 0px; padding-bottom: 10px;">
-                                <div class="t-slds__bullet t-slds__bullet_active" data-slide-bullet-for="1">
-                                    <div class="t-slds__bullet_body"
-                                        style="width: calc(8px * var(--zoom, 1)); height: calc(8px * var(--zoom, 1)); background-color: rgb(153, 153, 153);"
-                                        aria-current="true"></div>
-                                </div>
-                                <div class="t-slds__bullet" data-slide-bullet-for="2">
-                                    <div class="t-slds__bullet_body"
-                                        style="width: calc(8px * var(--zoom, 1)); height: calc(8px * var(--zoom, 1)); background-color: rgb(153, 153, 153);">
+                                    <div class="t-slds__caption__container"></div>
+                                    <div class="t-slds__arrow_container t-slds__arrow_container-center"
+                                        style="width: 100%;">
+                                        <div class="t-slds__arrow_wrapper t-slds__arrow_wrapper-left"
+                                            data-slide-direction="left" style="height: 800px;">
+                                            <div class="t-slds__arrow t-slds__arrow-left"
+                                                style="margin-top: 0px; width: calc(30px * var(--zoom, 1)); height: calc(30px * var(--zoom, 1)); background-color: rgb(232, 232, 232); left: calc(20px * var(--zoom, 1)); right: auto;">
+                                                <div class="t-slds__arrow_body t-slds__arrow_body-left"
+                                                    style="width: calc(30px * var(--zoom, 1)) !important;"><svg
+                                                        class="t-null__slds-arrow t-null__slds-arrow_1" width="94"
+                                                        height="94" viewBox="0 0 94 94" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg" style="display: block;">
+                                                        <path d="M39 68L60 47L39 26" stroke="black"
+                                                            vector-effect="non-scaling-stroke"
+                                                            style="stroke-width: 1px; stroke: rgb(0, 0, 0);"></path>
+                                                    </svg><svg class="t-null__slds-arrow t-null__slds-arrow_2"
+                                                        width="94" height="94" viewBox="0 0 94 94" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                                        <path d="M63 47.917H30" stroke="black"
+                                                            vector-effect="non-scaling-stroke"
+                                                            style="stroke-width: 1px; stroke: rgb(0, 0, 0);"></path>
+                                                        <path d="M46.917 64L63 47.917L46.917 31.834" stroke="black"
+                                                            vector-effect="non-scaling-stroke"
+                                                            style="stroke-width: 1px; stroke: rgb(0, 0, 0);"></path>
+                                                    </svg></div>
+                                            </div>
+                                        </div>
+                                        <div class="t-slds__arrow_wrapper t-slds__arrow_wrapper-right"
+                                            data-slide-direction="right" style="height: 800px;">
+                                            <div class="t-slds__arrow t-slds__arrow-right "
+                                                style="margin-top: 0px; width: calc(30px * var(--zoom, 1)); height: calc(30px * var(--zoom, 1)); background-color: rgb(232, 232, 232); left: auto; right: calc(20px * var(--zoom, 1));">
+                                                <div class="t-slds__arrow_body t-slds__arrow_body-right"
+                                                    style="width: calc(30px * var(--zoom, 1)) !important;"><svg
+                                                        class="t-null__slds-arrow t-null__slds-arrow_1" width="94"
+                                                        height="94" viewBox="0 0 94 94" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg" style="display: block;">
+                                                        <path d="M39 68L60 47L39 26" stroke="black"
+                                                            vector-effect="non-scaling-stroke"
+                                                            style="stroke-width: 1px; stroke: rgb(0, 0, 0);"></path>
+                                                    </svg><svg class="t-null__slds-arrow t-null__slds-arrow_2"
+                                                        width="94" height="94" viewBox="0 0 94 94" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                                        <path d="M63 47.917H30" stroke="black"
+                                                            vector-effect="non-scaling-stroke"
+                                                            style="stroke-width: 1px; stroke: rgb(0, 0, 0);"></path>
+                                                        <path d="M46.917 64L63 47.917L46.917 31.834" stroke="black"
+                                                            vector-effect="non-scaling-stroke"
+                                                            style="stroke-width: 1px; stroke: rgb(0, 0, 0);"></path>
+                                                    </svg></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="t-slds__bullet" data-slide-bullet-for="3">
-                                    <div class="t-slds__bullet_body"
-                                        style="width: calc(8px * var(--zoom, 1)); height: calc(8px * var(--zoom, 1)); background-color: rgb(153, 153, 153);">
+                                    <div class="t-slds__caption t-slds__caption-active" data-slide-caption="1">
+                                        <div class="t-slds__caption_wrapper">
+                                            <div class="t-slds__title"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="t-slds__bullet" data-slide-bullet-for="4">
-                                    <div class="t-slds__bullet_body"
-                                        style="width: calc(8px * var(--zoom, 1)); height: calc(8px * var(--zoom, 1)); background-color: rgb(153, 153, 153);">
+                                    <div class="t-slds__caption" data-slide-caption="2">
+                                        <div class="t-slds__caption_wrapper">
+                                            <div class="t-slds__title"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="t-slds__bullet" data-slide-bullet-for="5">
-                                    <div class="t-slds__bullet_body"
-                                        style="width: calc(8px * var(--zoom, 1)); height: calc(8px * var(--zoom, 1)); background-color: rgb(153, 153, 153);">
+                                    <div class="t-slds__caption" data-slide-caption="3">
+                                        <div class="t-slds__caption_wrapper">
+                                            <div class="t-slds__title"></div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="t-slds__caption__container"></div>
-                            <div class="t-slds__arrow_container t-slds__arrow_container-center" style="width: 100%;">
-                                <div class="t-slds__arrow_wrapper t-slds__arrow_wrapper-left"
-                                    data-slide-direction="left" style="height: 800px;">
-                                    <div class="t-slds__arrow t-slds__arrow-left"
-                                        style="margin-top: 0px; width: calc(30px * var(--zoom, 1)); height: calc(30px * var(--zoom, 1)); background-color: rgb(232, 232, 232); left: calc(20px * var(--zoom, 1)); right: auto;">
-                                        <div class="t-slds__arrow_body t-slds__arrow_body-left"
-                                            style="width: calc(30px * var(--zoom, 1)) !important;"><svg
-                                                class="t-null__slds-arrow t-null__slds-arrow_1" width="94" height="94"
-                                                viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                style="display: block;">
-                                                <path d="M39 68L60 47L39 26" stroke="black"
-                                                    vector-effect="non-scaling-stroke"
-                                                    style="stroke-width: 1px; stroke: rgb(0, 0, 0);"></path>
-                                            </svg><svg class="t-null__slds-arrow t-null__slds-arrow_2" width="94"
-                                                height="94" viewBox="0 0 94 94" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg" style="display: none;">
-                                                <path d="M63 47.917H30" stroke="black"
-                                                    vector-effect="non-scaling-stroke"
-                                                    style="stroke-width: 1px; stroke: rgb(0, 0, 0);"></path>
-                                                <path d="M46.917 64L63 47.917L46.917 31.834" stroke="black"
-                                                    vector-effect="non-scaling-stroke"
-                                                    style="stroke-width: 1px; stroke: rgb(0, 0, 0);"></path>
-                                            </svg></div>
+                                    <div class="t-slds__caption" data-slide-caption="4">
+                                        <div class="t-slds__caption_wrapper">
+                                            <div class="t-slds__title"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="t-slds__arrow_wrapper t-slds__arrow_wrapper-right"
-                                    data-slide-direction="right" style="height: 800px;">
-                                    <div class="t-slds__arrow t-slds__arrow-right "
-                                        style="margin-top: 0px; width: calc(30px * var(--zoom, 1)); height: calc(30px * var(--zoom, 1)); background-color: rgb(232, 232, 232); left: auto; right: calc(20px * var(--zoom, 1));">
-                                        <div class="t-slds__arrow_body t-slds__arrow_body-right"
-                                            style="width: calc(30px * var(--zoom, 1)) !important;"><svg
-                                                class="t-null__slds-arrow t-null__slds-arrow_1" width="94" height="94"
-                                                viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                style="display: block;">
-                                                <path d="M39 68L60 47L39 26" stroke="black"
-                                                    vector-effect="non-scaling-stroke"
-                                                    style="stroke-width: 1px; stroke: rgb(0, 0, 0);"></path>
-                                            </svg><svg class="t-null__slds-arrow t-null__slds-arrow_2" width="94"
-                                                height="94" viewBox="0 0 94 94" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg" style="display: none;">
-                                                <path d="M63 47.917H30" stroke="black"
-                                                    vector-effect="non-scaling-stroke"
-                                                    style="stroke-width: 1px; stroke: rgb(0, 0, 0);"></path>
-                                                <path d="M46.917 64L63 47.917L46.917 31.834" stroke="black"
-                                                    vector-effect="non-scaling-stroke"
-                                                    style="stroke-width: 1px; stroke: rgb(0, 0, 0);"></path>
-                                            </svg></div>
+                                    <div class="t-slds__caption" data-slide-caption="5">
+                                        <div class="t-slds__caption_wrapper">
+                                            <div class="t-slds__title"></div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="t-slds__caption t-slds__caption-active" data-slide-caption="1">
-                                <div class="t-slds__caption_wrapper">
-                                    <div class="t-slds__title"></div>
-                                </div>
-                            </div>
-                            <div class="t-slds__caption" data-slide-caption="2">
-                                <div class="t-slds__caption_wrapper">
-                                    <div class="t-slds__title"></div>
-                                </div>
-                            </div>
-                            <div class="t-slds__caption" data-slide-caption="3">
-                                <div class="t-slds__caption_wrapper">
-                                    <div class="t-slds__title"></div>
-                                </div>
-                            </div>
-                            <div class="t-slds__caption" data-slide-caption="4">
-                                <div class="t-slds__caption_wrapper">
-                                    <div class="t-slds__title"></div>
-                                </div>
-                            </div>
-                            <div class="t-slds__caption" data-slide-caption="5">
-                                <div class="t-slds__caption_wrapper">
-                                    <div class="t-slds__title"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="t396__elem tn-elem tn-elem__6617306041696253442236" data-elem-id="1696253442236"
+                        data-elem-type="shape" data-field-top-value="0" data-field-left-value="0"
+                        data-field-height-value="100" data-field-width-value="100" data-field-axisy-value="top"
+                        data-field-axisx-value="left" data-field-container-value="window" data-field-topunits-value="px"
+                        data-field-leftunits-value="px" data-field-heightunits-value="%" data-field-widthunits-value="%"
+                        data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
+                        style="width: 1521px; left: 0px; top: 0px; height: 800px;">
+                        <div class="tn-atom"> </div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6617306041695797803907" data-elem-id="1695797803907"
+                        data-elem-type="text" data-field-top-value="-222" data-field-left-value="176"
+                        data-field-width-value="986" data-field-axisy-value="bottom" data-field-axisx-value="left"
+                        data-field-container-value="window" data-field-topunits-value="px"
+                        data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+                        data-field-top-res-320-value="-221" data-field-left-res-320-value="18"
+                        data-field-width-res-320-value="294" data-field-top-res-640-value="-185"
+                        data-field-left-res-640-value="47" data-field-top-res-960-value="-168"
+                        data-field-left-res-960-value="118" data-field-width-res-960-value="566"
+                        data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
+                        style="top: 386px; left: 176px; width: 986px; height: auto;">
+                        <h1 class="tn-atom" field="tn_text_1695797803907" style="line-height: 96px;">
+                            {{ $project->title }}
+                        </h1>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6617306041695797803912" data-elem-id="1695797803912"
+                        data-elem-type="text" data-field-top-value="-124" data-field-left-value="180"
+                        data-field-width-value="446" data-field-axisy-value="bottom" data-field-axisx-value="left"
+                        data-field-container-value="window" data-field-topunits-value="px"
+                        data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+                        data-field-top-res-320-value="-165" data-field-left-res-320-value="20"
+                        data-field-width-res-320-value="272" data-field-top-res-640-value="-109"
+                        data-field-left-res-640-value="47" data-field-top-res-960-value="-92"
+                        data-field-left-res-960-value="120" data-field-width-res-960-value="361"
+                        data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
+                        style="top: 619px; left: 180px; width: 446px; height: auto;">
+                        <div class="tn-atom" field="tn_text_1695797803912" style="line-height: 29px;">
+                            {{ $project->apartment_info }}
+                        </div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6617306041695797803957" data-elem-id="1695797803957"
+                        data-elem-type="text" data-field-top-value="-134" data-field-left-value="-108"
+                        data-field-width-value="322" data-field-axisy-value="bottom" data-field-axisx-value="right"
+                        data-field-container-value="window" data-field-topunits-value="px"
+                        data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+                        data-field-top-res-320-value="-64" data-field-left-res-320-value="20"
+                        data-field-top-res-640-value="-57" data-field-left-res-640-value="47" Тип
+                        данных-x-res-640="left" data-field-top-res-960="-93" data-field-left-res-960="-99"
+                        data-field-width-res-960="242"
+                        data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
+                        style="top: 640px; left: 1091px; width: 322px; height: auto;">
+                        <div class="tn-atom" field="tn_text_1695797803957" style="line-height: 26px;">Бесплатная
+                            консультация</div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6617306041695797803958" data-elem-id="1695797803958"
+                        data-elem-type="shape" data-field-top-value="-123" data-field-left-value="-70"
+                        data-field-height-value="2" data-field-width-value="360" data-field-axisy-value="bottom"
+                        data-field-axisx-value="right" data-field-container-value="window"
+                        data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px"
+                        data-field-widthunits-value="px" data-field-top-res-320-value="-58"
+                        data-field-left-res-320-value="20" data-field-width-res-320-value="280"
+                        data-field-top-res-640-value="-51" data-field-left-res-640-value="47"
+                        data-field-axisx-res-640-value="left" data-field-top-res-960-value="-87"
+                        data-field-left-res-960-value="-41" data-field-width-res-960-value="300"
+                        data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
+                        style="width: 360px; left: 1091px; top: 675px; height: 2px;">
+                        <div class="tn-atom"> </div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6617306041695909801635" data-elem-id="1695909801635"
+                        data-elem-type="shape" data-field-top-value="0" data-field-left-value="80"
+                        data-field-height-value="100" data-field-width-value="1" data-field-axisy-value="top"
+                        data-field-axisx-value="left" data-field-container-value="window" data-field-topunits-value="px"
+                        data-field-leftunits-value="px" data-field-heightunits-value="%"
+                        data-field-widthunits-value="px" data-field-top-res-640-value="-710"
+                        data-field-left-res-640-value="60" data-field-left-res-960-value="70"
+                        data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
+                        style="width: 1px; left: 80px; top: 0px; height: 800px;">
+                        <div class="tn-atom"> </div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6617306041696001042438" data-elem-id="1696001042438"
+                        data-elem-type="text" data-field-top-value="-151" data-field-left-value="13"
+                        data-field-width-value="52" data-field-axisy-value="bottom" data-field-axisx-value="left"
+                        data-field-container-value="window" data-field-topunits-value="px"
+                        data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+                        data-animate-sbs-event="hover"
+                        data-animate-sbs-opts="[{'ti':'0','mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':'0','bl':'0','ea':'','dt':'0'},{'ti':200,'mx':'0','my':'0','sx':'1','sy':'1','op':0.7,'ro':'0','bl':'0','ea':'','dt':'0'}]"
+                        data-field-top-res-640-value="-658" data-field-top-res-960-value="-118"
+                        data-field-left-res-960-value="5"
+                        data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
+                        style="top: 635px; left: 13px; width: 52px; height: auto; transition: none;">
+                        <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
+                            id="sbs-661730604-1696001042438"
+                            style="display: table; width: inherit; height: inherit; pointer-events: none;">
+                            <div class="tn-atom" style="pointer-events: auto; line-height: 14px;"><a href="/"
+                                    style="color: inherit">Главная</a></div>
+                        </div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6637435581696001042449" data-elem-id="1696001042449"
+                        data-elem-type="text" data-field-top-value="-286" data-field-left-value="-18"
+                        data-field-width-value="117" data-field-axisy-value="bottom" data-field-axisx-value="left"
+                        data-field-container-value="window" data-field-topunits-value="px"
+                        data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+                        data-animate-sbs-event="hover"
+                        data-animate-sbs-opts="[{'ti':'0','mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':'0','bl':'0','ea':'','dt':'0'},{'ti':200,'mx':'0','my':'0','sx':'1','sy':'1','op':0.7,'ro':'0','bl':'0','ea':'','dt':'0'}]"
+                        data-field-top-res-640-value="-775" data-field-left-res-640-value="-28"
+                        data-field-top-res-960-value="-235" data-field-left-res-960-value="-27"
+                        data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
+                        style="top: 500px; left: -18px; width: 117px; height: auto;">
+                        <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover"
+                            id="sbs-663743558-1696001042449"
+                            style="display: table; width: inherit; height: inherit; pointer-events: none;">
+                            <div class="tn-atom" style="pointer-events: auto;"><a href="/projects"
+                                    style="color: inherit">Проекты</a></div>
+                        </div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6637435581695797803912" data-elem-id="1695797803912"
+                        data-elem-type="text" data-field-top-value="-446" data-field-left-value="180"
+                        data-field-width-value="294" data-field-axisy-value="bottom" data-field-axisx-value="left"
+                        data-field-container-value="window" data-field-topunits-value="px"
+                        data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+                        data-field-top-res-320-value="253" data-field-left-res-320-value="20"
+                        data-field-width-res-320-value="272" data-field-top-res-640-value="217"
+                        data-field-left-res-640-value="47" data-field-width-res-640-value="186"
+                        data-field-axisy-res-640-value="top" data-field-container-res-640-value="window"
+                        data-field-topunits-res-640-value="px" data-field-leftunits-res-640-value="px"
+                        data-field-top-res-960-value="-340" data-field-left-res-960-value="120"
+                        data-field-width-res-960-value="361"
+                        data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
+                        style="top: 336px; left: 180px; width: 294px; height: auto;">
+                        <div class="tn-atom" field="tn_text_1695797803912" style=""><a href="/"
+                                style="color: rgb(255, 255, 255);">Главная</a> → <a href="/projects"
+                                style="color: rgb(255, 255, 255);">Проекты</a> → Проект {{ $project->id }}</div>
+                    </div>
+                    <div class="t396__elem tn-elem tn-elem__6617306041697392484171 js-sbs-anim-trigger_hover"
+                        data-elem-id="1697392484171" data-elem-type="shape" data-field-top-value="-123"
+                        data-field-left-value="-70" data-field-height-value="35" data-field-width-value="360"
+                        data-field-axisy-value="bottom" data-field-axisx-value="right"
+                        data-field-container-value="window" data-field-topunits-value="px"
+                        data-field-leftunits-value="px" data-field-heightunits-value="px"
+                        data-field-widthunits-value="px" data-field-top-res-320-value="-61"
+                        data-field-left-res-320-value="20" data-field-width-res-320-value="280"
+                        data-field-top-res-640-value="-52" data-field-left-res-640-value="46"
+                        data-field-width-res-640-value="303" data-field-axisx-res-640-value="left"
+                        data-field-top-res-960-value="-90" data-field-left-res-960-value="-40"
+                        data-field-height-res-960-value="27" data-field-width-res-960-value="301"
+                        data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
+                        style="width: 360px; left: 1091px; top: 642px; height: 35px; pointer-events: none;"> <a
+                            class="tn-atom" href="#popup:consultation" role="button" aria-haspopup="dialog"
+                            style="pointer-events: auto;"> </a>
+                    </div>
                 </div>
             </div>
-            <div class="t396__elem tn-elem tn-elem__6617306041696253442236" data-elem-id="1696253442236"
-                data-elem-type="shape" data-field-top-value="0" data-field-left-value="0" data-field-height-value="100"
-                data-field-width-value="100" data-field-axisy-value="top" data-field-axisx-value="left"
-                data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px"
-                data-field-heightunits-value="%" data-field-widthunits-value="%"
-                data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
-                style="width: 1521px; left: 0px; top: 0px; height: 800px;">
-                <div class="tn-atom"> </div>
-            </div>
-            <div class="t396__elem tn-elem tn-elem__6617306041695797803907" data-elem-id="1695797803907"
-                data-elem-type="text" data-field-top-value="-222" data-field-left-value="176"
-                data-field-width-value="986" data-field-axisy-value="bottom" data-field-axisx-value="left"
-                data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px"
-                data-field-heightunits-value="" data-field-widthunits-value="px" data-field-top-res-320-value="-221"
-                data-field-left-res-320-value="18" data-field-width-res-320-value="294"
-                data-field-top-res-640-value="-185" data-field-left-res-640-value="47"
-                data-field-top-res-960-value="-168" data-field-left-res-960-value="118"
-                data-field-width-res-960-value="566"
-                data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
-                style="top: 386px; left: 176px; width: 986px; height: auto;">
-                <h1 class="tn-atom" field="tn_text_1695797803907" style="line-height: 96px;">
-                    {{ $project->title }}
-                </h1>
-            </div>
-            <div class="t396__elem tn-elem tn-elem__6617306041695797803912" data-elem-id="1695797803912"
-                data-elem-type="text" data-field-top-value="-124" data-field-left-value="180"
-                data-field-width-value="446" data-field-axisy-value="bottom" data-field-axisx-value="left"
-                data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px"
-                data-field-heightunits-value="" data-field-widthunits-value="px" data-field-top-res-320-value="-165"
-                data-field-left-res-320-value="20" data-field-width-res-320-value="272"
-                data-field-top-res-640-value="-109" data-field-left-res-640-value="47"
-                data-field-top-res-960-value="-92" data-field-left-res-960-value="120"
-                data-field-width-res-960-value="361"
-                data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
-                style="top: 619px; left: 180px; width: 446px; height: auto;">
-                <div class="tn-atom" field="tn_text_1695797803912" style="line-height: 29px;">
-                    {{ $project->apartment_info }}
-                </div>
-            </div>
-            <div class="t396__elem tn-elem tn-elem__6617306041695797803957" data-elem-id="1695797803957"
-                data-elem-type="text" data-field-top-value="-134" data-field-left-value="-108"
-                data-field-width-value="322" data-field-axisy-value="bottom" data-field-axisx-value="right"
-                data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px"
-                data-field-heightunits-value="" data-field-widthunits-value="px" data-field-top-res-320-value="-64"
-                data-field-left-res-320-value="20" data-field-top-res-640-value="-57" data-field-left-res-640-value="47"
-                Тип данных-x-res-640="left" data-field-top-res-960="-93" data-field-left-res-960="-99"
-                data-field-width-res-960="242"
-                data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
-                style="top: 640px; left: 1091px; width: 322px; height: auto;">
-                <div class="tn-atom" field="tn_text_1695797803957" style="line-height: 26px;">Бесплатная
-                    консультация</div>
-            </div>
-            <div class="t396__elem tn-elem tn-elem__6617306041695797803958" data-elem-id="1695797803958"
-                data-elem-type="shape" data-field-top-value="-123" data-field-left-value="-70"
-                data-field-height-value="2" data-field-width-value="360" data-field-axisy-value="bottom"
-                data-field-axisx-value="right" data-field-container-value="window" data-field-topunits-value="px"
-                data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px"
-                data-field-top-res-320-value="-58" data-field-left-res-320-value="20"
-                data-field-width-res-320-value="280" data-field-top-res-640-value="-51"
-                data-field-left-res-640-value="47" data-field-axisx-res-640-value="left"
-                data-field-top-res-960-value="-87" data-field-left-res-960-value="-41"
-                data-field-width-res-960-value="300"
-                data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
-                style="width: 360px; left: 1091px; top: 675px; height: 2px;">
-                <div class="tn-atom"> </div>
-            </div>
-            <div class="t396__elem tn-elem tn-elem__6617306041695909801635" data-elem-id="1695909801635"
-                data-elem-type="shape" data-field-top-value="0" data-field-left-value="80" data-field-height-value="100"
-                data-field-width-value="1" data-field-axisy-value="top" data-field-axisx-value="left"
-                data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px"
-                data-field-heightunits-value="%" data-field-widthunits-value="px" data-field-top-res-640-value="-710"
-                data-field-left-res-640-value="60" data-field-left-res-960-value="70"
-                data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
-                style="width: 1px; left: 80px; top: 0px; height: 800px;">
-                <div class="tn-atom"> </div>
-            </div>
-            <div class="t396__elem tn-elem tn-elem__6617306041696001042438" data-elem-id="1696001042438"
-                data-elem-type="text" data-field-top-value="-151" data-field-left-value="13" data-field-width-value="52"
-                data-field-axisy-value="bottom" data-field-axisx-value="left" data-field-container-value="window"
-                data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value=""
-                data-field-widthunits-value="px" data-animate-sbs-event="hover"
-                data-animate-sbs-opts="[{'ti':'0','mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':'0','bl':'0','ea':'','dt':'0'},{'ti':200,'mx':'0','my':'0','sx':'1','sy':'1','op':0.7,'ro':'0','bl':'0','ea':'','dt':'0'}]"
-                data-field-top-res-640-value="-658" data-field-top-res-960-value="-118"
-                data-field-left-res-960-value="5"
-                data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
-                style="top: 635px; left: 13px; width: 52px; height: auto; transition: none;">
-                <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover" id="sbs-661730604-1696001042438"
-                    style="display: table; width: inherit; height: inherit; pointer-events: none;">
-                    <div class="tn-atom" style="pointer-events: auto; line-height: 14px;"><a href="/"
-                            style="color: inherit">Главная</a></div>
-                </div>
-            </div>
-            <div class="t396__elem tn-elem tn-elem__6637435581696001042449" data-elem-id="1696001042449"
-                data-elem-type="text" data-field-top-value="-286" data-field-left-value="-18"
-                data-field-width-value="117" data-field-axisy-value="bottom" data-field-axisx-value="left"
-                data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px"
-                data-field-heightunits-value="" data-field-widthunits-value="px" data-animate-sbs-event="hover"
-                data-animate-sbs-opts="[{'ti':'0','mx':'0','my':'0','sx':'1','sy':'1','op':'1','ro':'0','bl':'0','ea':'','dt':'0'},{'ti':200,'mx':'0','my':'0','sx':'1','sy':'1','op':0.7,'ro':'0','bl':'0','ea':'','dt':'0'}]"
-                data-field-top-res-640-value="-775" data-field-left-res-640-value="-28"
-                data-field-top-res-960-value="-235" data-field-left-res-960-value="-27"
-                data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
-                style="top: 500px; left: -18px; width: 117px; height: auto;">
-                <div class="tn-atom__sbs-anim-wrapper js-sbs-anim-trigger_hover" id="sbs-663743558-1696001042449"
-                    style="display: table; width: inherit; height: inherit; pointer-events: none;">
-                    <div class="tn-atom" style="pointer-events: auto;"><a href="/projects"
-                            style="color: inherit">Проекты</a></div>
-                </div>
-            </div>
-            <div class="t396__elem tn-elem tn-elem__6637435581695797803912" data-elem-id="1695797803912"
-                data-elem-type="text" data-field-top-value="-446" data-field-left-value="180"
-                data-field-width-value="294" data-field-axisy-value="bottom" data-field-axisx-value="left"
-                data-field-container-value="window" data-field-topunits-value="px" data-field-leftunits-value="px"
-                data-field-heightunits-value="" data-field-widthunits-value="px" data-field-top-res-320-value="253"
-                data-field-left-res-320-value="20" data-field-width-res-320-value="272"
-                data-field-top-res-640-value="217" data-field-left-res-640-value="47"
-                data-field-width-res-640-value="186" data-field-axisy-res-640-value="top"
-                data-field-container-res-640-value="window" data-field-topunits-res-640-value="px"
-                data-field-leftunits-res-640-value="px" data-field-top-res-960-value="-340"
-                data-field-left-res-960-value="120" data-field-width-res-960-value="361"
-                data-fields="top,left,width,height,container,axisx,axisy,widthunits,leftunits,topunits"
-                style="top: 336px; left: 180px; width: 294px; height: auto;">
-                <div class="tn-atom" field="tn_text_1695797803912" style=""><a href="/"
-                        style="color: rgb(255, 255, 255);">Главная</a> → <a href="/projects"
-                        style="color: rgb(255, 255, 255);">Проекты</a> → Проект {{ $project->id }}</div>
-            </div>
-            <div class="t396__elem tn-elem tn-elem__6617306041697392484171 js-sbs-anim-trigger_hover"
-                data-elem-id="1697392484171" data-elem-type="shape" data-field-top-value="-123"
-                data-field-left-value="-70" data-field-height-value="35" data-field-width-value="360"
-                data-field-axisy-value="bottom" data-field-axisx-value="right" data-field-container-value="window"
-                data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px"
-                data-field-widthunits-value="px" data-field-top-res-320-value="-61" data-field-left-res-320-value="20"
-                data-field-width-res-320-value="280" data-field-top-res-640-value="-52"
-                data-field-left-res-640-value="46" data-field-width-res-640-value="303"
-                data-field-axisx-res-640-value="left" data-field-top-res-960-value="-90"
-                data-field-left-res-960-value="-40" data-field-height-res-960-value="27"
-                data-field-width-res-960-value="301"
-                data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
-                style="width: 360px; left: 1091px; top: 642px; height: 35px; pointer-events: none;"> <a class="tn-atom"
-                    href="#popup:consultation" role="button" aria-haspopup="dialog" style="pointer-events: auto;"> </a>
-            </div>
+            <script>t_onReady(function () { t_onFuncLoad('t396_init', function () { t396_init('661730604'); }); });</script>
+            <!-- /T396 -->
         </div>
-    </div>
-    <script>t_onReady(function () { t_onFuncLoad('t396_init', function () { t396_init('661730604'); }); });</script>
-    <!-- /T396 -->
-</div>
 
         <div id="rec663743560" class="r t-rec" style="--zoom: 1;" data-animationappear="off" data-record-type="396">
             <!-- T396 -->
@@ -1384,31 +1403,31 @@
                 </div>
             </div>
 
-<style>
-    .copyright {
-        font-size: 14px;
-        color: #ccc;
-        text-align: center;
-        padding: 20px 0;
-    }
+            <style>
+                .copyright {
+                    font-size: 14px;
+                    color: #ccc;
+                    text-align: center;
+                    padding: 20px 0;
+                }
 
-    .copyright a {
-        font-weight: bold;
-        color: #444 !important;
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
+                .copyright a {
+                    font-weight: bold;
+                    color: #444 !important;
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+                }
 
-    .copyright a:hover {
-        color: #fff !important; 
-        text-decoration: underline;
-    }
-</style>
+                .copyright a:hover {
+                    color: #fff !important;
+                    text-decoration: underline;
+                }
+            </style>
 
-<div class="copyright">
-    &copy; {{ date('Y') }} {{ config('app.name') }}. Все права защищены.  
-    Сайт разработан <a href="https://iqbolshoh.uz" target="_blank">Iqbolshoh dev</a>. 
-</div>
+            <div class="copyright">
+                &copy; {{ date('Y') }} {{ config('app.name') }}. Все права защищены.
+                Сайт разработан <a href="https://iqbolshoh.uz" target="_blank">Iqbolshoh dev</a>.
+            </div>
 
         </footer>
 
