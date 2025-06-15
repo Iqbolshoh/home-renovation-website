@@ -7,6 +7,17 @@
     <title>Подробности проекта | {{ config('app.name') }}</title>
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/tilda-zero-form-errorbox.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/tilda-grid-3.0.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/tilda-blocks-page38850329.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/tilda-animation-2.0.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/tilda-cover-1.0.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/tilda-popup-1.1.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/tilda-menusub-1.0.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/tilda-forms-1.0.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/tilda-slds-1.4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/tilda-zero-gallery-1.0.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/fonts-tildasans.css') }}">
     <link rel="stylesheet" href="{{ asset('css/projects-details.css') }}">
     <link rel="stylesheet" href="{{ asset('css/fonts-tildasans.css') }}" media="all" onerror="this.loaderr='y';">
     <link rel="stylesheet" href="{{ asset('css/tilda-grid-3.0.min.css') }}" media="all" onerror="this.loaderr='y';">
@@ -37,16 +48,9 @@
         <link rel="stylesheet" href="{{ asset('css/tilda-zoom-2.0.min.css') }}" media="all">
     </noscript>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
     <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
-    <script src="{{ asset('js/tilda-scripts-3.0.min.js') }}"></script>
-    <script src="{{ asset('js/tilda-events-1.0.min.js') }}"></script>
-    <script src="{{ asset('js/tilda-cover-1.0.min.js') }}"></script>
-    <script src="{{ asset('js/tilda-zero-1.1.min.js') }}"></script>
-    <script src="{{ asset('js/tilda-video-1.0.min.js') }}"></script>
-    <script src="{{ asset('js/tilda-animation-sbs-1.0.min.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
     <script async id="tildastatscript" src="{{ asset('js/tilda-stat-1.0.min.js') }}"></script>
     <script async id="t-phonemask-script" src="{{ asset('js/tilda-phone-mask-1.1.min.js') }}"></script>
     <script async src="{{ asset('js/tilda-fallback-1.0.min.js') }}" charset="utf-8"></script>
@@ -80,6 +84,40 @@
     <script async src="{{ asset('js/tilda-skiplink-1.0.min.js') }}" charset="utf-8"
         onerror="this.loaderr='y';"></script>
     <script async src="{{ asset('js/tilda-events-1.0.min.js') }}" charset="utf-8" onerror="this.loaderr='y';"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="{{ asset('js/tilda-scripts-3.0.min.js') }}"></script>
+    <script src="{{ asset('js/tilda-events-1.0.min.js') }}"></script>
+    <script src="{{ asset('js/tilda-cover-1.0.min.js') }}"></script>
+    <script src="{{ asset('js/tilda-zero-1.1.min.js') }}"></script>
+    <script src="{{ asset('js/tilda-video-1.0.min.js') }}"></script>
+    <script src="{{ asset('js/tilda-animation-sbs-1.0.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script src="{{ asset('js/tilda-stat-1.0.min.js') }}" async></script>
+    <script src="{{ asset('js/tilda-fallback-1.0.min.js') }}" async></script>
+    <script nomodule src="{{ asset('js/tilda-polyfill-1.0.min.js') }}"></script>
+    <script src="{{ asset('js/tilda-scripts-3.0.min.js') }}" defer></script>
+    <script src="{{ asset('js/tilda-blocks-page38850329.min.js') }}" async></script>
+    <script src="{{ asset('js/tilda-lazyload-1.0.min.js') }}" async></script>
+    <script src="{{ asset('js/tilda-animation-2.0.min.js') }}" async></script>
+    <script src="{{ asset('js/tilda-zero-1.1.min.js') }}" async></script>
+    <script src="{{ asset('js/tilda-cover-1.0.min.js') }}" async></script>
+    <script src="{{ asset('js/tilda-video-1.0.min.js') }}" async></script>
+    <script src="{{ asset('js/tilda-video-processor-1.0.min.js') }}" async></script>
+    <script src="{{ asset('js/tilda-popup-1.0.min.js') }}" async></script>
+    <script src="{{ asset('js/tilda-text-clamp.min.js') }}" async></script>
+    <script src="{{ asset('js/tilda-menusub-1.0.min.js') }}" async></script>
+    <script src="{{ asset('js/tilda-menu-1.0.min.js') }}" async></script>
+    <script src="{{ asset('js/tilda-submenublocks-1.0.min.js') }}" async></script>
+    <script src="{{ asset('js/tilda-forms-1.0.min.js') }}" async></script>
+    <script src="{{ asset('js/tilda-slds-1.4.min.js') }}" async></script>
+    <script src="{{ asset('js/tilda-zero-gallery-1.0.min.js') }}" async></script>
+    <script src="{{ asset('js/hammer.min.js') }}" async></script>
+    <script src="{{ asset('js/tilda-zero-forms-1.0.min.js') }}" async></script>
+    <script src="{{ asset('js/tilda-animation-sbs-1.0.min.js') }}" async></script>
+    <script src="{{ asset('js/tilda-zero-scale-1.0.min.js') }}" async></script>
+    <script src="{{ asset('js/tilda-zero-fixed-1.0.min.js') }}" async></script>
+    <script src="{{ asset('js/tilda-skiplink-1.0.min.js') }}" async></script>
+    <script src="{{ asset('js/tilda-events-1.0.min.js') }}" async></script>
     <script>function t_onReady(t) { "loading" != document.readyState ? t() : document.addEventListener("DOMContentLoaded", t) } function t_onFuncLoad(t, e, a) { "function" == typeof window[t] ? e() : setTimeout(function () { t_onFuncLoad(t, e, a) }, a || 100) } function t396_initialScale(t) { if ((t = document.getElementById("rec" + t)) && (t = t.querySelector(".t396__artboard"))) { var e, a = document.documentElement.clientWidth, r = []; if (i = t.getAttribute("data-artboard-screens")) for (var i = i.split(","), o = 0; o < i.length; o++)r[o] = parseInt(i[o], 10); else r = [320, 480, 640, 960, 1200]; for (o = 0; o < r.length; o++) { var n = r[o]; n <= a && (e = n) } var l = "edit" === window.allrecords.getAttribute("data-tilda-mode"), d = "center" === t396_getFieldValue(t, "valign", e, r), c = "grid" === t396_getFieldValue(t, "upscale", e, r), s = t396_getFieldValue(t, "height_vh", e, r), u = t396_getFieldValue(t, "height", e, r), f = !!window.opr && !!window.opr.addons || !!window.opera || -1 !== navigator.userAgent.indexOf(" OPR/"); if (!l && d && !c && !s && u && !f) { for (var g = parseFloat((a / e).toFixed(3)), b = [t, t.querySelector(".t396__carrier"), t.querySelector(".t396__filter")], o = 0; o < b.length; o++)b[o].style.height = Math.floor(parseInt(u, 10) * g) + "px"; t396_scaleInitial__getElementsToScale(t).forEach(function (t) { t.style.zoom = g }) } } } function t396_scaleInitial__getElementsToScale(t) { return t ? Array.prototype.slice.call(t.children).filter(function (t) { return t && (t.classList.contains("t396__elem") || t.classList.contains("t396__group")) }) : [] } function t396_getFieldValue(t, e, a, r) { var i = r[r.length - 1], o = a === i ? t.getAttribute("data-artboard-" + e) : t.getAttribute("data-artboard-" + e + "-res-" + a); if (!o) for (var n = 0; n < r.length; n++) { var l = r[n]; if (!(l <= a) && (o = l === i ? t.getAttribute("data-artboard-" + e) : t.getAttribute("data-artboard-" + e + "-res-" + l))) break } return o } window.dataLayer = window.dataLayer || [], !/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(navigator.userAgent) && "undefined" != typeof sessionStorage && "y" !== sessionStorage.getItem("visited") && document.visibilityState && document.addEventListener("DOMContentLoaded", function t() { var e = document.querySelectorAll(".t-records"); Array.prototype.forEach.call(e, function (t) { t.classList.add("t-records_animated") }), setTimeout(function () { Array.prototype.forEach.call(e, function (t) { t.classList.add("t-records_visible") }), sessionStorage.setItem("visited", "y") }, 400) });</script>
 </head>
 
@@ -811,7 +849,7 @@
                         data-field-width-value="322" data-field-axisy-value="bottom" data-field-axisx-value="right"
                         data-field-container-value="window" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-                        data-field-top-res-320-value="-64" data-field-left-res-320-value="20"
+                        data-field-top-res-320-value="-64" data-field-left-res-320-value="-50"
                         data-field-top-res-640-value="-57" data-field-left-res-640-value="47" Тип
                         данных-x-res-640="left" data-field-top-res-960="-93" data-field-left-res-960="-99"
                         data-field-width-res-960="242"

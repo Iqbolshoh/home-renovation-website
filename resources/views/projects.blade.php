@@ -787,7 +787,7 @@
                         data-field-width-value="322" data-field-axisy-value="bottom" data-field-axisx-value="right"
                         data-field-container-value="window" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-                        data-field-top-res-320-value="-64" data-field-left-res-320-value="20"
+                        data-field-top-res-320-value="-64" data-field-left-res-320-value="-50"
                         data-field-top-res-640-value="-57" data-field-left-res-640-value="47" Тип
                         данных-x-res-640="left" data-field-top-res-960="-93" data-field-left-res-960="-99"
                         data-field-width-res-960="242"
