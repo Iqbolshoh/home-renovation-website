@@ -22,6 +22,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
     <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="{{ asset('js/tilda-scripts-3.0.min.js') }}"></script>
     <script src="{{ asset('js/tilda-events-1.0.min.js') }}"></script>
     <script src="{{ asset('js/tilda-cover-1.0.min.js') }}"></script>
