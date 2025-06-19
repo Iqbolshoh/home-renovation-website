@@ -22,13 +22,12 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
     <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="{{ asset('js/tilda-scripts-3.0.min.js') }}"></script>
     <script src="{{ asset('js/tilda-events-1.0.min.js') }}"></script>
     <script src="{{ asset('js/tilda-cover-1.0.min.js') }}"></script>
-    <script src="{{ asset('js/tilda-zero-1.1.min.js') }}"></script>
     <script src="{{ asset('js/tilda-video-1.0.min.js') }}"></script>
-    <script src="{{ asset('js/tilda-animation-sbs-1.0.min.js') }}"></script>
     <script src="{{ asset('js/sweet-alert.js') }}"></script>
     <script src="{{ asset('js/tilda-stat-1.0.min.js') }}" async></script>
     <script src="{{ asset('js/tilda-fallback-1.0.min.js') }}" async></script>
@@ -51,12 +50,11 @@
     <script src="{{ asset('js/tilda-zero-gallery-1.0.min.js') }}" async></script>
     <script src="{{ asset('js/hammer.min.js') }}" async></script>
     <script src="{{ asset('js/tilda-zero-forms-1.0.min.js') }}" async></script>
-    <script src="{{ asset('js/tilda-animation-sbs-1.0.min.js') }}" async></script>
     <script src="{{ asset('js/tilda-zero-scale-1.0.min.js') }}" async></script>
     <script src="{{ asset('js/tilda-zero-fixed-1.0.min.js') }}" async></script>
     <script src="{{ asset('js/tilda-skiplink-1.0.min.js') }}" async></script>
     <script src="{{ asset('js/tilda-events-1.0.min.js') }}" async></script>
-    <script>function t_onReady(t) { "loading" != document.readyState ? t() : document.addEventListener("DOMContentLoaded", t) } function t_onFuncLoad(t, e, a) { "function" == typeof window[t] ? e() : setTimeout(function () { t_onFuncLoad(t, e, a) }, a || 100) } function t396_initialScale(t) { if ((t = document.getElementById("rec" + t)) && (t = t.querySelector(".t396__artboard"))) { var e, a = document.documentElement.clientWidth, r = []; if (i = t.getAttribute("data-artboard-screens")) for (var i = i.split(","), o = 0; o < i.length; o++)r[o] = parseInt(i[o], 10); else r = [320, 480, 640, 960, 1200]; for (o = 0; o < r.length; o++) { var n = r[o]; n <= a && (e = n) } var l = "edit" === window.allrecords.getAttribute("data-tilda-mode"), d = "center" === t396_getFieldValue(t, "valign", e, r), c = "grid" === t396_getFieldValue(t, "upscale", e, r), s = t396_getFieldValue(t, "height_vh", e, r), u = t396_getFieldValue(t, "height", e, r), f = !!window.opr && !!window.opr.addons || !!window.opera || -1 !== navigator.userAgent.indexOf(" OPR/"); if (!l && d && !c && !s && u && !f) { for (var g = parseFloat((a / e).toFixed(3)), b = [t, t.querySelector(".t396__carrier"), t.querySelector(".t396__filter")], o = 0; o < b.length; o++)b[o].style.height = Math.floor(parseInt(u, 10) * g) + "px"; t396_scaleInitial__getElementsToScale(t).forEach(function (t) { t.style.zoom = g }) } } } function t396_scaleInitial__getElementsToScale(t) { return t ? Array.prototype.slice.call(t.children).filter(function (t) { return t && (t.classList.contains("t396__elem") || t.classList.contains("t396__group")) }) : [] } function t396_getFieldValue(t, e, a, r) { var i = r[r.length - 1], o = a === i ? t.getAttribute("data-artboard-" + e) : t.getAttribute("data-artboard-" + e + "-res-" + a); if (!o) for (var n = 0; n < r.length; n++) { var l = r[n]; if (!(l <= a) && (o = l === i ? t.getAttribute("data-artboard-" + e) : t.getAttribute("data-artboard-" + e + "-res-" + l))) break } return o } window.dataLayer = window.dataLayer || [], !/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(navigator.userAgent) && "undefined" != typeof sessionStorage && "y" !== sessionStorage.getItem("visited") && document.visibilityState && document.addEventListener("DOMContentLoaded", function t() { var e = document.querySelectorAll(".t-records"); Array.prototype.forEach.call(e, function (t) { t.classList.add("t-records_animated") }), setTimeout(function () { Array.prototype.forEach.call(e, function (t) { t.classList.add("t-records_visible") }), sessionStorage.setItem("visited", "y") }, 400) });</script>
+    <script>function t_onReady(t) { "loading" !== document.readyState ? t() : document.addEventListener("DOMContentLoaded", t) } function t_onFuncLoad(t, e, r) { "function" == typeof window[t] ? e() : setTimeout(function () { t_onFuncLoad(t, e, r) }, r || 100) } function t396_initialScale(t) { try { let e = document.getElementById("rec" + t)?.querySelector(".t396__artboard"); if (!e) { console.warn(`Artboard with ID rec${t} not found`); return } let r = document.documentElement.clientWidth, a = e.getAttribute("data-artboard-screens")?.split(",").map(t => parseInt(t, 10)) || [320, 480, 640, 960, 1200], i; for (let o of a) o <= r && (i = o); let l = "edit" === window.allrecords?.getAttribute("data-tilda-mode"), n = "center" === t396_getFieldValue(e, "valign", i, a), d = "grid" === t396_getFieldValue(e, "upscale", i, a), c = t396_getFieldValue(e, "height_vh", i, a), s = t396_getFieldValue(e, "height", i, a), u = !!window.opr?.addons || !!window.opera || navigator.userAgent.includes(" OPR/"); if (!l && n && !d && !c && s && !u) { let f = parseFloat((r / i).toFixed(3)), g = [e, e.querySelector(".t396__carrier"), e.querySelector(".t396__filter")]; g.forEach(t => { t && (t.style.height = Math.floor(parseInt(s, 10) * f) + "px") }), t396_scaleInitial__getElementsToScale(e).forEach(t => { t && (t.style.zoom = f) }) } } catch (b) { console.error("Error in t396_initialScale:", b) } } function t396_scaleInitial__getElementsToScale(t) { return t ? Array.from(t.children).filter(t => t?.classList.contains("t396__elem") || t?.classList.contains("t396__group")) : [] } function t396_getFieldValue(t, e, r, a) { try { let i = a[a.length - 1], o = r === i ? t.getAttribute(`data-artboard-${e}`) : t.getAttribute(`data-artboard-${e}-res-${r}`); if (!o) { for (let l of a) if (!(l <= r) && (o = l === i ? t.getAttribute(`data-artboard-${e}`) : t.getAttribute(`data-artboard-${e}-res-${l}`))) break } return o || "" } catch (n) { return console.error(`Error in t396_getFieldValue for ${e}:`, n), "" } } window.dataLayer = window.dataLayer || [], !/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(navigator.userAgent) && "undefined" != typeof sessionStorage && "y" !== sessionStorage.getItem("visited") && document.visibilityState && t_onReady(function () { let t = document.querySelectorAll(".t-records"); t.forEach(t => t.classList.add("t-records_animated")), setTimeout(() => { t.forEach(t => t.classList.add("t-records_visible")), sessionStorage.setItem("visited", "y") }, 400) });</script>
 </head>
 
 <body class="t-body" style="margin:0;">
@@ -2985,7 +2983,7 @@
                         style="top: 853px; left: 982.5px; width: 333px; height: auto;">
                         <div class="tn-atom" field="tn_text_1695798983925" style="line-height: 30px;">
                             @if(isset($contacts[4]) && $contacts[4]['is_active'])
-                                {{ $contacts[4]['value'] }} 
+                                {{ $contacts[4]['value'] }}
                             @endif
                         </div>
                     </div>
@@ -3168,151 +3166,154 @@
             <script
                 type="text/javascript">t_onReady(function () { t_onFuncLoad('t890_init', function () { t890_init('653299402', '1000'); }); });</script>
         </div>
-<div id="rec653299529" class="r t-rec" style="opacity: 1;" data-animationappear="off" data-record-type="702"
-    data-popup-subscribe-inited="y"> <!-- T702 -->
-    <div class="t702">
-        <div class="t-popup" data-tooltip-hook="#popup:consultation" role="dialog" aria-modal="true" tabindex="-1"
-            aria-label="Бесплатная консультация" id="rec_653299529777">
-            <div class="t-popup__close t-popup__block-close">
-                <button type="button" class="t-popup__close-wrapper t-popup__block-close-button"
-                    aria-label="Закрыть диалоговое окно">
-                    <svg role="presentation" class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23"
-                        version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
-                            <rect
-                                transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
-                                x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
-                            <rect
-                                transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
-                                x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
-                        </g>
-                    </svg>
-                </button>
-            </div>
-            <div>
-                <div class="custom-popup__container">
-                    <div class="custom-popup__wrapper">
-                        <div class="custom-popup__text">
-                            <div class="custom-popup__title">Бесплатная консультация</div>
-                            <div class="custom-popup__description">Заполните форму, и мы свяжемся с вами в ближайшее
-                                время.</div>
+        <div id="rec653299529" class="r t-rec" style="opacity: 1;" data-animationappear="off" data-record-type="702"
+            data-popup-subscribe-inited="y"> <!-- T702 -->
+            <div class="t702">
+                <div class="t-popup" data-tooltip-hook="#popup:consultation" role="dialog" aria-modal="true"
+                    tabindex="-1" aria-label="Бесплатная консультация" id="rec_653299529777">
+                    <div class="t-popup__close t-popup__block-close">
+                        <button type="button" class="t-popup__close-wrapper t-popup__block-close-button"
+                            aria-label="Закрыть диалоговое окно">
+                            <svg role="presentation" class="t-popup__close-icon" width="23px" height="23px"
+                                viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                                    <rect
+                                        transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                                        x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                                    <rect
+                                        transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                                        x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div>
+                        <div class="custom-popup__container">
+                            <div class="custom-popup__wrapper">
+                                <div class="custom-popup__text">
+                                    <div class="custom-popup__title">Бесплатная консультация</div>
+                                    <div class="custom-popup__description">Заполните форму, и мы свяжемся с вами в
+                                        ближайшее
+                                        время.</div>
+                                </div>
+                                <form id="custom-consultation-form">
+                                    @csrf
+                                    <input type="text" name="name" placeholder="Ваше имя" required>
+                                    <input type="email" name="email" placeholder="Ваш email" required>
+                                    <input type="tel" name="phone" id="custom-phone" placeholder="+7 (___) ___-__-__"
+                                        required>
+                                    <button type="submit" id="custom-submit-btn">Отправить</button>
+                                </form>
+                                <div id="custom-response-msg"></div>
+                                <div class="custom-popup__bottom-text">
+                                    Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и политику
+                                    конфиденциальности.
+                                </div>
+                            </div>
                         </div>
-                        <form id="custom-consultation-form">
-                            @csrf
-                            <input type="text" name="name" placeholder="Ваше имя" required>
-                            <input type="email" name="email" placeholder="Ваш email" required>
-                            <input type="tel" name="phone" id="custom-phone" placeholder="+7 (___) ___-__-__" required>
-                            <button type="submit" id="custom-submit-btn">Отправить</button>
-                        </form>
-                        <div id="custom-response-msg"></div>
-                        <div class="custom-popup__bottom-text">
-                            Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и политику
-                            конфиденциальности.
-                        </div>
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function () {
+                                let e = document.getElementById("custom-consultation-form"),
+                                    t = document.getElementById("custom-submit-btn"),
+                                    s = document.getElementById("custom-response-msg"),
+                                    n = document.getElementById("custom-phone"),
+                                    l = !1;
+                                n.addEventListener("input", function (e) {
+                                    let t = e.target.value.replace(/\D/g, "");
+                                    t.startsWith("7") && (t = t.slice(1)),
+                                        t.length > 10 && (t = t.slice(0, 10));
+                                    let s = "+7";
+                                    t.length > 0 && (s += " (" + t.slice(0, 3)),
+                                        t.length > 3 && (s += ") " + t.slice(3, 6)),
+                                        t.length > 6 && (s += "-" + t.slice(6, 8)),
+                                        t.length > 8 && (s += "-" + t.slice(8, 10)),
+                                        e.target.value = s
+                                }),
+                                    e.addEventListener("submit", async function (r) {
+                                        if (r.preventDefault(), l) return;
+                                        let a = n.value.trim();
+                                        if (!/^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/.test(a)) {
+                                            Swal.fire({
+                                                position: 'top-end',
+                                                icon: "error",
+                                                title: "Ошибка",
+                                                text: "Телефон введён неверно! Пожалуйста, используйте формат: +7 (XXX) XXX-XX-XX.",
+                                                timer: 3000,
+                                                timerProgressBar: true
+                                            });
+                                            return
+                                        }
+                                        l = !0;
+                                        t.disabled = !0;
+                                        t.classList.add("loading");
+                                        let i = new FormData(e),
+                                            o = document.querySelector('input[name="_token"]').value;
+                                        try {
+                                            let c = await fetch("{{ route('consultation.send') }}", {
+                                                method: "POST",
+                                                headers: { "X-CSRF-TOKEN": o },
+                                                body: i
+                                            }),
+                                                d = await c.json();
+                                            if (c.ok && d.success) {
+                                                document.querySelector('.t-popup').classList.remove('t-popup_show');
+
+                                                Swal.fire({
+                                                    toast: true,
+                                                    position: 'top-end',
+                                                    icon: 'success',
+                                                    title: 'Ваш запрос успешно отправлен!',
+                                                    showConfirmButton: false,
+                                                    timer: 1500,
+                                                    timerProgressBar: true,
+                                                    didClose: () => {
+                                                        window.location.reload();
+                                                    }
+                                                });
+                                            }
+                                            else {
+                                                Swal.fire({
+                                                    toast: true,
+                                                    position: 'top-end',
+                                                    icon: "error",
+                                                    title: "Ошибка",
+                                                    text: d.message || "Ошибка при отправке формы!",
+                                                    timer: 3000,
+                                                    timerProgressBar: true
+                                                });
+                                                l = !1;
+                                                t.disabled = !1;
+                                                t.classList.remove("loading");
+                                            }
+                                        } catch (u) {
+                                            Swal.fire({
+                                                toast: true,
+                                                position: 'top-end',
+                                                icon: "error",
+                                                title: "Ошибка",
+                                                text: "Не удалось связаться с сервером!",
+                                                timer: 3000,
+                                                timerProgressBar: true
+                                            });
+                                            l = !1;
+                                            t.disabled = !1;
+                                            t.classList.remove("loading");
+                                        }
+                                    })
+                            });
+                        </script>
                     </div>
                 </div>
-                <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                        let e = document.getElementById("custom-consultation-form"),
-                            t = document.getElementById("custom-submit-btn"),
-                            s = document.getElementById("custom-response-msg"),
-                            n = document.getElementById("custom-phone"),
-                            l = !1;
-                        n.addEventListener("input", function (e) {
-                            let t = e.target.value.replace(/\D/g, "");
-                            t.startsWith("7") && (t = t.slice(1)),
-                                t.length > 10 && (t = t.slice(0, 10));
-                            let s = "+7";
-                            t.length > 0 && (s += " (" + t.slice(0, 3)),
-                                t.length > 3 && (s += ") " + t.slice(3, 6)),
-                                t.length > 6 && (s += "-" + t.slice(6, 8)),
-                                t.length > 8 && (s += "-" + t.slice(8, 10)),
-                                e.target.value = s
-                        }),
-                            e.addEventListener("submit", async function (r) {
-                                if (r.preventDefault(), l) return;
-                                let a = n.value.trim();
-                                if (!/^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/.test(a)) {
-                                    Swal.fire({
-                                        position: 'top-end',
-                                        icon: "error",
-                                        title: "Ошибка",
-                                        text: "Телефон введён неверно! Пожалуйста, используйте формат: +7 (XXX) XXX-XX-XX.",
-                                        timer: 3000,
-                                        timerProgressBar: true
-                                    });
-                                    return
-                                }
-                                l = !0;
-                                t.disabled = !0;
-                                t.classList.add("loading");
-                                let i = new FormData(e),
-                                    o = document.querySelector('input[name="_token"]').value;
-                                try {
-                                    let c = await fetch("{{ route('consultation.send') }}", {
-                                        method: "POST",
-                                        headers: { "X-CSRF-TOKEN": o },
-                                        body: i
-                                    }),
-                                        d = await c.json();
-                                    if (c.ok && d.success) {
-                                        document.querySelector('.t-popup').classList.remove('t-popup_show');
-
-                                        Swal.fire({
-                                            toast: true,
-                                            position: 'top-end',
-                                            icon: 'success',
-                                            title: 'Ваш запрос успешно отправлен!',
-                                            showConfirmButton: false,
-                                            timer: 1500,
-                                            timerProgressBar: true,
-                                            didClose: () => {
-                                                window.location.reload();
-                                            }
-                                        });
-                                    }
-                                    else {
-                                        Swal.fire({
-                                            toast: true,
-                                            position: 'top-end',
-                                            icon: "error",
-                                            title: "Ошибка",
-                                            text: d.message || "Ошибка при отправке формы!",
-                                            timer: 3000,
-                                            timerProgressBar: true
-                                        });
-                                        l = !1;
-                                        t.disabled = !1;
-                                        t.classList.remove("loading");
-                                    }
-                                } catch (u) {
-                                    Swal.fire({
-                                        toast: true,
-                                        position: 'top-end',
-                                        icon: "error",
-                                        title: "Ошибка",
-                                        text: "Не удалось связаться с сервером!",
-                                        timer: 3000,
-                                        timerProgressBar: true
-                                    });
-                                    l = !1;
-                                    t.disabled = !1;
-                                    t.classList.remove("loading");
-                                }
-                            })
-                    });
-                </script>
             </div>
+            <script>
+                t_onReady(function () {
+                    t_onFuncLoad('t702_initPopup', function () {
+                        t702_initPopup('653299529');
+                    });
+                });
+            </script>
         </div>
-    </div>
-    <script>
-        t_onReady(function () {
-            t_onFuncLoad('t702_initPopup', function () {
-                t702_initPopup('653299529');
-            });
-        });
-    </script>
-</div>
 
     </div>
 </body>
