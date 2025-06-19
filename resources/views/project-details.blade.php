@@ -51,6 +51,8 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
     <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
     <script async id="tildastatscript" src="{{ asset('js/tilda-stat-1.0.min.js') }}"></script>
     <script async id="t-phonemask-script" src="{{ asset('js/tilda-phone-mask-1.1.min.js') }}"></script>
     <script async src="{{ asset('js/tilda-fallback-1.0.min.js') }}" charset="utf-8"></script>
@@ -74,8 +76,6 @@
     <script async src="{{ asset('js/tilda-forms-1.0.min.js') }}" charset="utf-8" onerror="this.loaderr='y';"></script>
     <script async src="{{ asset('js/tilda-zero-forms-1.0.min.js') }}" charset="utf-8"
         onerror="this.loaderr='y';"></script>
-    <script async src="{{ asset('js/tilda-animation-sbs-1.0.min.js') }}" charset="utf-8"
-        onerror="this.loaderr='y';"></script>
     <script async src="{{ asset('js/tilda-zoom-2.0.min.js') }}" charset="utf-8" onerror="this.loaderr='y';"></script>
     <script async src="{{ asset('js/tilda-zero-scale-1.0.min.js') }}" charset="utf-8"
         onerror="this.loaderr='y';"></script>
@@ -84,13 +84,11 @@
     <script async src="{{ asset('js/tilda-skiplink-1.0.min.js') }}" charset="utf-8"
         onerror="this.loaderr='y';"></script>
     <script async src="{{ asset('js/tilda-events-1.0.min.js') }}" charset="utf-8" onerror="this.loaderr='y';"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="{{ asset('js/tilda-scripts-3.0.min.js') }}"></script>
     <script src="{{ asset('js/tilda-events-1.0.min.js') }}"></script>
     <script src="{{ asset('js/tilda-cover-1.0.min.js') }}"></script>
     <script src="{{ asset('js/tilda-zero-1.1.min.js') }}"></script>
     <script src="{{ asset('js/tilda-video-1.0.min.js') }}"></script>
-    <script src="{{ asset('js/tilda-animation-sbs-1.0.min.js') }}"></script>
     <script src="{{ asset('js/sweet-alert.js') }}"></script>
     <script src="{{ asset('js/tilda-stat-1.0.min.js') }}" async></script>
     <script src="{{ asset('js/tilda-fallback-1.0.min.js') }}" async></script>
@@ -113,7 +111,6 @@
     <script src="{{ asset('js/tilda-zero-gallery-1.0.min.js') }}" async></script>
     <script src="{{ asset('js/hammer.min.js') }}" async></script>
     <script src="{{ asset('js/tilda-zero-forms-1.0.min.js') }}" async></script>
-    <script src="{{ asset('js/tilda-animation-sbs-1.0.min.js') }}" async></script>
     <script src="{{ asset('js/tilda-zero-scale-1.0.min.js') }}" async></script>
     <script src="{{ asset('js/tilda-zero-fixed-1.0.min.js') }}" async></script>
     <script src="{{ asset('js/tilda-skiplink-1.0.min.js') }}" async></script>
