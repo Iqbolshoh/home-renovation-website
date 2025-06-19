@@ -29,7 +29,7 @@
     <script src="{{ asset('js/tilda-cover-1.0.min.js') }}"></script>
     <script src="{{ asset('js/tilda-zero-1.1.min.js') }}"></script>
     <script src="{{ asset('js/tilda-video-1.0.min.js') }}"></script>
-    <script src="{{ asset('js/sweet-alert.js') }}"></script>
+    <script src="{{ asset('js/alert.js') }}"></script>
     <script src="{{ asset('js/tilda-stat-1.0.min.js') }}" async></script>
     <script src="{{ asset('js/tilda-fallback-1.0.min.js') }}" async></script>
     <script nomodule src="{{ asset('js/tilda-polyfill-1.0.min.js') }}"></script>
