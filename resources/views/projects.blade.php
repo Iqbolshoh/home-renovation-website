@@ -1545,7 +1545,7 @@
                                                     icon: 'success',
                                                     title: 'Ваш запрос успешно отправлен!',
                                                     showConfirmButton: false,
-                                                    timer: 3000,
+                                                    timer: 500,
                                                     timerProgressBar: true,
                                                     didClose: () => {
                                                         window.location.reload();
